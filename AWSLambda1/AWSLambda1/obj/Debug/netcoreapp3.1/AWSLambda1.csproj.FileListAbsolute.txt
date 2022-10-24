@@ -1,0 +1,14 @@
+C:\Users\vmedellin\source\repos\AWSLambda1\AWSLambda1\bin\Debug\netcoreapp3.1\AWSLambda1.deps.json
+C:\Users\vmedellin\source\repos\AWSLambda1\AWSLambda1\bin\Debug\netcoreapp3.1\AWSLambda1.runtimeconfig.json
+C:\Users\vmedellin\source\repos\AWSLambda1\AWSLambda1\bin\Debug\netcoreapp3.1\AWSLambda1.runtimeconfig.dev.json
+C:\Users\vmedellin\source\repos\AWSLambda1\AWSLambda1\bin\Debug\netcoreapp3.1\AWSLambda1.dll
+C:\Users\vmedellin\source\repos\AWSLambda1\AWSLambda1\bin\Debug\netcoreapp3.1\AWSLambda1.pdb
+C:\Users\vmedellin\source\repos\AWSLambda1\AWSLambda1\bin\Debug\netcoreapp3.1\Amazon.Lambda.Core.dll
+C:\Users\vmedellin\source\repos\AWSLambda1\AWSLambda1\bin\Debug\netcoreapp3.1\Amazon.Lambda.Serialization.SystemTextJson.dll
+C:\Users\vmedellin\source\repos\AWSLambda1\AWSLambda1\obj\Debug\netcoreapp3.1\AWSLambda1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vmedellin\source\repos\AWSLambda1\AWSLambda1\obj\Debug\netcoreapp3.1\AWSLambda1.AssemblyInfoInputs.cache
+C:\Users\vmedellin\source\repos\AWSLambda1\AWSLambda1\obj\Debug\netcoreapp3.1\AWSLambda1.AssemblyInfo.cs
+C:\Users\vmedellin\source\repos\AWSLambda1\AWSLambda1\obj\Debug\netcoreapp3.1\AWSLambda1.csproj.CoreCompileInputs.cache
+C:\Users\vmedellin\source\repos\AWSLambda1\AWSLambda1\obj\Debug\netcoreapp3.1\AWSLambda1.dll
+C:\Users\vmedellin\source\repos\AWSLambda1\AWSLambda1\obj\Debug\netcoreapp3.1\AWSLambda1.pdb
+C:\Users\vmedellin\source\repos\AWSLambda1\AWSLambda1\obj\Debug\netcoreapp3.1\AWSLambda1.genruntimeconfig.cache
