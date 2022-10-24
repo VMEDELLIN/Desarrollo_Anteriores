@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xrsi="http://www.westernunion.com/schema/xrsi" targetNamespace="http://www.westernunion.com/schema/xrsi" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="XRSIBasicTypes.xsd" />
+  <xs:include schemaLocation="XRSIClasses.xsd" />
+  <xs:annotation>
+    <xs:documentation>
+			***********************************************************************************************************
+			Copyright 2009. Western Union Financial Services, Inc. All Worldwide Rights 
+			Reserved. This media contains unpublished, confidential and proprietary     
+			information of Western Union Financial Services, Inc. You may not disclose, 
+			copy, display, prepare derivative works or use any portion of these         
+			materials for any purpose without the express written consent of Western    
+			Union Financial Services, Inc. You must reproduce this copyright notice and 
+			any other copyright notices included in the machine-readable copies on all  
+			authorized copies.                                                          
+			***********************************************************************************************************
+			$Revision: 1.1.4.3 $
+			$Date: 2013/11/27 23:14:19 $
+		</xs:documentation>
+  </xs:annotation>
+  <xs:complexType name="quick-pay-validation-reply">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:reply_transaction_base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="foreign_remote_system" type="xrsi:foreign_remote_system" />
+          <xs:element minOccurs="0" name="sender" type="xrsi:sender" />
+          <xs:element name="convenience_search" type="xrsi:convenience_search" />
+          <xs:element minOccurs="0" name="payment_details" type="xrsi:payment_details" />
+          <xs:element minOccurs="0" name="financials" type="xrsi:financials" />
+          <xs:element minOccurs="0" name="promotions" type="xrsi:promotions" />
+          <xs:element minOccurs="0" name="mtcn" type="xrsi:mtcn" />
+          <xs:element minOccurs="0" name="new_mtcn" type="xrsi:mtcn" />
+          <xs:element minOccurs="0" name="stage_mtcn" type="xrsi:mtcn" />
+          <xs:element minOccurs="0" name="filing_date" type="xrsi:date" />
+          <xs:element minOccurs="0" name="filing_time" type="xrsi:time" />
+          <xs:element minOccurs="0" maxOccurs="1" name="df_fields" type="xrsi:df_fields" />
+          <xs:element minOccurs="0" maxOccurs="5" name="spare" type="xrsi:spare" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="quick-pay-validation-reply" type="xrsi:quick-pay-validation-reply" />
+</xs:schema>

@@ -1,0 +1,12 @@
+C:\WORK\Proyectos Elaborados Pruebas\UtilityLibraries\StringLibrary\bin\Debug\net5.0\StringLibrary.deps.json
+C:\WORK\Proyectos Elaborados Pruebas\UtilityLibraries\StringLibrary\bin\Debug\net5.0\StringLibrary.dll
+C:\WORK\Proyectos Elaborados Pruebas\UtilityLibraries\StringLibrary\bin\Debug\net5.0\ref\StringLibrary.dll
+C:\WORK\Proyectos Elaborados Pruebas\UtilityLibraries\StringLibrary\bin\Debug\net5.0\StringLibrary.pdb
+C:\WORK\Proyectos Elaborados Pruebas\UtilityLibraries\StringLibrary\obj\Debug\net5.0\StringLibrary.csproj.AssemblyReference.cache
+C:\WORK\Proyectos Elaborados Pruebas\UtilityLibraries\StringLibrary\obj\Debug\net5.0\StringLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\WORK\Proyectos Elaborados Pruebas\UtilityLibraries\StringLibrary\obj\Debug\net5.0\StringLibrary.AssemblyInfoInputs.cache
+C:\WORK\Proyectos Elaborados Pruebas\UtilityLibraries\StringLibrary\obj\Debug\net5.0\StringLibrary.AssemblyInfo.cs
+C:\WORK\Proyectos Elaborados Pruebas\UtilityLibraries\StringLibrary\obj\Debug\net5.0\StringLibrary.csproj.CoreCompileInputs.cache
+C:\WORK\Proyectos Elaborados Pruebas\UtilityLibraries\StringLibrary\obj\Debug\net5.0\StringLibrary.dll
+C:\WORK\Proyectos Elaborados Pruebas\UtilityLibraries\StringLibrary\obj\Debug\net5.0\ref\StringLibrary.dll
+C:\WORK\Proyectos Elaborados Pruebas\UtilityLibraries\StringLibrary\obj\Debug\net5.0\StringLibrary.pdb

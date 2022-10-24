@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/GITHUB/TransferDirecto.Net/WSDL/WesternUnion/Desarrollo/MEX06/ALL/XRSISendMoneyValidationReply.xsd" filename="XRSISendMoneyValidationReply.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/GITHUB/TransferDirecto.Net/WSDL/WesternUnion/Desarrollo/MEX06/ALL/XRSIErrorReply.xsd" filename="XRSIErrorReply.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///C:/GITHUB/TransferDirecto.Net/WSDL/WesternUnion/Desarrollo/MEX06/ALL/SendMoneyValidation_Service_H2HService_1.wsdl" filename="sendmoneyValidation_Service_H2H.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/GITHUB/TransferDirecto.Net/WSDL/WesternUnion/Desarrollo/MEX06/ALL/XRSISendMoneyValidationRequest.xsd" filename="XRSISendMoneyValidationRequest.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/GITHUB/TransferDirecto.Net/WSDL/WesternUnion/Desarrollo/MEX06/ALL/XRSIClasses.xsd" filename="XRSIClasses.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/GITHUB/TransferDirecto.Net/WSDL/WesternUnion/Desarrollo/MEX06/ALL/XRSIBasicTypes.xsd" filename="XRSIBasicTypes.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

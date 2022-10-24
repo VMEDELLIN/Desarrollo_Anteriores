@@ -1,0 +1,6 @@
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\PatronEstrategy\bin\Debug\PatronEstrategy.dll.config
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\PatronEstrategy\bin\Debug\PatronEstrategy.dll
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\PatronEstrategy\bin\Debug\PatronEstrategy.pdb
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\PatronEstrategy\obj\Debug\PatronEstrategy.csproj.CoreCompileInputs.cache
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\PatronEstrategy\obj\Debug\PatronEstrategy.dll
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\PatronEstrategy\obj\Debug\PatronEstrategy.pdb

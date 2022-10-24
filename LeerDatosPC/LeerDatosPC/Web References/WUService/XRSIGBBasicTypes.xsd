@@ -1,0 +1,2081 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xrsi="http://www.westernunion.com/schema/xrsi" targetNamespace="http://www.westernunion.com/schema/xrsi" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>***********************************************************************************************************
+			Copyright 2009. Western Union Financial Services, Inc. All Worldwide Rights 
+			Reserved. This media contains unpublished, confidential and proprietary     
+			information of Western Union Financial Services, Inc. You may not disclose, 
+			copy, display, prepare derivative works or use any portion of these         
+			materials for any purpose without the express written consent of Western    
+			Union Financial Services, Inc. You must reproduce this copyright notice and 
+			any other copyright notices included in the machine-readable copies on all  
+			authorized copies.                                                          
+			***********************************************************************************************************
+			$Revision: 1.1.6.7 $
+			$Date: 2011/05/19 06:09:32 $</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="amount">
+    <xs:annotation>
+      <xs:documentation>Basic Type for Amount</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:long" />
+  </xs:simpleType>
+  <xs:simpleType name="float_amount">
+    <xs:annotation>
+      <xs:documentation>Basic Type for Float Amount</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:double" />
+  </xs:simpleType>
+  <xs:simpleType name="count">
+    <xs:annotation>
+      <xs:documentation>Basic Type for Count</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:integer" />
+  </xs:simpleType>
+  <xs:simpleType name="city">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="30" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qualifying_for_reward">
+    <xs:annotation>
+      <xs:documentation>qualifying for reward</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="redemption_status">
+    <xs:annotation>
+      <xs:documentation>redemption status</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="pin">
+    <xs:annotation>
+      <xs:documentation>phone pin or promo code</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="csr_id">
+    <xs:annotation>
+      <xs:documentation>csr id</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xrsi:id">
+      <xs:minLength value="0" />
+      <xs:maxLength value="12" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="special_pricing_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="special_pricing_description">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="15" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="device_flag">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="local_amount">
+    <xs:annotation>
+      <xs:documentation>amount in local currency</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="name_base">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="80" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="country_name">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="40" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="country_iso_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="currency_iso_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="language_iso_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="state_iso_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="5" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qp_reference_no">
+    <xs:annotation>
+      <xs:documentation>quick pay company reference no</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="24" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qp_company_name">
+    <xs:annotation>
+      <xs:documentation>quick pay company name</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="84" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qp_city_code">
+    <xs:annotation>
+      <xs:documentation>quick pay city code</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="24" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qp_country">
+    <xs:annotation>
+      <xs:documentation>quick pay country code</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="5" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qp_department">
+    <xs:annotation>
+      <xs:documentation>quick pay company department name/ attention</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="69" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qp_rate_modifier">
+    <xs:annotation>
+      <xs:documentation>quick pay company rate modifier / discount rate</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qp_account_no">
+    <xs:annotation>
+      <xs:documentation>EFP FID 28 - quick pay company Debtor Account No</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="69" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="debtor_account_number">
+    <xs:annotation>
+      <xs:documentation>single find receiver - preferred customer</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="25" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="postal_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="40" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="state_province">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="40" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="phone">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="31" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="yes_no">
+    <xs:restriction base="xs:boolean" />
+  </xs:simpleType>
+  <xs:simpleType name="documents_verified">
+    <xs:restriction base="xrsi:yes_no" />
+  </xs:simpleType>
+  <xs:simpleType name="email">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="80" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="address_line_short">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="40" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="address_line_long">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="84" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="currency">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="id">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="84" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="date">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="52" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="time">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="16" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_device_id">
+    <xs:annotation>
+      <xs:documentation>FID 11 (QQC Device Id)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="12" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_device_status">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_device_route">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_device_draft_form">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_device_route_type">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="6" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_device_total_ack_nack">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="6" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_device_equipment_type">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_device_max_del_con">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_device_equipment_prot">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_hours">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_timezone">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_device_class">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="8" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_db_area">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_del_await">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_del_ip">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_timestamp_ad">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="18" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_timestamp_dip">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="18" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_delivery_priority">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="qqc_reason_last_nak">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="frequency_of_transfers">
+    <xs:annotation>
+      <xs:documentation>frequency of transfers per year(emea ii)</xs:documentation>
+      <xs:documentation>frequency of transfers using wu(emea ii)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="more_flag">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="preferred_mode_to_receive_info">
+    <xs:annotation>
+      <xs:documentation>preferred mode to receive info (emea ii)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="reason_for_transfer">
+    <xs:annotation>
+      <xs:documentation>reason for transfer (emea ii)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="id_on_file">
+    <xs:annotation>
+      <xs:documentation>id on file (emea ii)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="preferred_language">
+    <xs:annotation>
+      <xs:documentation>preferred language - ISO language code</xs:documentation>
+      <xs:documentation>Enumeration - EN etc.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string">
+    <xs:annotation>
+      <xs:documentation>Generic string type</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="300" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="card_status">
+    <xs:annotation>
+      <xs:documentation>EFP FID  - card status</xs:documentation>
+      <xs:documentation>Enumeration: I=Inactive,A=Active,T=Temporarily Active,S=Suspended,R=Replacement/Reorder,N=New</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="enrollment_source">
+    <xs:annotation>
+      <xs:documentation>MOM FID G3,EFP FID 249</xs:documentation>
+      <xs:documentation>Enumeration - P,G,B,M</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="marketing_code">
+    <xs:annotation>
+      <xs:documentation>marketing code- preferred customer</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="16" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="gender">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+      <xs:enumeration value="M" />
+      <xs:enumeration value="F" />
+      <xs:enumeration value="S" />
+      <xs:enumeration value=" " />
+      <xs:enumeration value="" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="name_raw">
+    <xs:restriction base="xrsi:name_base" />
+  </xs:simpleType>
+  <xs:simpleType name="first_name">
+    <xs:restriction base="xrsi:name_base" />
+  </xs:simpleType>
+  <xs:simpleType name="last_name">
+    <xs:restriction base="xrsi:name_base" />
+  </xs:simpleType>
+  <xs:simpleType name="middle_name">
+    <xs:restriction base="xrsi:name_base" />
+  </xs:simpleType>
+  <xs:simpleType name="maternal_name">
+    <xs:restriction base="xrsi:name_base" />
+  </xs:simpleType>
+  <xs:simpleType name="paternal_name">
+    <xs:restriction base="xrsi:name_base" />
+  </xs:simpleType>
+  <xs:simpleType name="business_name">
+    <xs:restriction base="xrsi:name_base" />
+  </xs:simpleType>
+  <xs:simpleType name="attention">
+    <xs:restriction base="xrsi:name_base" />
+  </xs:simpleType>
+  <xs:simpleType name="empty_string">
+    <xs:restriction base="xs:string">
+      <xs:length value="0" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="name_prefix_val">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(M(R|r)\.)|           (M(S|s)\.)|           (M(RS|rs)\.)" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="name_prefix">
+    <xs:union memberTypes="xrsi:name_prefix_val xrsi:empty_string" />
+  </xs:simpleType>
+  <xs:simpleType name="name_suffix">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Jr." />
+      <xs:enumeration value="Sr." />
+      <xs:enumeration value="I" />
+      <xs:enumeration value="II" />
+      <xs:enumeration value="III" />
+      <xs:enumeration value="Esq." />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="wu_card_number">
+    <xs:annotation>
+      <xs:documentation>wu card number</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="16" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="bank_name">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="bank_account_number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="28" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="bank_routing_number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="mtcn">
+    <xs:annotation>
+      <xs:documentation>Money Transfer Control Number</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="10" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="number_matches">
+    <xs:annotation>
+      <xs:documentation>Number Matches</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:integer" />
+  </xs:simpleType>
+  <xs:simpleType name="transaction_type">
+    <xs:annotation>
+      <xs:documentation>Transaction type - wmo, mod</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="mocn">
+    <xs:annotation>
+      <xs:documentation>Money Order Control Number</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="16" />
+      <xs:maxLength value="16" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="receiver_index_number">
+    <xs:annotation>
+      <xs:documentation>receiver index number - send money store</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="convenience_search_type">
+    <xs:annotation>
+      <xs:documentation>Convenience Search Type</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="convenience_search_key">
+    <xs:annotation>
+      <xs:documentation>Convenience Search Key</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="80" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="wu_card_lookup_context">
+    <xs:annotation>
+      <xs:documentation>Context</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="card_lookup_search_type">
+    <xs:annotation>
+      <xs:documentation>Card Lookup Search Type</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="fusion_screen">
+    <xs:annotation>
+      <xs:documentation>Fusion Screen</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="pfc_filter_flag">
+    <xs:annotation>
+      <xs:documentation>PFC Filter Flag</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="flag_type">
+    <xs:annotation>
+      <xs:documentation>Generic Flag</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="add_track_one_data">
+    <xs:annotation>
+      <xs:documentation>Add Track One Data</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="80" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="sender_filter">
+    <xs:annotation>
+      <xs:documentation>Sender Filter</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="receiver_filter">
+    <xs:annotation>
+      <xs:documentation>Receiver Filter</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="reply_type">
+    <xs:annotation>
+      <xs:documentation>Reply Type</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="save_position_key">
+    <xs:annotation>
+      <xs:documentation>MOM FID 10 - preferred lookup sender reply</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="65" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="question_answer">
+    <xs:annotation>
+      <xs:documentation>Identification/Test question and Answer</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="40" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="comments">
+    <xs:annotation>
+      <xs:documentation>Operator comments, Generic comments</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="80" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="message">
+    <xs:annotation>
+      <xs:documentation>Promo Message/Message Banner/Message</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="80" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="pref_cust_account_number">
+    <xs:annotation>
+      <xs:documentation>Preferred Customer Account Number</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="11" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="database_key">
+    <xs:annotation>
+      <xs:documentation>Database Key</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="reference_key">
+    <xs:annotation>
+      <xs:documentation>Reference key contains recording agent + time stamp or db_key</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="30" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="banking_regulations_data">
+    <xs:annotation>
+      <xs:documentation>Banking regulations data - compliance</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="99" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="level_code">
+    <xs:annotation>
+      <xs:documentation>Level code</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="points_assigned_redeemed">
+    <xs:annotation>
+      <xs:documentation>Points assigned redeemed</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="16" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="wu_card_total_points_earned">
+    <xs:annotation>
+      <xs:documentation>Wu Card Total Points Earned</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="32" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="interests">
+    <xs:annotation>
+      <xs:documentation>Customer Interests (emea ii)</xs:documentation>
+      <xs:documentation>Enumeration - A, B, C, E, M, P, R, S, T, U</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="id_issue_date">
+    <xs:annotation>
+      <xs:documentation>senders id issue date</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xrsi:date">
+      <xs:minLength value="0" />
+      <xs:maxLength value="8" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="id_expiration_date">
+    <xs:annotation>
+      <xs:documentation>senders id expiration date</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xrsi:date">
+      <xs:minLength value="0" />
+      <xs:maxLength value="8" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="compliance_comments">
+    <xs:annotation>
+      <xs:documentation>senders compliance comments</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="48" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="bank_account_type">
+    <xs:annotation>
+      <xs:documentation>Bank Account Type</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="nationality">
+    <xs:annotation>
+      <xs:documentation>Nationality</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="card_class">
+    <xs:annotation>
+      <xs:documentation>Card Class - Preferred customer</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="sender_orig_card_type">
+    <xs:annotation>
+      <xs:documentation>Sender original card type - Preferred customer</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="pref_cust_status">
+    <xs:annotation>
+      <xs:documentation>sender PFC status - Preferred customer</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="rate_modifier">
+    <xs:annotation>
+      <xs:documentation>rate modifier for sender- Preferred customer</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="promo_code">
+    <xs:annotation>
+      <xs:documentation>promo code</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="30" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="context">
+    <xs:annotation>
+      <xs:documentation>MOM FID 10(TCPLAN only) - WuCard information(lookup)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="200" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="id_document_type_data">
+    <xs:annotation>
+      <xs:documentation>sender id document types and data - compliance</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="80" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="money_transfer_key">
+    <xs:annotation>
+      <xs:documentation>EFP FID 55- receive money</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="card_update_indicator">
+    <xs:annotation>
+      <xs:documentation>EnrollWuCard[E]  -&gt;  Enroll both sender and Receiver</xs:documentation>
+      <xs:documentation>DeleteWuCard[S]  -&gt; Permanent Sender Change , no Receiver Change</xs:documentation>
+      <xs:documentation>UpdateWuCard[S] -&gt; Permanent Sender Change , no Receiver Change</xs:documentation>
+      <xs:documentation>LookUp[P] -&gt; Redemption Only / LookUp</xs:documentation>
+      <xs:documentation>AddAssociate[R] -&gt; Permanent Receiver Change , no Sender Change</xs:documentation>
+      <xs:documentation>UpdateAssociate[R] -&gt; Permanent Receiver Change , no Sender Change</xs:documentation>
+      <xs:documentation>Store[A] -&gt; Permanent Receiver Change , No Sender Change</xs:documentation>
+      <xs:documentation>None[N] -&gt; No Changes in either Sender or Receiver</xs:documentation>
+      <xs:documentation>UpdateSenderAssociate[B] -&gt; Changes to both Sender and Receiver</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EnrollWuCard" />
+      <xs:enumeration value="DeleteWuCard" />
+      <xs:enumeration value="UpdateWuCard" />
+      <xs:enumeration value="LookUp" />
+      <xs:enumeration value="AddAssociate" />
+      <xs:enumeration value="UpdateAssociate" />
+      <xs:enumeration value="Store" />
+      <xs:enumeration value="UpdateSenderAssociate" />
+      <xs:enumeration value="None" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="preferred_customer_discount">
+    <xs:annotation>
+      <xs:documentation>MOM FID B0 - preferred_customer_discount</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="preferred_customer_name_altkey">
+    <xs:annotation>
+      <xs:documentation>MOM FID 49 - preferred lookup</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="37" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ip_address">
+    <xs:annotation>
+      <xs:documentation>IP address</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="7" />
+      <xs:maxLength value="17" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="operation">
+    <xs:annotation>
+      <xs:documentation>preferred customer operation</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="social_security_no">
+    <xs:annotation>
+      <xs:documentation>EFP FID 127</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="short_date">
+    <xs:annotation>
+      <xs:documentation>short date</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="8" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="max_number_receivers_allowed">
+    <xs:annotation>
+      <xs:documentation>max number of receivers allowed - preferred customer</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="last_change_source">
+    <xs:annotation>
+      <xs:documentation>last change source- preferred customer</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="auto_enroll">
+    <xs:annotation>
+      <xs:documentation>auto enroll flag - preferred customer</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="update">
+    <xs:annotation>
+      <xs:documentation>update flag for sender - preferred lookup reply</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="opt_in_out">
+    <xs:annotation>
+      <xs:documentation>opt in out flag - preferred lookup reply</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="rcv_financial_id">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="11" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="city_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="6" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="local_area">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="40" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="external_reference_no">
+    <xs:annotation>
+      <xs:documentation>partner / remote transaction ref number</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="48" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="phone_number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="14" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="phone_country_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="mobile_transaction_id">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="16" />
+      <xs:maxLength value="16" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="id_document_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PASSPORT" />
+      <xs:enumeration value="DRIVER_LICENSE" />
+      <xs:enumeration value="NATIONAL_ID" />
+      <xs:enumeration value="ALIEN_ID" />
+      <xs:enumeration value="STATE_ID" />
+      <xs:enumeration value="SSN" />
+      <xs:enumeration value="PRC_ID" />
+      <xs:enumeration value="IBP_ID" />
+      <xs:enumeration value="NBI_CLEARANCE" />
+      <xs:enumeration value="POLICE_CLEARANCE_CERTIFICATE" />
+      <xs:enumeration value="POSTAL_ID" />
+      <xs:enumeration value="VOTERS_ID" />
+      <xs:enumeration value="GSIS_E_CARD" />
+      <xs:enumeration value="SSS_CARD" />
+      <xs:enumeration value="SENIOR_CITIZEN_CARD" />
+      <xs:enumeration value="OWWA_ID" />
+      <xs:enumeration value="OFW_ID" />
+      <xs:enumeration value="SEAMANS_BOOK" />
+      <xs:enumeration value="FIRE_ARM_LICENSE" />
+      <xs:enumeration value="EMPLOYMENT_ID" />
+      <xs:enumeration value="STUDENT_ID" />
+      <xs:enumeration value="OTHER_GOVERNMENT_ID" />
+      <xs:enumeration value="OTHER_ID" />
+      <xs:enumeration value="GOVERNMENT STATE CENTRAL EMPLOYEE ID" />
+      <xs:enumeration value="PAN CARD" />
+      <xs:enumeration value="ELECTION VOTER ID CARD" />
+      <xs:enumeration value="REFUGEE CARD" />
+      <xs:enumeration value="DRIVING LICENSE" />
+      <xs:enumeration value="OTHERS" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="mobile_phone_identity_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="TMSI" />
+      <xs:enumeration value="IMSI" />
+      <xs:enumeration value="MSISDN" />
+      <xs:enumeration value="ESN" />
+      <xs:enumeration value="IMEI" />
+      <xs:enumeration value="MEID" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="mobile_phone_identity_data">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="48" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="paid_status">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PAID" />
+      <xs:enumeration value="NOT PAID" />
+      <xs:enumeration value="ON HOLD" />
+      <xs:enumeration value="NOT AVAILABLE" />
+      <xs:enumeration value="AVAILABLE" />
+      <xs:enumeration value="PAID_OTHER" />
+      <xs:enumeration value="QUEUED" />
+      <xs:enumeration value="CANCELLED" />
+      <xs:enumeration value="SUSPENDED" />
+      <xs:enumeration value="UNKNOWN" />
+      <xs:enumeration value="PURGED" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="country_unisys_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="route_designator">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="41" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="control_number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="25" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="phone_pin">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="24" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="sender_receiver_relationship">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="source_of_funds">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="charges">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="transaction_digest">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="80" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="state_zip">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="8" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="delivery_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="WORK" />
+      <xs:enumeration value="RESIDENTIAL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="delivery_name">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="35" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="pickup_status_code">
+    <xs:restriction base="xs:integer">
+      <xs:enumeration value="0000">
+        <xs:annotation>
+          <xs:documentation>Successful or likely to be successful</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1000">
+        <xs:annotation>
+          <xs:documentation>Rejected</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="2000">
+        <xs:annotation>
+          <xs:documentation>Queued or likely to be queued</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="transaction_status">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SUCCESS">
+        <xs:annotation>
+          <xs:documentation>Transaction successfully cancelled/suspended/resumed</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FAILURE">
+        <xs:annotation>
+          <xs:documentation>Failure while canceling/suspending/resuming Transaction</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="transaction_date">
+    <xs:annotation>
+      <xs:documentation>Transaction date format is MMDDYY</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="queue_allowed">
+    <xs:restriction base="xrsi:yes_no" />
+  </xs:simpleType>
+  <xs:simpleType name="gbs_transaction_id">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="16" />
+      <xs:maxLength value="16" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="gwp_gbs_device_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ATM" />
+      <xs:enumeration value="WEB" />
+      <xs:enumeration value="AGENT" />
+      <xs:enumeration value="CSR" />
+      <xs:enumeration value="IVR" />
+      <xs:enumeration value="MOBILE" />
+      <xs:enumeration value="OTHER" />
+      <xs:enumeration value="SYSTEM" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="pin_verification_time">
+    <xs:annotation>
+      <xs:documentation>UTC timestamp that user pin was verified by sending bank</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:dateTime" />
+  </xs:simpleType>
+  <xs:simpleType name="wu_product_name">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="40" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="wu_product_code">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="fee_survey_pricing_digest">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="consumer_notification_preference">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NONE" />
+      <xs:enumeration value="EMAIL" />
+      <xs:enumeration value="AUTOMATED_PHONE_CALL" />
+      <xs:enumeration value="SMS" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="payout_method">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CASH" />
+      <xs:enumeration value="MOBILE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="heartbeat_status_code">
+    <xs:restriction base="xs:integer">
+      <xs:enumeration value="0000">
+        <xs:annotation>
+          <xs:documentation>Successful or likely to be successful</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1000">
+        <xs:annotation>
+          <xs:documentation>Rejected</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="channel_customer_identity_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MOBILE_ACCOUNT" />
+      <xs:enumeration value="BANK_ACCOUNT" />
+      <xs:enumeration value="PREPAID_CARD_NUMBER" />
+      <xs:enumeration value="EMAIL_ADDRESS" />
+      <xs:enumeration value="LOYALTY_CARD_NUMBER" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="channel_customer_identity_data">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="48" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="reminder_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FIRST_REMINDER" />
+      <xs:enumeration value="SECOND_REMINDER" />
+      <xs:enumeration value="THIRD_REMINDER" />
+      <xs:enumeration value="FOURTH_REMINDER" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="sender_type">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="35" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="cookie">
+    <xs:annotation>
+      <xs:documentation>Sender or Receiver Cookie</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="500" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="source_fdi_csc_pos_etc">
+    <xs:annotation>
+      <xs:documentation>MOM FID 44 - preferred lookup -enumeration</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="returned_mail_status">
+    <xs:annotation>
+      <xs:documentation>MOM FID 32- preferred lookup</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="export_status">
+    <xs:annotation>
+      <xs:documentation>export status - preferred lookup reply</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="delete_code">
+    <xs:annotation>
+      <xs:documentation>delete code - preferred lookup reply</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="address_type">
+    <xs:annotation>
+      <xs:documentation>address type - preferred lookup reply</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="h" />
+      <xs:enumeration value="p" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="phone_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Home Phone" />
+      <xs:enumeration value="Business Phone" />
+      <xs:enumeration value="Cell Phone" />
+      <xs:enumeration value="Pay Phone" />
+      <xs:enumeration value="Other" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="listing_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Listed" />
+      <xs:enumeration value="Not Listed" />
+      <xs:enumeration value="UnPublished" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="employment_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Employed" />
+      <xs:enumeration value="Self Employed" />
+      <xs:enumeration value="Unemployed" />
+      <xs:enumeration value="Retired" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="universal_buffer">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="300" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="zero_one_int">
+    <xs:restriction base="xs:integer">
+      <xs:enumeration value="0" />
+      <xs:enumeration value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="yes_no_flag_string">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Y" />
+      <xs:enumeration value="N" />
+      <xs:enumeration value="true" />
+      <xs:enumeration value="false" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="yes_no_flag">
+    <xs:union memberTypes="xrsi:yes_no_flag_string xrsi:zero_one_int xrsi:empty_string" />
+  </xs:simpleType>
+  <xs:simpleType name="TStreet">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="40" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="pref_cust_search_key">
+    <xs:annotation>
+      <xs:documentation>preferred customer(sender) search key</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="25" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="test_question_flag_type">
+    <xs:annotation>
+      <xs:documentation>test question flag</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="message_word_limit">
+    <xs:annotation>
+      <xs:documentation>message service - base, incremental word limit</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="attn_message">
+    <xs:annotation>
+      <xs:documentation>Quick Pay Attention Message/Send Money Store Message</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="69" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="customer_affidavit_number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="09" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="customer_affidavit">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="01" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="mobile_number">
+    <xs:annotation>
+      <xs:documentation>Mobile Number</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="11" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="reason_for_sending">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Family support" />
+      <xs:enumeration value="Special Occasion" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="sms_notification">
+    <xs:annotation>
+      <xs:documentation>sms notification value (must be y if sent)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Y" />
+      <xs:enumeration value="N" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="visa_flag">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="visa_number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="13" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="visa_date">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="occupation">
+    <xs:annotation>
+      <xs:documentation>third party occupation</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="30" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="transaction_reason">
+    <xs:annotation>
+      <xs:documentation>transaction reason</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="host_message_set1">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="700" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="host_message_set2">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="700" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="host_message_set3">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="700" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Country_of_Birth">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="44" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Customer_type_Alpha_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="30" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Customer_type_Numeric_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Location">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="24" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Valuta_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Valuta_Amount">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Send_Money_Form_Serial_Number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="address_validation">
+    <xs:annotation>
+      <xs:documentation>EFP FID 279 - address validation flag (valid values are y or blank)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="true" />
+      <xs:enumeration value="false" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ID_Description_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Identity_type">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Fathers_Name">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="mothers_name">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="24" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Member_or_Associate_to_Government">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Money_Transfer_Category">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Other">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Province">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="fiscal_code">
+    <xs:annotation>
+      <xs:documentation>fiscal code</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="16" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Name_of_Employer_Business">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Nature_of_Work_Business">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="24" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Relationship_to_Receiver_Sender">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RFC">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CURP">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="18" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Address_verification_document_type">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="City_of_Birth">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Personal_Identification_Number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Tax_payers_registration_number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="12" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="I_act_on_My_Behalf">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Classifier_of_the_Purpose_of_MT_number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="User_Equipment_ID_Type">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="User_Equipment_ID_Data">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="48" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="EAS_Consumer_ID_Key">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="21" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Consumer_ID_Key">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="White_List_Key">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="address_verification_document_issue_date">
+    <xs:annotation>
+      <xs:documentation>Address Verification Document Issue Date</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="address_verification_document">
+    <xs:annotation>
+      <xs:documentation>Address Verification Document</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="reason_for_alternative_id">
+    <xs:annotation>
+      <xs:documentation>Reason For Alternative ID</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="International_Bank_Account_Number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="35" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Routing_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="12" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Residence_Permit_Type">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Residence_Permit_Series_And_Number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="35" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Residence_Permit_Issue_Date">
+    <xs:restriction base="xrsi:date">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Residence_Permit_Expiration_Date">
+    <xs:restriction base="xrsi:date">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Migration_Card_Number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="35" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Migration_Card_Issue_Date">
+    <xs:restriction base="xrsi:date">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Migration_Card_Expiration_Date">
+    <xs:restriction base="xrsi:date">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Funds_Sender_Code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Beneficiary_Code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="GEN_III_Indicator">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Beneficiary_Profession">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="45" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Beneficiary_Nationality">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="44" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="other_Occupation">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="30" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="STD_Phone_Number_Code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="7" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Mobile_Phone_Number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Marital_Status">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="30" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Country_Code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="WU_COM_Electronic_Validation">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Date_of_Birth">
+    <xs:annotation>
+      <xs:documentation>Date of Birtht</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xrsi:date">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Place_of_Birth">
+    <xs:annotation>
+      <xs:documentation>Place of Birth</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="organization">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="25" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="flag_pay">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="80" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="relationship">
+    <xs:annotation>
+      <xs:documentation>Relationship</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Place_of_Organization">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="30" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Remarks">
+    <xs:annotation>
+      <xs:documentation>Remarks</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="46" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ID_Expiration_Date">
+    <xs:restriction base="xrsi:date">
+      <xs:minLength value="0" />
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="id_type">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="id_country_of_issue">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="30" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="id_number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Ccity">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="24" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CStreet">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="25" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Cpostal_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="9" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="state_name">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="24" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="state_code">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="district">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="24" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="sms_flag">
+    <xs:annotation>
+      <xs:documentation>SMS Flag</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="fx">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="17" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

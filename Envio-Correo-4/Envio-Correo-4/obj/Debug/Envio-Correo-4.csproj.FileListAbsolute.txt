@@ -1,0 +1,9 @@
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\Envio-Correo-4\Envio-Correo-4\bin\Debug\Envio-Correo-4.exe
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\Envio-Correo-4\Envio-Correo-4\bin\Debug\Envio-Correo-4.pdb
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\Envio-Correo-4\Envio-Correo-4\obj\Debug\Envio-Correo-4.csproj.AssemblyReference.cache
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\Envio-Correo-4\Envio-Correo-4\obj\Debug\Envio_Correo_4.Form1.resources
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\Envio-Correo-4\Envio-Correo-4\obj\Debug\Envio_Correo_4.Properties.Resources.resources
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\Envio-Correo-4\Envio-Correo-4\obj\Debug\Envio-Correo-4.csproj.GenerateResource.cache
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\Envio-Correo-4\Envio-Correo-4\obj\Debug\Envio-Correo-4.csproj.CoreCompileInputs.cache
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\Envio-Correo-4\Envio-Correo-4\obj\Debug\Envio-Correo-4.exe
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\Envio-Correo-4\Envio-Correo-4\obj\Debug\Envio-Correo-4.pdb

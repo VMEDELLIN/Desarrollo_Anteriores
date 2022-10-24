@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xrsi="http://www.westernunion.com/schema/xrsi" targetNamespace="http://www.westernunion.com/schema/xrsi" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="XRSIGBBasicTypes.xsd" />
+  <xs:annotation>
+    <xs:documentation>***********************************************************************************************************
+			Copyright 2009. Western Union Financial Services, Inc. All Worldwide Rights 
+			Reserved. This media contains unpublished, confidential and proprietary     
+			information of Western Union Financial Services, Inc. You may not disclose, 
+			copy, display, prepare derivative works or use any portion of these         
+			materials for any purpose without the express written consent of Western    
+			Union Financial Services, Inc. You must reproduce this copyright notice and 
+			any other copyright notices included in the machine-readable copies on all  
+			authorized copies.                                                          
+			***********************************************************************************************************
+			$Revision: 1.1.6.6 $
+			$Date: 2011/03/21 16:15:14 $</xs:documentation>
+  </xs:annotation>
+  <xs:complexType name="collection_base">
+    <xs:attribute name="more" type="xrsi:yes_no" />
+    <xs:attribute name="context" type="xrsi:context" />
+  </xs:complexType>
+  <xs:group name="individual_name">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="first_name" type="xrsi:first_name" />
+      <xs:element minOccurs="0" name="middle_name" type="xrsi:middle_name" />
+      <xs:element minOccurs="0" name="last_name" type="xrsi:last_name" />
+    </xs:sequence>
+  </xs:group>
+  <xs:complexType name="address">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="addr_line1" type="xrsi:address_line_long" />
+      <xs:element minOccurs="0" name="addr_line2" type="xrsi:address_line_long" />
+      <xs:element minOccurs="0" name="city" type="xrsi:city" />
+      <xs:element minOccurs="0" name="state" type="xrsi:state_province" />
+      <xs:element minOccurs="0" name="postal_code" type="xrsi:postal_code" />
+      <xs:choice>
+        <xs:element minOccurs="0" name="country_code" type="xrsi:country_currency_info" />
+      </xs:choice>
+      <xs:element minOccurs="0" name="local_area" type="xrsi:local_area" />
+      <xs:element minOccurs="0" name="locale" type="xrsi:local_area" />
+      <xs:element minOccurs="0" name="city_code" type="xrsi:city_code" />
+      <xs:element minOccurs="0" name="state_zip" type="xrsi:state_zip" />
+      <xs:element minOccurs="0" name="address_type" type="xrsi:delivery_type" />
+      <xs:element minOccurs="0" name="business_name" type="xrsi:delivery_name" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="preferred_customer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="permanent_change" type="xrsi:card_update_indicator" />
+      <xs:element minOccurs="0" name="account_nbr" type="xrsi:pref_cust_account_number" />
+      <xs:element minOccurs="0" name="level_code" type="xrsi:level_code" />
+      <xs:element minOccurs="0" name="points_assigned_redeemed" type="xrsi:points_assigned_redeemed" />
+      <xs:element minOccurs="0" name="total_points_earned" type="xrsi:wu_card_total_points_earned" />
+      <xs:element minOccurs="0" name="current_number_of_receivers" type="xrsi:count" />
+      <xs:element minOccurs="0" name="original_card_type" type="xrsi:sender_orig_card_type" />
+      <xs:element minOccurs="0" name="status" type="xrsi:pref_cust_status" />
+      <xs:element minOccurs="0" name="card_class" type="xrsi:card_class" />
+      <xs:element minOccurs="0" name="apply_discount" type="xrsi:yes_no" />
+      <xs:element minOccurs="0" name="first_use" type="xrsi:yes_no" />
+      <xs:element minOccurs="0" name="rate_modifier" type="xrsi:rate_modifier" />
+      <xs:element minOccurs="0" name="discount" type="xrsi:preferred_customer_discount" />
+      <xs:element minOccurs="0" name="name_altkey" type="xrsi:preferred_customer_name_altkey" />
+      <xs:element minOccurs="0" name="operation" type="xrsi:operation" />
+      <xs:element minOccurs="0" name="last_use_date" type="xrsi:short_date" />
+      <xs:element minOccurs="0" name="issue_date" type="xrsi:short_date" />
+      <xs:element minOccurs="0" name="first_use_date" type="xrsi:short_date" />
+      <xs:element minOccurs="0" name="nonpermanent_change_count" type="xrsi:count" />
+      <xs:element minOccurs="0" name="max_number_receivers_allowed" type="xrsi:max_number_receivers_allowed" />
+      <xs:element minOccurs="0" name="last_modification_time" type="xrsi:time" />
+      <xs:element minOccurs="0" name="last_change_source" type="xrsi:last_change_source" />
+      <xs:element minOccurs="0" name="interests" type="xrsi:interests" />
+      <xs:element minOccurs="0" name="expiration_date" type="xrsi:short_date" />
+      <xs:element minOccurs="0" name="card_replaced_count" type="xrsi:short_date" />
+      <xs:element minOccurs="0" name="card_changes_count" type="xrsi:count" />
+      <xs:element minOccurs="0" name="auto_enroll" type="xrsi:auto_enroll" />
+      <xs:element minOccurs="0" name="card_has_expired" type="xrsi:yes_no_flag" />
+      <xs:element minOccurs="0" name="update" type="xrsi:update" />
+      <xs:element minOccurs="0" name="share_personal_data" type="xrsi:yes_no" />
+      <xs:element minOccurs="0" name="receive_mail" type="xrsi:yes_no">
+        <xs:annotation>
+          <xs:documentation>mail flag</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="opt_flag" type="xrsi:yes_no" />
+      <xs:element minOccurs="0" name="opt_in_out" type="xrsi:opt_in_out" />
+      <xs:element minOccurs="0" name="opt_in_out_change_date" type="xrsi:short_date" />
+      <xs:element minOccurs="0" name="control_number" type="xrsi:control_number" />
+      <xs:element minOccurs="0" name="phone_pin" type="xrsi:phone_pin" />
+      <xs:element minOccurs="0" name="pref_cust_search_key" type="xrsi:pref_cust_search_key" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bank_details">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xrsi:bank_name" />
+      <xs:element minOccurs="1" name="account_number" type="xrsi:bank_account_number" />
+      <xs:element minOccurs="1" name="routing_number" type="xrsi:bank_routing_number" />
+      <xs:element minOccurs="0" name="account_type" type="xrsi:bank_account_type" />
+      <xs:element minOccurs="0" name="state_country">
+        <xs:simpleType>
+          <xs:restriction base="xrsi:state_province">
+            <xs:minLength value="0" />
+            <xs:maxLength value="2" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="comments" type="xrsi:comments" />
+      <xs:element minOccurs="0" name="phone_number" type="xrsi:phone" />
+      <xs:element minOccurs="0" name="rcv_financial_id" type="xrsi:rcv_financial_id" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="international_phone_number">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="country_code" type="xrsi:phone_country_code" />
+      <xs:element minOccurs="0" name="national_number" type="xrsi:phone_number" />
+      <xs:element minOccurs="0" name="telephone_city_code" type="xrsi:city_code" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="identification_question">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="question" type="xrsi:question_answer" />
+      <xs:element minOccurs="0" name="answer" type="xrsi:question_answer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="country_currency_info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cpc_code" type="xrsi:country_unisys_code" />
+      <xs:element minOccurs="0" name="iso_code" type="xrsi:iso_code" />
+      <xs:element minOccurs="0" name="country_name" type="xrsi:country_name" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="iso_code">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="country_code" type="xrsi:country_iso_code" />
+      <xs:element minOccurs="0" name="currency_code" type="xrsi:currency" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="informational_messages">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="informational_message" type="xrsi:message" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="connector">
+    <xs:sequence>
+      <xs:element name="id" type="xrsi:id" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="system">
+    <xs:sequence>
+      <xs:element name="id">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation />
+          </xs:annotation>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0" />
+            <xs:maxLength value="20" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0" />
+            <xs:maxLength value="20" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="version">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0" />
+            <xs:maxLength value="20" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ip_address" type="xrsi:ip_address" />
+      <xs:element name="connector" type="xrsi:connector" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="preferences">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="language" />
+      <xs:element minOccurs="0" name="error_translation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="channel_partner">
+    <xs:sequence>
+      <xs:element name="id">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation />
+          </xs:annotation>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0" />
+            <xs:maxLength value="32" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="system" type="xrsi:system" />
+      <xs:element minOccurs="0" name="preferences" type="xrsi:preferences" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="channel_customer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xrsi:channel_general_name" />
+      <xs:element minOccurs="0" name="address" type="xrsi:iso_address" />
+      <xs:element minOccurs="0" name="preferred_customer" type="xrsi:preferred_customer" />
+      <xs:element minOccurs="0" name="type" type="xrsi:sender_type" />
+      <xs:element minOccurs="0" name="receiver_index_no" type="xrsi:count" />
+      <xs:element minOccurs="0" name="receiver_first_name" type="xs:string" />
+      <xs:element minOccurs="0" name="compliance_details" type="xrsi:channel_compliance_details" />
+      <xs:element minOccurs="0" name="email" type="xrsi:email" />
+      <xs:element minOccurs="0" name="contact_phone" type="xrsi:phone" />
+      <xs:element minOccurs="0" name="mobile_phone" type="xrsi:mobile_phone" />
+      <xs:element minOccurs="0" name="mobile_details" type="xrsi:mobile_details" />
+      <xs:element minOccurs="0" name="cookie" type="xrsi:cookie" />
+      <xs:element minOccurs="0" name="pc_source" type="xrsi:source_fdi_csc_pos_etc" />
+      <xs:element minOccurs="0" name="gender" type="xrsi:gender" />
+      <xs:element minOccurs="0" name="date_of_birth" type="xrsi:date" />
+      <xs:element minOccurs="0" name="language_iso_code" type="xrsi:language_iso_code" />
+      <xs:element minOccurs="0" name="place_of_birth" type="xs:string" />
+      <xs:element minOccurs="0" name="unv_buffer" type="xrsi:universal_buffer" />
+      <xs:element minOccurs="0" name="occupation" type="xs:string" />
+      <xs:element minOccurs="0" name="employer_name" type="xs:string" />
+      <xs:element minOccurs="0" name="queue_allowed" type="xrsi:queue_allowed" />
+      <xs:element minOccurs="0" name="notification_preference" type="xrsi:consumer_notification_preference" />
+      <xs:element minOccurs="0" name="reason_for_sending" type="xrsi:reason_for_sending" />
+      <xs:element minOccurs="0" name="notification_language" type="xrsi:language_iso_code" />
+      <xs:element minOccurs="0" name="notification_phone" type="xrsi:international_phone_number" />
+      <xs:element minOccurs="0" name="identities" type="xrsi:channel_customer_identities" />
+      <xs:element minOccurs="0" maxOccurs="1" name="cash_to_mobile" type="xrsi:cash_to_mobile" />
+      <xs:element minOccurs="0" name="mothers_maiden_name" type="xrsi:mothers_name" />
+      <xs:element minOccurs="0" name="sms_notification_flag" type="xrsi:sms_notification" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="iso_address">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="addr_line1" type="xrsi:address_line_long" />
+      <xs:element minOccurs="0" name="addr_line2" type="xrsi:address_line_long" />
+      <xs:element minOccurs="0" name="city" type="xrsi:city" />
+      <xs:element minOccurs="0" name="state" type="xrsi:state_province" />
+      <xs:element minOccurs="0" name="postal_code" type="xrsi:postal_code" />
+      <xs:element minOccurs="0" name="country_iso_code" type="xrsi:country_iso_code" />
+      <xs:element minOccurs="0" name="locale" type="xrsi:local_area" />
+      <xs:element minOccurs="0" name="address_type" type="xrsi:string" />
+      <xs:element minOccurs="0" name="business_name" type="xrsi:delivery_name" />
+      <xs:element minOccurs="0" name="street" type="xrsi:TStreet" />
+      <xs:element minOccurs="0" name="country_code" type="xrsi:country_currency_info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mobile_phone">
+    <xs:sequence>
+      <xs:element name="phone_number" type="xrsi:international_phone_number" />
+      <xs:element minOccurs="0" name="identity" type="xrsi:mobile_phone_identity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="name_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="C">
+        <xs:annotation>
+          <xs:documentation>Comany Name Type</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D">
+        <xs:annotation>
+          <xs:documentation>Domestic Name Type</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="M">
+        <xs:annotation>
+          <xs:documentation>Mexican Name Type</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="name_type_base">
+    <xs:attribute name="name_type" type="xrsi:name_type" />
+  </xs:complexType>
+  <xs:complexType name="channel_general_name">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:name_type_base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="name_prefix" type="xrsi:name_prefix" />
+          <xs:group minOccurs="0" ref="xrsi:individual_name" />
+          <xs:group minOccurs="0" ref="xrsi:organization_name" />
+          <xs:group minOccurs="0" ref="xrsi:mexican_name" />
+          <xs:element minOccurs="0" name="name_suffix" type="xrsi:name_suffix" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:group name="organization_name">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="business_name" type="xrsi:business_name" />
+      <xs:element minOccurs="0" name="attention" type="xrsi:attention" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="mexican_name">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="given_name" type="xrsi:first_name" />
+      <xs:element minOccurs="0" name="paternal_name" type="xrsi:paternal_name" />
+      <xs:element minOccurs="0" name="maternal_name" type="xrsi:maternal_name" />
+    </xs:sequence>
+  </xs:group>
+  <xs:complexType name="origination">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="principal_amount" type="xrsi:amount">
+        <xs:annotation>
+          <xs:documentation>The amount of money being sent by the sender.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="gross_amount" type="xrsi:amount">
+        <xs:annotation>
+          <xs:documentation>The amount of money to be collected from the sender.  gross_amount = principal_amount + fees</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="currency_iso_code" type="xrsi:currency_iso_code" />
+      <xs:element minOccurs="0" name="country_iso_code" type="xrsi:country_iso_code" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="destination">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="expected_payout_amount" type="xrsi:amount">
+        <xs:annotation>
+          <xs:documentation>Expected payout amount that receiver will be paid.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="actual_payout_amount" type="xrsi:amount">
+        <xs:annotation>
+          <xs:documentation>Actual payout amount that receiver was paid.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="currency_iso_code" type="xrsi:currency_iso_code" />
+      <xs:element minOccurs="0" name="country_iso_code" type="xrsi:country_iso_code" />
+      <xs:element minOccurs="0" name="state_code" type="xrsi:state_iso_code" />
+      <xs:element minOccurs="0" name="city" type="xrsi:city" />
+      <xs:element minOccurs="0" name="expected_payout_method" type="xrsi:payout_method" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="channel_payment_details">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="origination" type="xrsi:origination" />
+      <xs:element minOccurs="0" name="destination" type="xrsi:destination" />
+      <xs:element minOccurs="0" name="promotion" type="xrsi:channel_promotion" />
+      <xs:element minOccurs="0" name="taxes" type="xrsi:channel_taxes" />
+      <xs:element minOccurs="0" name="fees" type="xrsi:channel_fees" />
+      <xs:element minOccurs="0" name="message_charges" type="xrsi:channel_message_charges" />
+      <xs:element minOccurs="0" name="exchange_rate" type="xrsi:float_amount" />
+      <xs:element minOccurs="0" name="identification_question" type="xrsi:identification_question" />
+      <xs:element minOccurs="0" name="payment_digest" type="xrsi:fee_survey_pricing_digest" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="channel_compliance_details">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="template_id" type="xrsi:id" />
+      <xs:element minOccurs="0" name="id_documents" type="xrsi:id_documents" />
+      <xs:element minOccurs="0" name="third_party_details" type="xrsi:third_party_details" />
+      <xs:element minOccurs="0" name="date_of_birth" type="xrsi:date" />
+      <xs:element minOccurs="0" name="occupation" type="xrsi:occupation" />
+      <xs:element minOccurs="0" name="compliance_comments" type="xrsi:compliance_comments" />
+      <xs:element minOccurs="0" name="country_of_residence" type="xrsi:country_iso_code" />
+      <xs:element minOccurs="0" name="transaction_reason" type="xrsi:transaction_reason" />
+      <xs:element minOccurs="0" name="Is_a_citizen" type="xrsi:yes_no_flag" />
+      <xs:element minOccurs="0" name="Is_a_Nordic_citizen" type="xrsi:yes_no_flag" />
+      <xs:element minOccurs="0" name="Current_address" type="xrsi:compliance_address" />
+      <xs:element minOccurs="0" name="contact_phone" type="xrsi:phone" />
+      <xs:element minOccurs="0" name="Country_of_Birth" type="xrsi:Country_of_Birth" />
+      <xs:element minOccurs="0" name="nationality" type="xrsi:nationality" />
+      <xs:element minOccurs="0" name="Gender" type="xrsi:gender" />
+      <xs:element minOccurs="0" name="Customer_type_Alpha_code" type="xrsi:Customer_type_Alpha_code" />
+      <xs:element minOccurs="0" name="Customer_type_Numeric_code" type="xrsi:Customer_type_Numeric_code" />
+      <xs:element minOccurs="0" name="Is_a_resident" type="xrsi:yes_no_flag" />
+      <xs:element minOccurs="0" name="Location" type="xrsi:Location" />
+      <xs:element minOccurs="0" name="Valuta_code" type="xrsi:Valuta_code" />
+      <xs:element minOccurs="0" name="Valuta_Amount" type="xrsi:Valuta_Amount" />
+      <xs:element minOccurs="0" name="Source_of_Funds" type="xrsi:source_of_funds" />
+      <xs:element minOccurs="0" name="Send_Money_Form_Serial_Number" type="xrsi:Send_Money_Form_Serial_Number" />
+      <xs:element minOccurs="0" name="ID_Description_code" type="xrsi:ID_Description_code" />
+      <xs:element minOccurs="0" name="Identity_type" type="xrsi:Identity_type" />
+      <xs:element minOccurs="0" name="Fathers_Name" type="xrsi:Fathers_Name" />
+      <xs:element minOccurs="0" name="Member_or_Associate_to_Government" type="xrsi:Member_or_Associate_to_Government" />
+      <xs:element minOccurs="0" name="Money_Transfer_Category" type="xrsi:Money_Transfer_Category" />
+      <xs:element minOccurs="0" name="Other" type="xrsi:Other" />
+      <xs:element minOccurs="0" name="Province" type="xrsi:Province" />
+      <xs:element minOccurs="0" name="fiscal_code" type="xrsi:fiscal_code" />
+      <xs:element minOccurs="0" name="Permanent_address" type="xrsi:compliance_address" />
+      <xs:element minOccurs="0" name="Name_of_Employer_Business" type="xrsi:Name_of_Employer_Business" />
+      <xs:element minOccurs="0" name="Nature_of_Work_Business" type="xrsi:Nature_of_Work_Business" />
+      <xs:element minOccurs="0" name="Is_txn_Individual_or_Organization" type="xrsi:yes_no_flag" />
+      <xs:element minOccurs="0" name="Relationship_to_Receiver_Sender" type="xrsi:Relationship_to_Receiver_Sender" />
+      <xs:element minOccurs="0" name="Is_this_for_Commercial_Purposes" type="xrsi:yes_no_flag" />
+      <xs:element minOccurs="0" name="address_validation" type="xrsi:address_validation" />
+      <xs:element minOccurs="0" name="RFC" type="xrsi:RFC" />
+      <xs:element minOccurs="0" name="CURP" type="xrsi:CURP" />
+      <xs:element minOccurs="0" name="Does_the_ID_have_an_expiration_date" type="xrsi:yes_no_flag" />
+      <xs:element minOccurs="0" name="Is_remittance_a_trade_related_transaction" type="xrsi:yes_no_flag" />
+      <xs:element minOccurs="0" name="Does_receiver_have_a_phone_number" type="xrsi:yes_no_flag" />
+      <xs:element minOccurs="0" name="Does_the_sender_have_ID" type="xrsi:yes_no_flag" />
+      <xs:element minOccurs="0" name="Address_verification_document_type" type="xrsi:Address_verification_document_type" />
+      <xs:element minOccurs="0" name="City_of_Birth" type="xrsi:City_of_Birth" />
+      <xs:element minOccurs="0" name="Personal_Identification_Number" type="xrsi:Personal_Identification_Number" />
+      <xs:element minOccurs="0" name="Tax_payers_registration_number" type="xrsi:Tax_payers_registration_number" />
+      <xs:element minOccurs="0" name="I_act_on_My_Behalf" type="xrsi:I_act_on_My_Behalf" />
+      <xs:element minOccurs="0" name="Classifier_of_the_Purpose_of_MT_number" type="xrsi:Classifier_of_the_Purpose_of_MT_number" />
+      <xs:element minOccurs="0" name="User_Equipment_ID_Type" type="xrsi:User_Equipment_ID_Type" />
+      <xs:element minOccurs="0" name="User_Equipment_ID_Data" type="xrsi:User_Equipment_ID_Data" />
+      <xs:element minOccurs="0" name="EAS_Consumer_ID_Key" type="xrsi:EAS_Consumer_ID_Key" />
+      <xs:element minOccurs="0" name="Consumer_ID_Key" type="xrsi:Consumer_ID_Key" />
+      <xs:element minOccurs="0" name="White_List_Key" type="xrsi:White_List_Key" />
+      <xs:element minOccurs="0" name="ack_flag" type="xrsi:flag_type" />
+      <xs:element minOccurs="0" name="Reason_For_Alternate_Id" type="xrsi:reason_for_alternative_id" />
+      <xs:element minOccurs="0" name="Address_Verification_Document_Issue_Date" type="xrsi:address_verification_document_issue_date" />
+      <xs:element minOccurs="0" name="International_Bank_Account_Number" type="xrsi:International_Bank_Account_Number" />
+      <xs:element minOccurs="0" name="Routing_code" type="xrsi:Routing_code" />
+      <xs:element minOccurs="0" name="Residence_Permit_Type" type="xrsi:Residence_Permit_Type" />
+      <xs:element minOccurs="0" name="Residence_Permit_Series_And_Number" type="xrsi:Residence_Permit_Series_And_Number" />
+      <xs:element minOccurs="0" name="Residence_Permit_Issue_Date" type="xrsi:Residence_Permit_Issue_Date" />
+      <xs:element minOccurs="0" name="Residence_Permit_Expiration_Date" type="xrsi:Residence_Permit_Expiration_Date" />
+      <xs:element minOccurs="0" name="Migration_Card_Number" type="xrsi:Migration_Card_Number" />
+      <xs:element minOccurs="0" name="Migration_Card_Issue_Date" type="xrsi:Migration_Card_Issue_Date" />
+      <xs:element minOccurs="0" name="Migration_Card_Expiration_Date" type="xrsi:Migration_Card_Expiration_Date" />
+      <xs:element minOccurs="0" name="Funds_Sender_Code" type="xrsi:Funds_Sender_Code" />
+      <xs:element minOccurs="0" name="Beneficiary_Code" type="xrsi:Beneficiary_Code" />
+      <xs:element minOccurs="0" name="GEN_III_Indicator" type="xrsi:GEN_III_Indicator" />
+      <xs:element minOccurs="0" name="Beneficiary_Profession" type="xrsi:Beneficiary_Profession" />
+      <xs:element minOccurs="0" name="Beneficiary_Nationality" type="xrsi:Beneficiary_Nationality" />
+      <xs:element minOccurs="0" name="Other_Occupation" type="xrsi:other_Occupation" />
+      <xs:element minOccurs="0" name="Was_A_Proof_Of_EU_Citizenship_Provided" type="xrsi:yes_no_flag" />
+      <xs:element minOccurs="0" name="Was_A_Resident_Permit_Provided" type="xrsi:yes_no_flag" />
+      <xs:element minOccurs="0" name="STD_Phone_Number_Code" type="xrsi:STD_Phone_Number_Code" />
+      <xs:element minOccurs="0" name="Mobile_Phone_Number" type="xrsi:Mobile_Phone_Number" />
+      <xs:element minOccurs="0" name="Marital_Status" type="xrsi:Marital_Status" />
+      <xs:element minOccurs="0" name="Country_Code" type="xrsi:Country_Code" />
+      <xs:element minOccurs="0" name="WU_COM_Electronic_Validation" type="xrsi:WU_COM_Electronic_Validation" />
+      <xs:element minOccurs="0" name="Other_Party_SorR_Address" type="xrsi:compliance_address" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mobile_details">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="city_code" type="xrsi:city_code" />
+      <xs:element minOccurs="0" name="number" type="xrsi:mobile_number" />
+      <xs:element minOccurs="0" name="sms_flag" type="xrsi:sms_flag" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="convenience_search">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="type" type="xrsi:convenience_search_type" />
+      <xs:element minOccurs="0" name="key" type="xrsi:convenience_search_key" />
+      <xs:element minOccurs="0" name="flag" type="xrsi:flag_type" />
+      <xs:element minOccurs="0" name="suppress_flag" type="xrsi:flag_type" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="third_party_details">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xrsi:general_name" />
+      <xs:element minOccurs="0" name="address" type="xrsi:compliance_address" />
+      <xs:element minOccurs="0" name="pay_wo_id_indicator" type="xrsi:yes_no" />
+      <xs:element minOccurs="0" name="organization" type="xrsi:organization" />
+      <xs:element minOccurs="0" name="identification_number" type="xrsi:id" />
+      <xs:element minOccurs="0" name="occupation" type="xrsi:occupation" />
+      <xs:element minOccurs="0" name="amount" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="fx" type="xrsi:fx" />
+      <xs:element minOccurs="0" name="flag_pay" type="xrsi:flag_pay" />
+      <xs:element minOccurs="0" name="id_details" type="xrsi:id_details" />
+      <xs:element minOccurs="0" name="relationship" type="xrsi:relationship" />
+      <xs:element minOccurs="0" name="Place_of_Organization" type="xrsi:Place_of_Organization" />
+      <xs:element minOccurs="0" name="Date_of_Birth" type="xrsi:Date_of_Birth" />
+      <xs:element minOccurs="0" name="Place_of_Birth" type="xrsi:Place_of_Birth" />
+      <xs:element minOccurs="0" name="Country_of_Birth" type="xrsi:Country_of_Birth" />
+      <xs:element minOccurs="0" name="Nationality" type="xrsi:nationality" />
+      <xs:element minOccurs="0" name="Remarks" type="xrsi:Remarks" />
+      <xs:element minOccurs="0" name="ID_Expiration_Date" type="xrsi:ID_Expiration_Date" />
+      <xs:element minOccurs="0" name="EAS_Consumer_ID_Key" type="xrsi:EAS_Consumer_ID_Key" />
+      <xs:element minOccurs="0" name="Consumer_ID_Key" type="xrsi:Consumer_ID_Key" />
+      <xs:element minOccurs="0" name="White_List_Key" type="xrsi:White_List_Key" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="id_documents">
+    <xs:sequence>
+      <xs:element maxOccurs="2" name="id_document" type="xrsi:id_document" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="id_document">
+    <xs:sequence>
+      <xs:element name="type" type="xrsi:id_document_type" />
+      <xs:element name="data" type="xrsi:id_document_type_data" />
+      <xs:element minOccurs="0" name="issue_date" type="xrsi:id_issue_date" />
+      <xs:element minOccurs="0" name="issue_place" type="xrsi:city" />
+      <xs:element minOccurs="0" name="issue_country" type="xrsi:country_currency_info" />
+      <xs:element minOccurs="0" name="expiration_date" type="xrsi:id_expiration_date" />
+      <xs:element minOccurs="0" name="id_expires" type="xrsi:yes_no" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="id_details">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id_type" type="xrsi:id_type" />
+      <xs:element minOccurs="0" name="id_country_of_issue" type="xrsi:id_country_of_issue" />
+      <xs:element minOccurs="0" name="id_place_of_issue" type="xrsi:id_country_of_issue" />
+      <xs:element minOccurs="0" name="id_number" type="xrsi:id_number" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compliance_address">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="addr_line1" type="xrsi:address_line_short" />
+      <xs:element minOccurs="0" name="addr_line2" type="xrsi:address_line_short" />
+      <xs:element minOccurs="0" name="city" type="xrsi:Ccity" />
+      <xs:element minOccurs="0" name="state_name" type="xrsi:state_name" />
+      <xs:element minOccurs="0" name="state_code" type="xrsi:state_code" />
+      <xs:element minOccurs="0" name="postal_code" type="xrsi:Cpostal_code" />
+      <xs:element minOccurs="0" name="country" type="xrsi:country_name" />
+      <xs:element minOccurs="0" name="zip" type="xrsi:state_zip" />
+      <xs:element minOccurs="0" name="street" type="xrsi:CStreet" />
+      <xs:element minOccurs="0" name="district" type="xrsi:district" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="general_name">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:name_type_base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="name_raw" type="xrsi:name_raw" />
+          <xs:element minOccurs="0" name="name_prefix" type="xrsi:name_prefix" />
+          <xs:group minOccurs="0" ref="xrsi:name_group" />
+          <xs:element minOccurs="0" name="name_suffix" type="xrsi:name_suffix" />
+          <xs:element minOccurs="0" name="secondary_given_name" type="xrsi:first_name" />
+          <xs:element minOccurs="0" name="secondary_paternal_name" type="xrsi:paternal_name" />
+          <xs:element minOccurs="0" name="secondary_maternal_name" type="xrsi:maternal_name" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="mobile_phone_identity">
+    <xs:sequence>
+      <xs:element name="type" type="xrsi:mobile_phone_identity_type" />
+      <xs:element name="data" type="xrsi:mobile_phone_identity_data" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="money_transfer_control">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="date" type="xrsi:transaction_date" />
+      <xs:element name="mtcn" type="xrsi:mtcn" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pickup_status">
+    <xs:sequence>
+      <xs:element name="code" type="xrsi:pickup_status_code" />
+      <xs:element minOccurs="0" name="message" type="xrsi:message" />
+      <xs:element minOccurs="0" name="reference_no" type="xrsi:external_reference_no" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gbs_gwp_payment_details">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:channel_payment_details" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="gbs_payment_details">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:gbs_gwp_payment_details" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="gwp_gbs_notification_base">
+    <xs:sequence>
+      <xs:element name="partner" type="xrsi:channel_partner" />
+      <xs:element minOccurs="0" name="external_reference_no" type="xrsi:external_reference_no" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="emea_ii">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="frequency_of_transfers_per_year" type="xrsi:frequency_of_transfers" />
+      <xs:element minOccurs="0" name="frequency_of_transfers_using_wu" type="xrsi:frequency_of_transfers" />
+      <xs:element minOccurs="0" name="sender_gender" type="xrsi:gender" />
+      <xs:element minOccurs="0" name="interests" type="xrsi:interests" />
+      <xs:element minOccurs="0" name="preferred_mode_to_receive_info" type="xrsi:preferred_mode_to_receive_info" />
+      <xs:element minOccurs="0" name="reason_1_for_transfer" type="xrsi:reason_for_transfer" />
+      <xs:element minOccurs="0" name="reason_2_for_transfer" type="xrsi:reason_for_transfer" />
+      <xs:element minOccurs="0" name="id_on_file" type="xrsi:id_on_file" />
+      <xs:element minOccurs="0" name="mobile_phone_number">
+        <xs:simpleType>
+          <xs:restriction base="xrsi:phone">
+            <xs:minLength value="0" />
+            <xs:maxLength value="17" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="date_of_birth_mmddyyyy" type="xrsi:short_date" />
+      <xs:element minOccurs="0" name="key_serial_number" type="xrsi:string" />
+      <xs:element minOccurs="0" name="preferred_language" type="xrsi:preferred_language" />
+      <xs:element minOccurs="0" name="card_status" type="xrsi:card_status" />
+      <xs:element minOccurs="0" name="enrollment_source" type="xrsi:enrollment_source" />
+      <xs:element minOccurs="0" name="marketing_code" type="xrsi:marketing_code" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="qp_company">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="find_no" type="xrsi:count" />
+      <xs:element minOccurs="0" name="account_no" type="xrsi:qp_account_no" />
+      <xs:element minOccurs="0" name="company_name" type="xrsi:qp_company_name" />
+      <xs:element minOccurs="0" name="city_code" type="xrsi:qp_city_code" />
+      <xs:element minOccurs="0" name="debtor_account_number" type="xrsi:debtor_account_number" />
+      <xs:element minOccurs="0" name="country" type="xrsi:country_currency_info" />
+      <xs:element minOccurs="0" name="reference_no" type="xrsi:qp_reference_no" />
+      <xs:element minOccurs="0" name="department" type="xrsi:qp_department" />
+      <xs:element minOccurs="0" name="rate_modifier" type="xrsi:qp_rate_modifier" />
+      <xs:element minOccurs="0" name="addr_line1" type="xrsi:address_line_long" />
+      <xs:element minOccurs="0" name="addr_line2" type="xrsi:address_line_long" />
+      <xs:element minOccurs="0" name="city" type="xrsi:city" />
+      <xs:element minOccurs="0" name="state" type="xrsi:state_province" />
+      <xs:element minOccurs="0" name="postal_code" type="xrsi:postal_code" />
+      <xs:element minOccurs="0" name="contact_name" type="xrsi:channel_general_name" />
+      <xs:element minOccurs="0" name="contact_phone" type="xrsi:phone" />
+      <xs:element minOccurs="0" name="device_block" type="xrsi:qqc_device_block" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="qp_companies">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:collection_base">
+        <xs:sequence>
+          <xs:element maxOccurs="10" name="qp_company" type="xrsi:qp_company" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:group name="name_group">
+    <xs:choice>
+      <xs:group minOccurs="0" ref="xrsi:individual_name" />
+      <xs:group minOccurs="0" ref="xrsi:organization_name" />
+      <xs:group minOccurs="0" ref="xrsi:mexican_name" />
+    </xs:choice>
+  </xs:group>
+  <xs:complexType name="qqc_device_block">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="device_id" type="xrsi:qqc_device_id" />
+      <xs:element minOccurs="0" name="device_flag" type="xrsi:device_flag" />
+      <xs:element minOccurs="0" name="device_details" type="xrsi:qqc_device_details" />
+      <xs:element minOccurs="0" name="opration_hours" type="xrsi:qqc_weekly_operation_hours" />
+      <xs:element minOccurs="0" name="ignore_hours" type="xrsi:yes_no" />
+      <xs:element minOccurs="0" name="timezone" type="xrsi:qqc_timezone" />
+      <xs:element minOccurs="0" name="dst_honored" type="xrsi:yes_no" />
+      <xs:element minOccurs="0" name="clr_time_flag" type="xrsi:yes_no" />
+      <xs:element minOccurs="0" name="res_date" type="xrsi:date" />
+      <xs:element minOccurs="0" name="device_class" type="xrsi:qqc_device_class" />
+      <xs:element minOccurs="0" name="db_area" type="xrsi:qqc_db_area" />
+      <xs:element minOccurs="0" name="current_ack_date" type="xrsi:date" />
+      <xs:element minOccurs="0" name="await_delivery" type="xrsi:qqc_del_await" />
+      <xs:element minOccurs="0" name="timestamp_await_delivery" type="xrsi:qqc_timestamp_ad" />
+      <xs:element minOccurs="0" name="delivery_in_progress" type="xrsi:qqc_del_ip" />
+      <xs:element minOccurs="0" name="timestamp_delivery_inprogress" type="xrsi:qqc_timestamp_dip" />
+      <xs:element minOccurs="0" name="delivery_priority" type="xrsi:qqc_delivery_priority" />
+      <xs:element minOccurs="0" name="last_nak_reason" type="xrsi:qqc_reason_last_nak" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="qqc_device_details">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:collection_base">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="4" name="device_detail" type="xrsi:qqc_device_detail" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="qqc_operation_hours">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="opening" type="xrsi:qqc_hours" />
+      <xs:element minOccurs="0" name="closing" type="xrsi:qqc_hours" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="qqc_weekly_operation_hours">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sunday" type="xrsi:qqc_operation_hours" />
+      <xs:element minOccurs="0" name="monday" type="xrsi:qqc_operation_hours" />
+      <xs:element minOccurs="0" name="tuesday" type="xrsi:qqc_operation_hours" />
+      <xs:element minOccurs="0" name="wednesday" type="xrsi:qqc_operation_hours" />
+      <xs:element minOccurs="0" name="thursday" type="xrsi:qqc_operation_hours" />
+      <xs:element minOccurs="0" name="friday" type="xrsi:qqc_operation_hours" />
+      <xs:element minOccurs="0" name="saturday" type="xrsi:qqc_operation_hours" />
+      <xs:element minOccurs="0" name="holiday" type="xrsi:qqc_operation_hours" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="qqc_device_detail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="status" type="xrsi:qqc_device_status" />
+      <xs:element minOccurs="0" name="route" type="xrsi:qqc_device_route" />
+      <xs:element minOccurs="0" name="draft_form" type="xrsi:qqc_device_draft_form" />
+      <xs:element minOccurs="0" name="route_type" type="xrsi:qqc_device_route_type" />
+      <xs:element minOccurs="0" name="last_ack_date" type="xrsi:date" />
+      <xs:element minOccurs="0" name="total_ack" type="xrsi:qqc_device_total_ack_nack" />
+      <xs:element minOccurs="0" name="total_nack" type="xrsi:qqc_device_total_ack_nack" />
+      <xs:element minOccurs="0" name="cons_nack" type="xrsi:qqc_device_total_ack_nack" />
+      <xs:element minOccurs="0" name="curr_out" type="xrsi:yes_no" />
+      <xs:element minOccurs="0" name="equipment_type" type="xrsi:qqc_device_equipment_type" />
+      <xs:element minOccurs="0" name="max_del_conn" type="xrsi:qqc_device_max_del_con" />
+      <xs:element minOccurs="0" name="equipment_prot" type="xrsi:qqc_device_equipment_prot" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="wu_card">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wu_card_number" type="xrsi:wu_card_number" />
+      <xs:element minOccurs="0" name="promo_code" type="xrsi:promo_code" />
+      <xs:element minOccurs="0" name="add_date">
+        <xs:simpleType>
+          <xs:restriction base="xrsi:date">
+            <xs:minLength value="0" />
+            <xs:maxLength value="10" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="add_time">
+        <xs:simpleType>
+          <xs:restriction base="xrsi:time">
+            <xs:minLength value="0" />
+            <xs:maxLength value="8" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="change_date">
+        <xs:simpleType>
+          <xs:restriction base="xrsi:date">
+            <xs:minLength value="0" />
+            <xs:maxLength value="10" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="change_time">
+        <xs:simpleType>
+          <xs:restriction base="xrsi:time">
+            <xs:minLength value="0" />
+            <xs:maxLength value="8" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="points" type="xrsi:count" />
+      <xs:element minOccurs="0" name="reward_type" type="xrsi:string" />
+      <xs:element minOccurs="0" name="minimum_redemption" type="xrsi:count" />
+      <xs:element minOccurs="0" name="maximum_redemption" type="xrsi:count" />
+      <xs:element minOccurs="0" name="increment_amount_from_min" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="reward_value_pin_disc" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="transaction_date">
+        <xs:simpleType>
+          <xs:restriction base="xrsi:date">
+            <xs:minLength value="0" />
+            <xs:maxLength value="10" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="mtcn" type="xrsi:mtcn" />
+      <xs:element minOccurs="0" name="transaction_type" type="xrsi:transaction_type" />
+      <xs:element minOccurs="0" name="originating_country" type="xrsi:country_currency_info" />
+      <xs:element minOccurs="0" name="destination_country" type="xrsi:country_currency_info" />
+      <xs:element minOccurs="0" name="client_name" type="xrsi:channel_general_name" />
+      <xs:element minOccurs="0" name="amount_in_local_send_currency" type="xrsi:local_amount" />
+      <xs:element minOccurs="0" name="qualifying_for_reward" type="xrsi:qualifying_for_reward" />
+      <xs:element minOccurs="0" name="amount_granted" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="unique_record_id">
+        <xs:simpleType>
+          <xs:restriction base="xrsi:string">
+            <xs:minLength value="0" />
+            <xs:maxLength value="6" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="points_available_current_year" type="xs:integer" />
+      <xs:element minOccurs="0" name="total_points_earned" type="xs:integer" />
+      <xs:element minOccurs="0" name="total_points_redeemed" type="xs:integer" />
+      <xs:element minOccurs="0" name="redemption_date" type="xrsi:date" />
+      <xs:element minOccurs="0" name="redemption_time" type="xrsi:time" />
+      <xs:element minOccurs="0" name="redemption_status" type="xrsi:redemption_status" />
+      <xs:element minOccurs="0" name="phone_pin_or_promo_code" type="xrsi:pin" />
+      <xs:element minOccurs="0" name="csr_id" type="xrsi:csr_id" />
+      <xs:element minOccurs="0" name="discount_date" type="xrsi:date" />
+      <xs:element minOccurs="0" name="comments" type="xrsi:comments" />
+      <xs:element minOccurs="0" name="level_code" type="xrsi:level_code" />
+      <xs:element minOccurs="0" name="text_description">
+        <xs:simpleType>
+          <xs:restriction base="xrsi:comments">
+            <xs:minLength value="0" />
+            <xs:maxLength value="30" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="redemption_amount">
+        <xs:simpleType>
+          <xs:restriction base="xrsi:string">
+            <xs:minLength value="0" />
+            <xs:maxLength value="16" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="reward_value" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="reward_currency">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0" />
+            <xs:maxLength value="10" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="delivery_service_code">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0" />
+            <xs:maxLength value="3" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="special_pricing" type="xrsi:special_pricing" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="special_pricing">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="code" type="xrsi:special_pricing_code" />
+      <xs:element minOccurs="0" name="description" type="xrsi:special_pricing_description" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gbs_payment_transactions">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:collection_base">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="45" name="transaction" type="xrsi:gbs_payment_transaction" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="gbs_payment_transaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sender" type="xrsi:channel_customer" />
+      <xs:element minOccurs="0" name="receiver" type="xrsi:channel_customer" />
+      <xs:element minOccurs="0" name="payment_details" type="xrsi:gbs_payment_details" />
+      <xs:element minOccurs="0" name="transaction_id" type="xrsi:gbs_transaction_id" />
+      <xs:element name="money_transfer_control" type="xrsi:money_transfer_control" />
+      <xs:element minOccurs="0" name="status" type="xrsi:paid_status" />
+      <xs:element minOccurs="0" name="reference_key" type="xrsi:reference_key" />
+      <xs:element minOccurs="0" name="message" type="xrsi:message_details" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gbs_bank_details">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:bank_details">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="pin_verification_time" type="xrsi:pin_verification_time" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="gbs_customer">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:channel_customer">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bank_account" type="xrsi:gbs_bank_details" />
+          <xs:group minOccurs="0" ref="xrsi:sender_details" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="gbs_request_notification_base">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:gwp_gbs_notification_base" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="gbs_reply_notification_base">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:gwp_gbs_reply_notification_base" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="gwp_gbs_transaction_base">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="partner" type="xrsi:channel_partner" />
+      <xs:element minOccurs="0" name="device" type="xrsi:gwp_gbs_device" />
+      <xs:element minOccurs="0" name="external_reference_no" type="xrsi:external_reference_no" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gwp_gbs_reply_notification_base">
+    <xs:sequence>
+      <xs:element name="partner" type="xrsi:channel_partner" />
+      <xs:element minOccurs="0" name="external_reference_no" type="xrsi:external_reference_no" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gbs_transaction_base">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:gwp_gbs_transaction_base" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="gbs_request_transaction_base">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:gbs_transaction_base">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="gbs_reply_transaction_base">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:gbs_transaction_base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="informational_messages" type="xrsi:informational_messages" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="gwp_gbs_device">
+    <xs:sequence>
+      <xs:element name="id">
+        <xs:simpleType>
+          <xs:annotation>
+            <xs:documentation />
+          </xs:annotation>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0" />
+            <xs:maxLength value="32" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="type" type="xrsi:gwp_gbs_device_type" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="wu_product">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xrsi:wu_product_name" />
+      <xs:element minOccurs="0" name="code" type="xrsi:wu_product_code" />
+      <xs:element minOccurs="0" name="type" type="xrsi:transaction_type" />
+      <xs:element minOccurs="0" name="routing_code" type="xrsi:route_designator" />
+      <xs:element minOccurs="0" name="message" type="xrsi:message_details" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="message_details">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message_details" type="xrsi:messages" />
+      <xs:element minOccurs="0" name="base_word_limit" type="xrsi:message_word_limit" />
+      <xs:element minOccurs="0" name="incr_word_limit" type="xrsi:message_word_limit" />
+      <xs:element minOccurs="0" name="lines" type="xrsi:count" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="messages">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:collection_base">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="14" name="text" type="xrsi:attn_message" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="channel_promotion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="code" type="xrsi:promo_code" />
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element minOccurs="0" name="discount" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="status" type="xs:integer" />
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gbs_service_option">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wu_product" type="xrsi:wu_product" />
+      <xs:element minOccurs="0" name="payment_details" type="xrsi:gbs_payment_details" />
+      <xs:element minOccurs="0" name="additional_service_options" type="xrsi:gbs_additional_service_options" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gbs_service_options">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="service_option" type="xrsi:gbs_service_option" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gbs_optional_service">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xrsi:wu_product_name" />
+      <xs:element minOccurs="0" name="code" type="xrsi:wu_product_code" />
+      <xs:element minOccurs="0" name="surcharge" type="xrsi:charges" />
+      <xs:element minOccurs="0" name="discount" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="discounted_surcharge" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="promotion" type="xrsi:channel_promotion" />
+      <xs:element minOccurs="0" name="taxes" type="xrsi:channel_taxes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gbs_additional_service_options">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="additional_service_option" type="xrsi:gbs_optional_service" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="channel_fees">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="base_charges" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="delivery_charges" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="other_charges" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="charges" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="exchange_fee" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="conversion_fee" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="second_exchange_fee" type="xrsi:amount" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="heartbeat_reply_status">
+    <xs:sequence>
+      <xs:element name="code" type="xrsi:heartbeat_status_code" />
+      <xs:element minOccurs="0" name="message" type="xrsi:message" />
+      <xs:element minOccurs="0" name="reference_no" type="xrsi:external_reference_no" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="channel_customer_identities">
+    <xs:sequence>
+      <xs:element maxOccurs="4" name="identity" type="xrsi:channel_customer_identity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="channel_customer_identity_base">
+    <xs:attribute name="primary" type="xrsi:yes_no" />
+  </xs:complexType>
+  <xs:complexType name="channel_customer_identity">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:channel_customer_identity_base">
+        <xs:sequence>
+          <xs:element name="type" type="xrsi:channel_customer_identity_type" />
+          <xs:element name="data" type="xrsi:channel_customer_identity_data" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="channel_taxes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="tax_amount" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="tax_rate" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="municipal_tax" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="state_tax" type="xrsi:amount" />
+      <xs:element minOccurs="0" name="county_tax" type="xrsi:amount" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="channel_message_charges">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="msg_base_rate" />
+      <xs:element minOccurs="0" name="msg_base_cnt" />
+      <xs:element minOccurs="0" name="msg_marg_rate" />
+      <xs:element minOccurs="0" name="rate_special" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cash_to_mobile">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="sp_id_sp_name" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Receiving_Agent_Account" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="sender_sms_flag" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="sender_selected_language" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="reciever_selected_language" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="receiver_sms_flag" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:group name="sender_details">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="returned_mail_status" type="xrsi:returned_mail_status" />
+      <xs:element minOccurs="0" name="last_change_date" type="xrsi:short_date" />
+      <xs:element minOccurs="0" name="export_status" type="xrsi:export_status" />
+      <xs:element minOccurs="0" name="export_date" type="xrsi:short_date" />
+      <xs:element minOccurs="0" name="dup" type="xrsi:string" />
+      <xs:element minOccurs="0" name="delete_code" type="xrsi:delete_code" />
+      <xs:element minOccurs="0" name="address_flag_h_home_p_pos" type="xrsi:address_type" />
+      <xs:element minOccurs="0" name="phone_type" type="xrsi:phone_type" />
+      <xs:element minOccurs="0" name="listing_type" type="xrsi:listing_type" />
+      <xs:element minOccurs="0" name="employment_type" type="xrsi:employment_type" />
+    </xs:sequence>
+  </xs:group>
+</xs:schema>

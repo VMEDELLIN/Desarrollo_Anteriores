@@ -1,0 +1,11 @@
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\LeerXML\obj\Debug\LeerXML.csproj.AssemblyReference.cache
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\LeerXML\obj\Debug\LeerXML.csproj.CoreCompileInputs.cache
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\LeerXML\bin\Debug\LeerXML.exe
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\LeerXML\bin\Debug\LeerXML.pdb
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\LeerXML\bin\Debug\XmlDiffPatch.dll
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\LeerXML\bin\Debug\XmlDiffPatch.View.dll
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\LeerXML\obj\Debug\LeerXML.csproj.CopyComplete
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\LeerXML\obj\Debug\LeerXML.exe
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\LeerXML\obj\Debug\LeerXML.pdb
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\LeerXML\bin\Debug\LeerXML.exe.config
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\LeerXML\bin\Debug\Airpak.dll

@@ -1,0 +1,11 @@
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\Ejecuta\bin\Debug\Ejecuta.exe.config
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\Ejecuta\bin\Debug\Ejecuta.exe
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\Ejecuta\bin\Debug\Ejecuta.pdb
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\Ejecuta\bin\Debug\PatronEstrategy.dll
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\Ejecuta\bin\Debug\PatronEstrategy.pdb
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\Ejecuta\bin\Debug\PatronEstrategy.dll.config
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\Ejecuta\obj\Debug\Ejecuta.csproj.AssemblyReference.cache
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\Ejecuta\obj\Debug\Ejecuta.csproj.CoreCompileInputs.cache
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\Ejecuta\obj\Debug\Ejecuta.csproj.CopyComplete
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\Ejecuta\obj\Debug\Ejecuta.exe
+C:\Users\vmedellin\Documentos\source\repos\PatronEstrategy\Ejecuta\obj\Debug\Ejecuta.pdb

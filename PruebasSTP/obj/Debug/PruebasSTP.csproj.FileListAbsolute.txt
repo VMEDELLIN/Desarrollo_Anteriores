@@ -1,0 +1,10 @@
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\PruebasSTP\bin\Debug\PruebasSTP.exe.config
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\PruebasSTP\bin\Debug\PruebasSTP.exe
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\PruebasSTP\bin\Debug\PruebasSTP.pdb
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\PruebasSTP\bin\Debug\Newtonsoft.Json.dll
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\PruebasSTP\bin\Debug\Newtonsoft.Json.xml
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\PruebasSTP\obj\Debug\PruebasSTP.csproj.AssemblyReference.cache
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\PruebasSTP\obj\Debug\PruebasSTP.csproj.CoreCompileInputs.cache
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\PruebasSTP\obj\Debug\PruebasSTP.csproj.CopyComplete
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\PruebasSTP\obj\Debug\PruebasSTP.exe
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\PruebasSTP\obj\Debug\PruebasSTP.pdb

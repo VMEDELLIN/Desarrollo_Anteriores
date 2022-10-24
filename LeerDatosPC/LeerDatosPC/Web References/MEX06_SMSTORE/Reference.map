@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/Server/Certificate/XRSISendMoneyStoreReply.xsd" filename="XRSISendMoneyStoreReply.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/Server/Certificate/XRSISendMoneyStoreRequest.xsd" filename="XRSISendMoneyStoreRequest.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/Server/Certificate/XRSIErrorReply.xsd" filename="XRSIErrorReply.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///C:/Server/Certificate/SendMoneyStore_Service_H2HService_1.wsdl" filename="SendMoneyStore_Service_H2H.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/Server/Certificate/XRSIClasses.xsd" filename="XRSIClasses.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/Server/Certificate/XRSIBasicTypes.xsd" filename="XRSIBasicTypes.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

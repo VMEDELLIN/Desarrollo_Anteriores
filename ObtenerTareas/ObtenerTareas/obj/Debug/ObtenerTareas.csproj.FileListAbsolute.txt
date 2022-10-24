@@ -1,0 +1,8 @@
+C:\Users\vmedellin\source\repos\ObtenerTareas\ObtenerTareas\bin\Debug\ObtenerTareas.exe.config
+C:\Users\vmedellin\source\repos\ObtenerTareas\ObtenerTareas\bin\Debug\ObtenerTareas.exe
+C:\Users\vmedellin\source\repos\ObtenerTareas\ObtenerTareas\bin\Debug\ObtenerTareas.pdb
+C:\Users\vmedellin\source\repos\ObtenerTareas\ObtenerTareas\obj\Debug\ObtenerTareas.csproj.AssemblyReference.cache
+C:\Users\vmedellin\source\repos\ObtenerTareas\ObtenerTareas\obj\Debug\ObtenerTareas.csproj.CoreCompileInputs.cache
+C:\Users\vmedellin\source\repos\ObtenerTareas\ObtenerTareas\obj\Debug\ObtenerTareas.csproj.CopyComplete
+C:\Users\vmedellin\source\repos\ObtenerTareas\ObtenerTareas\obj\Debug\ObtenerTareas.exe
+C:\Users\vmedellin\source\repos\ObtenerTareas\ObtenerTareas\obj\Debug\ObtenerTareas.pdb

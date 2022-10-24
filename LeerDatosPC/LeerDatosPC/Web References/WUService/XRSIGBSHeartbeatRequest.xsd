@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xrsi="http://www.westernunion.com/schema/xrsi" targetNamespace="http://www.westernunion.com/schema/xrsi" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="XRSIGBClasses.xsd" />
+  <xs:complexType name="esp-heartbeat-request">
+    <xs:complexContent mixed="false">
+      <xs:extension base="xrsi:gbs_request_transaction_base" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="esp-heartbeat-request" type="xrsi:esp-heartbeat-request">
+    <xs:annotation>
+      <xs:documentation />
+    </xs:annotation>
+  </xs:element>
+</xs:schema>

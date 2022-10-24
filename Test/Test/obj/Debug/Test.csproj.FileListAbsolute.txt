@@ -1,0 +1,7 @@
+C:\WORK\Proyectos Elaborados Pruebas\Test\Test\bin\Debug\Test.exe.config
+C:\WORK\Proyectos Elaborados Pruebas\Test\Test\bin\Debug\Test.exe
+C:\WORK\Proyectos Elaborados Pruebas\Test\Test\bin\Debug\Test.pdb
+C:\WORK\Proyectos Elaborados Pruebas\Test\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+C:\WORK\Proyectos Elaborados Pruebas\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\WORK\Proyectos Elaborados Pruebas\Test\Test\obj\Debug\Test.exe
+C:\WORK\Proyectos Elaborados Pruebas\Test\Test\obj\Debug\Test.pdb

@@ -1,0 +1,2 @@
+Ejecutar el exec => ObtenerTareas.exe
+El resultado se va a generar en la carpeta Temp en fomato .txt

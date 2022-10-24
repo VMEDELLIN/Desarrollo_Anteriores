@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.westernunion.com/WesternUnion_Service_H2H" xmlns:xrsi="http://www.westernunion.com/schema/xrsi" name="WesternUnion_Service_H2H" targetNamespace="http://www.westernunion.com/WesternUnion_Service_H2H" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns:mrm="http://www.westernunion.com/WesternUnion_Service_H2H" targetNamespace="http://www.westernunion.com/WesternUnion_Service_H2H">
+      <xsd:import schemaLocation="../schema/XRSIErrorReply.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIDasReply.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIDasRequest.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIPayStatusInquiryRequest.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIPayStatusInquiryReply.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIReceiveMoneySelectRequest.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIReceiveMoneySelectReply.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIReceiveMoneySearchReply.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIReceiveMoneySearchRequest.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIReceiveMoneyPayRequest.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIReceiveMoneyPayReply.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIReceiptReprintSelectRequest.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIReceiptReprintSelectReply.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIReceiptReprintSearchReply.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIReceiptReprintSearchRequest.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIGBSHeartbeatReply.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIGBSHeartbeatRequest.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIErrorReply.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIFeeInquiryRequest.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIFeeInquiryReply.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSISendMoneyStoreReply.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSISendMoneyStoreRequest.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSISendMoneyValidationRequest.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSISendMoneyValidationReply.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIQuickPayValidationRequest.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIQuickPayValidationReply.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIQuickPayStoreRequest.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+      <xsd:import schemaLocation="../schema/XRSIQuickPayStoreReply.xsd" namespace="http://www.westernunion.com/schema/xrsi" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="DAS_Service_in">
+    <wsdl:part name="h2h-das-request" element="xrsi:h2h-das-request" />
+  </wsdl:message>
+  <wsdl:message name="DAS_Service_out">
+    <wsdl:part name="h2h-das-reply" element="xrsi:h2h-das-reply" />
+  </wsdl:message>
+  <wsdl:message name="DAS_Service_fault1">
+    <wsdl:part name="error-reply" element="xrsi:error-reply" />
+  </wsdl:message>
+  <wsdl:message name="PayStatus_in">
+    <wsdl:part name="pay-status-inquiry-request-data" element="xrsi:pay-status-inquiry-request-data" />
+  </wsdl:message>
+  <wsdl:message name="PayStatus_out">
+    <wsdl:part name="pay-status-inquiry-reply" element="xrsi:pay-status-inquiry-reply" />
+  </wsdl:message>
+  <wsdl:message name="PayStatus_fault1">
+    <wsdl:part name="error-reply" element="xrsi:error-reply" />
+  </wsdl:message>
+  <wsdl:message name="HeartBeatService_in">
+    <wsdl:part name="esp-heartbeat-request" element="xrsi:esp-heartbeat-request" />
+  </wsdl:message>
+  <wsdl:message name="HeartBeatService_out">
+    <wsdl:part name="esp-heartbeat-reply" element="xrsi:esp-heartbeat-reply" />
+  </wsdl:message>
+  <wsdl:message name="HeartBeatService_faultMsg">
+    <wsdl:part name="error-reply" element="xrsi:error-reply" />
+  </wsdl:message>
+  <wsdl:message name="ReceiptReprintSearch_Service_H2H_in">
+    <wsdl:part name="receipt-reprint-search-request" element="xrsi:receipt-reprint-search-request" />
+  </wsdl:message>
+  <wsdl:message name="ReceiptReprintSearch_Service_H2H_out">
+    <wsdl:part name="receipt-reprint-search-reply" element="xrsi:receipt-reprint-search-reply" />
+  </wsdl:message>
+  <wsdl:message name="ReceiptReprintSearch_Service_H2H_fault1">
+    <wsdl:part name="error-reply" element="xrsi:error-reply" />
+  </wsdl:message>
+  <wsdl:message name="ReceiptReprintSelect_Service_H2H_in">
+    <wsdl:part name="receipt-reprint-select-request" element="xrsi:receipt-reprint-select-request" />
+  </wsdl:message>
+  <wsdl:message name="ReceiptReprintSelect_Service_H2H_out">
+    <wsdl:part name="receipt-reprint-select-reply" element="xrsi:receipt-reprint-select-reply" />
+  </wsdl:message>
+  <wsdl:message name="ReceiptReprintSelect_Service_H2H_fault1">
+    <wsdl:part name="error-reply" element="xrsi:error-reply" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveMoneyPay_in">
+    <wsdl:part name="receive-money-pay-request" element="xrsi:receive-money-pay-request" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveMoneyPay_out">
+    <wsdl:part name="receive-money-pay-reply" element="xrsi:receive-money-pay-reply" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveMoneyPay_fault1">
+    <wsdl:part name="error-reply" element="xrsi:error-reply" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveMoneySearch_in">
+    <wsdl:part name="receive-money-search-request" element="xrsi:receive-money-search-request" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveMoneySearch_out">
+    <wsdl:part name="receive-money-search-reply" element="xrsi:receive-money-search-reply" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveMoneySearch_fault1">
+    <wsdl:part name="error-reply" element="xrsi:error-reply" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveMoneySelect_in">
+    <wsdl:part name="receive-money-select-request" element="xrsi:receive-money-select-request" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveMoneySelect_out">
+    <wsdl:part name="receive-money-select-reply" element="xrsi:receive-money-select-reply" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveMoneySelect_fault1">
+    <wsdl:part name="error-reply" element="xrsi:error-reply" />
+  </wsdl:message>
+  <wsdl:message name="FeeInquiry_in">
+    <wsdl:part name="fee-inquiry-request" element="xrsi:fee-inquiry-request" />
+  </wsdl:message>
+  <wsdl:message name="FeeInquiry_out">
+    <wsdl:part name="fee-inquiry-reply" element="xrsi:fee-inquiry-reply" />
+  </wsdl:message>
+  <wsdl:message name="FeeInquiry_fault1">
+    <wsdl:part name="error-reply" element="xrsi:error-reply" />
+  </wsdl:message>
+  <wsdl:message name="SendMoneyStore_H2H_in">
+    <wsdl:part name="send-money-store-request" element="xrsi:send-money-store-request" />
+  </wsdl:message>
+  <wsdl:message name="SendMoneyStore_H2H_out">
+    <wsdl:part name="send-money-store-reply" element="xrsi:send-money-store-reply" />
+  </wsdl:message>
+  <wsdl:message name="SendMoneyStore_H2H_fault1">
+    <wsdl:part name="error-reply" element="xrsi:error-reply" />
+  </wsdl:message>
+  <wsdl:message name="sendmoneyValidation_in">
+    <wsdl:part name="send-money-validation-request" element="xrsi:send-money-validation-request" />
+  </wsdl:message>
+  <wsdl:message name="sendmoneyValidation_out">
+    <wsdl:part name="send-money-validation-reply" element="xrsi:send-money-validation-reply" />
+  </wsdl:message>
+  <wsdl:message name="sendmoneyValidation_fault1">
+    <wsdl:part name="error-reply" element="xrsi:error-reply" />
+  </wsdl:message>
+  <wsdl:message name="QuickPayStore_H2H_in">
+    <wsdl:part name="quick-pay-store-request" element="xrsi:quick-pay-store-request" />
+  </wsdl:message>
+  <wsdl:message name="QuickPayStore_H2H_out">
+    <wsdl:part name="quick-pay-store-reply" element="xrsi:quick-pay-store-reply" />
+  </wsdl:message>
+  <wsdl:message name="QuickPayStore_H2H_fault1">
+    <wsdl:part name="error-reply" element="xrsi:error-reply" />
+  </wsdl:message>
+  <wsdl:message name="QuickPayValidation_in">
+    <wsdl:part name="quick-pay-validation-request" element="xrsi:quick-pay-validation-request" />
+  </wsdl:message>
+  <wsdl:message name="QuickPayValidation_out">
+    <wsdl:part name="quick-pay-validation-reply" element="xrsi:quick-pay-validation-reply" />
+  </wsdl:message>
+  <wsdl:message name="QuickPayValidation_fault1">
+    <wsdl:part name="error-reply" element="xrsi:error-reply" />
+  </wsdl:message>
+  <wsdl:portType name="WesternUnionPortType">
+    <wsdl:operation name="HeartBeatService">
+      <wsdl:input name="HeartBeatService_Input" message="tns:HeartBeatService_in" />
+      <wsdl:output name="HeartBeatService_Output" message="tns:HeartBeatService_out" />
+      <wsdl:fault name="fault" message="tns:HeartBeatService_faultMsg" />
+    </wsdl:operation>
+    <wsdl:operation name="PayStatus">
+      <wsdl:input name="PayStatus_Input" message="tns:PayStatus_in" />
+      <wsdl:output name="PayStatus_Output" message="tns:PayStatus_out" />
+      <wsdl:fault name="PayStatus_Fault" message="tns:PayStatus_fault1" />
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveMoneySelect">
+      <wsdl:input name="ReceiveMoneySelect_Input" message="tns:ReceiveMoneySelect_in" />
+      <wsdl:output name="ReceiveMoneySelect_Output" message="tns:ReceiveMoneySelect_out" />
+      <wsdl:fault name="ReceiveMoneySelect_Fault" message="tns:ReceiveMoneySelect_fault1" />
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveMoneySearch">
+      <wsdl:input name="ReceiveMoneySearch_Input" message="tns:ReceiveMoneySearch_in" />
+      <wsdl:output name="ReceiveMoneySearch_Output" message="tns:ReceiveMoneySearch_out" />
+      <wsdl:fault name="ReceiveMoneySearch_Fault" message="tns:ReceiveMoneySearch_fault1" />
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveMoneyPay">
+      <wsdl:input name="ReceiveMoneyPay_Input" message="tns:ReceiveMoneyPay_in" />
+      <wsdl:output name="ReceiveMoneyPay_Output" message="tns:ReceiveMoneyPay_out" />
+      <wsdl:fault name="ReceiveMoneyPay_Fault" message="tns:ReceiveMoneyPay_fault1" />
+    </wsdl:operation>
+    <wsdl:operation name="ReceiptReprintSelect_Service_H2H">
+      <wsdl:input name="ReceiptReprintSelect_Service_H2H_Input" message="tns:ReceiptReprintSelect_Service_H2H_in" />
+      <wsdl:output name="ReceiptReprintSelect_Service_H2H_Output" message="tns:ReceiptReprintSelect_Service_H2H_out" />
+      <wsdl:fault name="ReceiptReprintSelect_Service_H2H_Fault" message="tns:ReceiptReprintSelect_Service_H2H_fault1" />
+    </wsdl:operation>
+    <wsdl:operation name="ReceiptReprintSearch_Service_H2H">
+      <wsdl:input name="ReceiptReprintSearch_Service_H2H_Input" message="tns:ReceiptReprintSearch_Service_H2H_in" />
+      <wsdl:output name="ReceiptReprintSearch_Service_H2H_Output" message="tns:ReceiptReprintSearch_Service_H2H_out" />
+      <wsdl:fault name="ReceiptReprintSearch_Service_H2H_Fault" message="tns:ReceiptReprintSearch_Service_H2H_fault1" />
+    </wsdl:operation>
+    <wsdl:operation name="DAS_Service">
+      <wsdl:input name="DAS_Service_Input" message="tns:DAS_Service_in" />
+      <wsdl:output name="DAS_Service_Output" message="tns:DAS_Service_out" />
+      <wsdl:fault name="DAS_Service_Fault" message="tns:DAS_Service_fault1" />
+    </wsdl:operation>
+    <wsdl:operation name="FeeInquiry">
+      <wsdl:input name="FeeInquiry_Input" message="tns:FeeInquiry_in" />
+      <wsdl:output name="FeeInquiry_Output" message="tns:FeeInquiry_out" />
+      <wsdl:fault name="FeeInquiry_Fault" message="tns:FeeInquiry_fault1" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMoneyStore_H2H">
+      <wsdl:input name="SendMoneyStore_H2H_Input" message="tns:SendMoneyStore_H2H_in" />
+      <wsdl:output name="SendMoneyStore_H2H_Output" message="tns:SendMoneyStore_H2H_out" />
+      <wsdl:fault name="SendMoneyStore_H2H_Fault" message="tns:SendMoneyStore_H2H_fault1" />
+    </wsdl:operation>
+    <wsdl:operation name="sendmoneyValidation">
+      <wsdl:input name="sendmoneyValidation_Input" message="tns:sendmoneyValidation_in" />
+      <wsdl:output name="sendmoneyValidation_Output" message="tns:sendmoneyValidation_out" />
+      <wsdl:fault name="sendmoneyValidation_Fault" message="tns:sendmoneyValidation_fault1" />
+    </wsdl:operation>
+    <wsdl:operation name="QuickPayValidation">
+      <wsdl:input name="QuickPayValidation_Input" message="tns:QuickPayValidation_in" />
+      <wsdl:output name="QuickPayValidation_Output" message="tns:QuickPayValidation_out" />
+      <wsdl:fault name="QuickPayValidation_Fault" message="tns:QuickPayValidation_fault1" />
+    </wsdl:operation>
+    <wsdl:operation name="QuickPayStore_H2H">
+      <wsdl:input name="QuickPayStore_H2H_Input" message="tns:QuickPayStore_H2H_in" />
+      <wsdl:output name="QuickPayStore_H2H_Output" message="tns:QuickPayStore_H2H_out" />
+      <wsdl:fault name="QuickPayStore_H2H_Fault" message="tns:QuickPayStore_H2H_fault1" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WesternUnion_Service_H2H_SOAP_HTTP_Binding" type="tns:WesternUnionPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HeartBeatService">
+      <soap:operation soapAction="HeartBeatAction" />
+      <wsdl:input name="HeartBeatService_Input">
+        <soap:body use="literal" parts="esp-heartbeat-request" />
+      </wsdl:input>
+      <wsdl:output name="HeartBeatService_Output">
+        <soap:body use="literal" parts="esp-heartbeat-reply" />
+      </wsdl:output>
+      <wsdl:fault name="fault">
+        <soap:fault use="literal" name="fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PayStatus">
+      <soap:operation soapAction="" />
+      <wsdl:input name="PayStatus_Input">
+        <soap:body use="literal" parts="pay-status-inquiry-request-data" />
+      </wsdl:input>
+      <wsdl:output name="PayStatus_Output">
+        <soap:body use="literal" parts="pay-status-inquiry-reply" />
+      </wsdl:output>
+      <wsdl:fault name="PayStatus_Fault">
+        <soap:fault use="literal" name="PayStatus_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveMoneySelect">
+      <soap:operation soapAction="ReceiveMoneySelect_Action" />
+      <wsdl:input name="ReceiveMoneySelect_Input">
+        <soap:body use="literal" parts="receive-money-select-request" />
+      </wsdl:input>
+      <wsdl:output name="ReceiveMoneySelect_Output">
+        <soap:body use="literal" parts="receive-money-select-reply" />
+      </wsdl:output>
+      <wsdl:fault name="ReceiveMoneySelect_Fault">
+        <soap:fault use="literal" name="ReceiveMoneySelect_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveMoneySearch">
+      <soap:operation soapAction="ReceiveMoneySearch_Action" />
+      <wsdl:input name="ReceiveMoneySearch_Input">
+        <soap:body use="literal" parts="receive-money-search-request" />
+      </wsdl:input>
+      <wsdl:output name="ReceiveMoneySearch_Output">
+        <soap:body use="literal" parts="receive-money-search-reply" />
+      </wsdl:output>
+      <wsdl:fault name="ReceiveMoneySearch_Fault">
+        <soap:fault use="literal" name="ReceiveMoneySearch_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveMoneyPay">
+      <soap:operation soapAction="ReceiveMoneyPay_Action" />
+      <wsdl:input name="ReceiveMoneyPay_Input">
+        <soap:body use="literal" parts="receive-money-pay-request" />
+      </wsdl:input>
+      <wsdl:output name="ReceiveMoneyPay_Output">
+        <soap:body use="literal" parts="receive-money-pay-reply" />
+      </wsdl:output>
+      <wsdl:fault name="ReceiveMoneyPay_Fault">
+        <soap:fault use="literal" name="ReceiveMoneyPay_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiptReprintSelect_Service_H2H">
+      <soap:operation soapAction="ReceiptReprintSelect_Service_H2H" />
+      <wsdl:input name="ReceiptReprintSelect_Service_H2H_Input">
+        <soap:body use="literal" parts="receipt-reprint-select-request" />
+      </wsdl:input>
+      <wsdl:output name="ReceiptReprintSelect_Service_H2H_Output">
+        <soap:body use="literal" parts="receipt-reprint-select-reply" />
+      </wsdl:output>
+      <wsdl:fault name="ReceiptReprintSelect_Service_H2H_Fault">
+        <soap:fault use="literal" name="ReceiptReprintSelect_Service_H2H_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiptReprintSearch_Service_H2H">
+      <soap:operation soapAction="ReceiptReprintSearch_Service_H2H" />
+      <wsdl:input name="ReceiptReprintSearch_Service_H2H_Input">
+        <soap:body use="literal" parts="receipt-reprint-search-request" />
+      </wsdl:input>
+      <wsdl:output name="ReceiptReprintSearch_Service_H2H_Output">
+        <soap:body use="literal" parts="receipt-reprint-search-reply" />
+      </wsdl:output>
+      <wsdl:fault name="ReceiptReprintSearch_Service_H2H_Fault">
+        <soap:fault use="literal" name="ReceiptReprintSearch_Service_H2H_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DAS_Service">
+      <soap:operation soapAction="" />
+      <wsdl:input name="DAS_Service_Input">
+        <soap:body use="literal" parts="h2h-das-request" />
+      </wsdl:input>
+      <wsdl:output name="DAS_Service_Output">
+        <soap:body use="literal" parts="h2h-das-reply" />
+      </wsdl:output>
+      <wsdl:fault name="DAS_Service_Fault">
+        <soap:fault use="literal" name="DAS_Service_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="FeeInquiry">
+      <soap:operation soapAction="" />
+      <wsdl:input name="FeeInquiry_Input">
+        <soap:body use="literal" parts="fee-inquiry-request" />
+      </wsdl:input>
+      <wsdl:output name="FeeInquiry_Output">
+        <soap:body use="literal" parts="fee-inquiry-reply" />
+      </wsdl:output>
+      <wsdl:fault name="FeeInquiry_Fault">
+        <soap:fault use="literal" name="FeeInquiry_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SendMoneyStore_H2H">
+      <soap:operation soapAction="" />
+      <wsdl:input name="SendMoneyStore_H2H_Input">
+        <soap:body use="literal" parts="send-money-store-request" />
+      </wsdl:input>
+      <wsdl:output name="SendMoneyStore_H2H_Output">
+        <soap:body use="literal" parts="send-money-store-reply" />
+      </wsdl:output>
+      <wsdl:fault name="SendMoneyStore_H2H_Fault">
+        <soap:fault use="literal" name="SendMoneyStore_H2H_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="sendmoneyValidation">
+      <soap:operation soapAction="" />
+      <wsdl:input name="sendmoneyValidation_Input">
+        <soap:body use="literal" parts="send-money-validation-request" />
+      </wsdl:input>
+      <wsdl:output name="sendmoneyValidation_Output">
+        <soap:body use="literal" parts="send-money-validation-reply" />
+      </wsdl:output>
+      <wsdl:fault name="sendmoneyValidation_Fault">
+        <soap:fault use="literal" name="sendmoneyValidation_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="QuickPayStore_H2H">
+      <soap:operation soapAction="" />
+      <wsdl:input name="QuickPayStore_H2H_Input">
+        <soap:body use="literal" parts="quick-pay-store-request" />
+      </wsdl:input>
+      <wsdl:output name="QuickPayStore_H2H_Output">
+        <soap:body use="literal" parts="quick-pay-store-reply" />
+      </wsdl:output>
+      <wsdl:fault name="QuickPayStore_H2H_Fault">
+        <soap:fault use="literal" name="QuickPayStore_H2H_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="QuickPayValidation">
+      <soap:operation soapAction="" />
+      <wsdl:input name="QuickPayValidation_Input">
+        <soap:body use="literal" parts="quick-pay-validation-request" />
+      </wsdl:input>
+      <wsdl:output name="QuickPayValidation_Output">
+        <soap:body use="literal" parts="quick-pay-validation-reply" />
+      </wsdl:output>
+      <wsdl:fault name="QuickPayValidation_Fault">
+        <soap:fault use="literal" name="QuickPayValidation_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WesternUnion_Service_H2H">
+    <wsdl:port name="SOAP_HTTP_Port" binding="tns:WesternUnion_Service_H2H_SOAP_HTTP_Binding">
+      <soap:address location="https://wugateway2pi.westernunion.net" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,7 @@
+C:\Users\vmedellin\OneDrive\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\LeerDatosPC\LeerDatosPC\bin\Debug\LeerDatosPC.exe.config
+C:\Users\vmedellin\OneDrive\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\LeerDatosPC\LeerDatosPC\bin\Debug\LeerDatosPC.exe
+C:\Users\vmedellin\OneDrive\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\LeerDatosPC\LeerDatosPC\bin\Debug\LeerDatosPC.pdb
+C:\Users\vmedellin\OneDrive\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\LeerDatosPC\LeerDatosPC\obj\Debug\LeerDatosPC.csproj.CoreCompileInputs.cache
+C:\Users\vmedellin\OneDrive\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\LeerDatosPC\LeerDatosPC\obj\Debug\LeerDatosPC.exe
+C:\Users\vmedellin\OneDrive\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\LeerDatosPC\LeerDatosPC\obj\Debug\LeerDatosPC.pdb
+C:\Users\vmedellin\OneDrive\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\LeerDatosPC\LeerDatosPC\obj\Debug\LeerDatosPC.csproj.AssemblyReference.cache
