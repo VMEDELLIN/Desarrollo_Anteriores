@@ -1,0 +1,10 @@
+C:\Users\vmedellin\source\repos\Blogger\Blogger\bin\Release\netcoreapp3.1\publish\Blogger.dll
+C:\Users\vmedellin\source\repos\Blogger\Blogger\bin\Release\netcoreapp3.1\publish\Blogger.deps.json
+C:\Users\vmedellin\source\repos\Blogger\Blogger\bin\Release\netcoreapp3.1\publish\Blogger.runtimeconfig.json
+C:\Users\vmedellin\source\repos\Blogger\Blogger\bin\Release\netcoreapp3.1\publish\Blogger.pdb
+C:\Users\vmedellin\source\repos\Blogger\Blogger\bin\Release\netcoreapp3.1\publish\Amazon.Lambda.APIGatewayEvents.dll
+C:\Users\vmedellin\source\repos\Blogger\Blogger\bin\Release\netcoreapp3.1\publish\Amazon.Lambda.Core.dll
+C:\Users\vmedellin\source\repos\Blogger\Blogger\bin\Release\netcoreapp3.1\publish\Amazon.Lambda.Serialization.SystemTextJson.dll
+C:\Users\vmedellin\source\repos\Blogger\Blogger\bin\Release\netcoreapp3.1\publish\AWSSDK.Core.dll
+C:\Users\vmedellin\source\repos\Blogger\Blogger\bin\Release\netcoreapp3.1\publish\AWSSDK.DynamoDBv2.dll
+C:\Users\vmedellin\source\repos\Blogger\Blogger\bin\Release\netcoreapp3.1\publish\Newtonsoft.Json.dll
