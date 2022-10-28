@@ -1,0 +1,1 @@
+C:\GitPerson\Desarrollo_Anteriores\MAUI\PgesDemo\PgesDemo.csproj;x64

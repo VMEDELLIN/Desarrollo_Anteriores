@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<!-- saved from url=(0272)https://cdn.socy.cloud/WEBE/amix/WEBE_635_001_735/299/3eb7371441383dedd16e7265897ef5a8/226/3/ZZ/eyJwbGF0Zm9ybSI6InVua25vd24iLCJwYWdldHlwZSI6ImhvbWUifQ%3D%3D_1666970000.html?bk=aHR0cHM6Ly93d3cuZ2VuYmV0YS5jb20vd2luZG93cy90cnVjby1jb21vLWVsaW1pbmFyLXNlcnZpY2lvcy1lbi13aW5kb3dz -->
+<html lang="es" data-mix-anchor="226"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MIX Model basic-stories</title>
+        <meta name="Twitterbot" content="none">
+        <meta name="mediapartners-google" content="none">
+        <meta name="adsBot-google" content="none">
+        <meta name="adsBot-google-mobile" content="none">
+        <meta name="robots" content="noindex, nofollow">
+        <link href="./css2" rel="stylesheet">
+                    <link rel="stylesheet" type="text/css" href="./slick.css">
+                                    <style class="MIX_globalStyles">html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    overflow: hidden;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.MIX_Content_Debug {
+    margin: 20px auto;
+}</style>
+                                    <style class="MIX_animationStyles">.story-content-img,
+.story-content-img img {
+    animation: mix-anchor-pulse 6s ease-in-out infinite both;
+    animation-delay: calc(0.04s + (0.10s * var(--index)));
+    transition-property: transform;
+    transition-property: opacity, width, height;
+    transition-delay: calc(0.04s + (0.10s * var(--index)));
+}
+@-webkit-keyframes mix-anchor-pulse {
+    0%,90% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    91%,93%{
+        -webkit-transform: scale(1.03);
+                transform: scale(1.03);
+        -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        opacity: 0.90;
+    }
+    95% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
+@keyframes mix-anchor-pulse {
+    0%,90% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    91%,93%{
+        -webkit-transform: scale(1.04);
+                transform: scale(1.04);
+        -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        opacity: 0.9;
+    }
+    95% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}</style>
+                            <style class="MIX_modelStyles">body {
+    /* font-family: 'Voltaire', sans-serif; */
+    /* background-color: #fff; */
+    color: #000;
+    text-align: center;
+    overflow: hidden;
+}
+h1 {
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    color: #212121;
+    text-align: left;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: "Roboto",Arial,sans-serif;
+    padding-left: 5px;
+}
+.stories,
+.empty-results {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: left; */
+    color: #fff;
+    padding: 0 5px;
+    position: relative;
+    height: 100px;
+    overflow: auto hidden;
+}
+
+a.story,
+a.story:link,
+a.story:hover,
+a.story:visited {
+    text-decoration: none;
+    width: 100px;
+    margin: 6px auto;
+    color: #fff;
+    padding: 6px 0px;
+    position: relative;
+}
+
+a.story > * {
+    pointer-events: none;
+}
+
+iframe.story-bd {
+    width: 75px;
+    margin: 0 auto;
+}
+
+.story img {
+    display: inline-block;
+    vertical-align: top;
+    width: 54px;
+    height: 54px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 2px solid white;
+    background-color: white;
+    box-sizing: border-box;
+}
+.story-content-img img {
+    background: white;
+}
+.story-title {
+    font-size: 12px;
+    text-align: center;
+    color: #262626;
+    width: 75px;
+    margin-top: 5px;
+    font-family: "Roboto",Arial,sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.story-branded-icon {
+    /*position: absolute;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 8px;
+    bottom: 48px;
+    color: rgba(0, 0, 0, 0.5);*/
+    position: absolute;
+    top: 0;
+    left: calc(50% + 8px);
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    background: rgb(118,61,184);
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    line-height: 16px;
+    box-sizing: content-box;
+}
+
+.story-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-content-img {
+    width: 54px;
+    height: 54px;
+    padding: 2px;
+    border-radius: 50%;
+    background-size: 400% 400% !important;
+    background: rgb(118,61,184);
+    background: -moz-linear-gradient(45deg, rgba(118,61,184,1) 0%, rgba(225,63,122,1) 40%, rgba(255,212,110,1) 80%, rgba(247,158,82,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(118,61,184,1) 0%, rgba(225,63,122,1) 40%, rgba(255,212,110,1) 80%, rgba(247,158,82,1) 100%);
+    background: linear-gradient(45deg, rgba(118,61,184,1) 0%, rgba(225,63,122,1) 40%, rgba(255,212,110,1) 80%, rgba(247,158,82,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#763db8",endColorstr="#f79e52",GradientType=1);
+}
+
+a.story {
+    display: flex;
+    /*margin: 6px 10px !important;*/
+    /* flex: 0 0 0; */
+    /* min-width: 70px !important; */
+    max-width: 100% !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Solo funciona en movil */
+.stories::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+}
+
+.stories:after {
+    content: "";
+    flex: 0 0 5px;
+}
+
+.slick-slide {
+    border: none !important;
+    outline: none !important;
+}</style>
+                                    <style class="MIX_matTokenStyles">a.story{
+    margin: 6px;
+}
+
+.story-content-img, .story-content-img img{
+    width: 60px !important;
+    height: 60px !important;
+}
+
+.story{
+    margin-top:3px !important;
+}
+
+.title-container h1{
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.story-content-img{
+    background: linear-gradient(90deg, rgba(0,76,152,1) 0%, rgba(2,30,58,1) 40%, rgba(0,76,152,1) 80%, rgba(2,30,58,1) 100%) !important;
+}</style>
+            </head>
+    <body id="MIX_Anchor_226_3" data-anchor-num="3" data-anchor="226" data-model="basic-stories" data-version="v1.4.2">
+        <div id="MIX_Content" class="MIX_Content" data-sortable="" data-sort-viewed="0" data-sort-viewed-exp="0" data-total="30">
+                            <div class="title-container">
+                    <h1>Stories Genbeta</h1>
+                </div>
+                                        <div class="stories swiper-wrapper slick-initialized slick-slider">
+                    <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 2460px; transform: translate3d(0px, 0px, 0px); display: flex;"><a class="story story-frame slick-slide slick-current slick-active" href="https://stories.genbeta.com/media/24434/?frame=f73b514baf6ae369cc1c&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24434%2F%3Fframe%3Dd14a501a4fffd80140e9%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666967506000" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 0;">
+            <img src="./1366_521.jpg" alt="Estos 5 libros de origami ahora se pueden descargar completamente gratis. Aprenderás de la mano de un experto" style="--index: 0;">
+        </div>
+        <div class="story-title story-title-frame">Estos 5 libros de origami ahora se pueden descargar completamente gratis. Aprenderás de la mano de un experto</div>
+    </div>
+</a><a class="story story-frame slick-slide slick-active" href="https://stories.genbeta.com/media/24434/?frame=d14a501a4fffd80140e9&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24434%2F%3Fframe%3D07d039a0b742e5ed1101%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666950754000" data-slick-index="1" aria-hidden="false" tabindex="0" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 1;">
+            <img src="./1024_2000.jpg" alt="Elon Musk ya es dueño de Twitter, y sus hasta ahora directivos ya han comenzado a sufrirlo" style="--index: 1;">
+        </div>
+        <div class="story-title story-title-frame">Elon Musk ya es dueño de Twitter, y sus hasta ahora directivos ya han comenzado a sufrirlo</div>
+    </div>
+</a><a class="story story-frame slick-slide slick-active" href="https://stories.genbeta.com/media/24434/?frame=07d039a0b742e5ed1101&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24434%2F%3Fframe%3D12d8c6d83b8bf269bb4c%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666945257000" data-slick-index="2" aria-hidden="false" tabindex="0" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 2;">
+            <img src="./1024_2000(1).jpg" alt="Amazon se olvida de poner contraseña a uno de sus servidores. Estaba abierto a cualquier persona" style="--index: 2;">
+        </div>
+        <div class="story-title story-title-frame">Amazon se olvida de poner contraseña a uno de sus servidores. Estaba abierto a cualquier persona</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24434/?frame=12d8c6d83b8bf269bb4c&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24434%2F%3Fframe%3Dd9bf921772f053d0e212%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666867265000" data-slick-index="3" aria-hidden="true" tabindex="0" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 3;">
+            <img src="./1366_521(1).jpg" alt="Elon Musk entra a la sede de Twitter con un lavamanos en la mano. En inglés, lavabo y hundirse son la misma palabra" style="--index: 3;">
+        </div>
+        <div class="story-title story-title-frame">Elon Musk entra a la sede de Twitter con un lavamanos en la mano. En inglés, lavabo y hundirse son la misma palabra</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24434/?frame=d9bf921772f053d0e212&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24434%2F%3Fframe%3D53b0c9d6bc1c8ff222ea%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666856102000" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 4;">
+            <img src="./1366_521(2).jpg" alt="Apple da marcha atrás ante las críticas: pausa la publicidad en la App Store" style="--index: 4;">
+        </div>
+        <div class="story-title story-title-frame">Apple da marcha atrás ante las críticas: pausa la publicidad en la App Store</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24434/?frame=53b0c9d6bc1c8ff222ea&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24434%2F%3Fframe%3Db9037966165cce13f28e%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666817047000" data-slick-index="5" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 5;">
+            <img src="./1366_521(3).jpg" alt="Twitter pierde poco a poco a sus usuarios más activos mientras habla cada vez más sobre porno y criptomonedas" style="--index: 5;">
+        </div>
+        <div class="story-title story-title-frame">Twitter pierde poco a poco a sus usuarios más activos mientras habla cada vez más sobre porno y criptomonedas</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24434/?frame=b9037966165cce13f28e&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24434%2F%3Fframe%3D4b69094694a1c7bdaf3c%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666805825000" data-slick-index="6" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 6;">
+            <img src="./1366_521(4).jpg" alt="Steve Jobs dijo " simplemente,="" no="" queremos="" anuncios".="" y="" ahora="" la="" app="" store="" se="" ha="" llenado="" de="" publicidad="" casas="" apuestas="" casinos"="" style="--index: 6;">
+        </div>
+        <div class="story-title story-title-frame">Steve Jobs dijo "simplemente, no queremos anuncios". Y ahora la App Store se ha llenado de publicidad de casas de apuestas y casinos</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24434/?frame=4b69094694a1c7bdaf3c&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24434%2F%3Fframe%3De74683204d78e59bafb5%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666788845000" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 7;">
+            <img src="./1366_521(5).jpg" alt="Meta deja Java para adoptar el lenguaje de programación Kotlin en sus aplicaciones Android, siguiendo a Google" style="--index: 7;">
+        </div>
+        <div class="story-title story-title-frame">Meta deja Java para adoptar el lenguaje de programación Kotlin en sus aplicaciones Android, siguiendo a Google</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24434/?frame=e74683204d78e59bafb5&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24434%2F%3Fframe%3D79ddd8128571264177fe%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666783270000" data-slick-index="8" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 8;">
+            <img src="./1024_2000(2).jpg" alt="Este banco de imágenes dice &#39;sí&#39; a las generadas por IA... pero sólo si se crean con DALL-E y se recompensa a sus autores" style="--index: 8;">
+        </div>
+        <div class="story-title story-title-frame">Este banco de imágenes dice 'sí' a las generadas por IA... pero sólo si se crean con DALL-E y se recompensa a sus autores</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24434/?frame=79ddd8128571264177fe&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24434%2F%3Fframe%3Df73b514baf6ae369cc1c%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666783268000" data-slick-index="9" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 9;">
+            <img src="./1024_2000(3).jpg" alt="Estas empresas están buscando desarrolladores y un CTO en modalidad teletrabajo y sueldo de hasta 60.000 euros" style="--index: 9;">
+        </div>
+        <div class="story-title story-title-frame">Estas empresas están buscando desarrolladores y un CTO en modalidad teletrabajo y sueldo de hasta 60.000 euros</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24437/?frame=564ec473e8512e7fbaf6&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24437%2F%3Fframe%3D033e8982d54b3fe50792%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666954552000" data-slick-index="10" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 0;">
+            <img src="./1366_521(6).jpg" alt="100 millones de archivos de los 80 y los 90 estaban en CD-ROMs. Ahora están gratis en esta genial web" style="--index: 0;">
+        </div>
+        <div class="story-title story-title-frame">100 millones de archivos de los 80 y los 90 estaban en CD-ROMs. Ahora están gratis en esta genial web</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24437/?frame=033e8982d54b3fe50792&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24437%2F%3Fframe%3D70bd627d79f425a9796b%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666881919000" data-slick-index="11" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 1;">
+            <img src="./1366_521(7).jpg" alt="El teletrabajo y la comunicación por chat traen muchos malentendidos. Hay trucos para evitar problemas" style="--index: 1;">
+        </div>
+        <div class="story-title story-title-frame">El teletrabajo y la comunicación por chat traen muchos malentendidos. Hay trucos para evitar problemas</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24437/?frame=70bd627d79f425a9796b&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24437%2F%3Fframe%3D2d889521e8ced3e9ff1d%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666876334000" data-slick-index="12" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 2;">
+            <img src="./1366_521(8).jpg" alt="Brave ahora permite navegar sin avisos de cookies: así puedes hacerlo en Chrome, Edge, Firefox o Safari" style="--index: 2;">
+        </div>
+        <div class="story-title story-title-frame">Brave ahora permite navegar sin avisos de cookies: así puedes hacerlo en Chrome, Edge, Firefox o Safari</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24437/?frame=2d889521e8ced3e9ff1d&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24437%2F%3Fframe%3Db577d6a0e4cce0faed30%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666543594000" data-slick-index="13" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 3;">
+            <img src="./1024_2000.jpeg" alt="Qué es el Smishing: consejos para evitar caer en esta trampa" style="--index: 3;">
+        </div>
+        <div class="story-title story-title-frame">Qué es el Smishing: consejos para evitar caer en esta trampa</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24437/?frame=b577d6a0e4cce0faed30&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24437%2F%3Fframe%3Dbb8a03373c81bc85a2bd%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666532506000" data-slick-index="14" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 4;">
+            <img src="./1366_521(9).jpg" alt="Esto es lo (mucho) que puedes ahorrar al compartir Netflix, Prime Video y HBO Max con el máximo número de personas posible" style="--index: 4;">
+        </div>
+        <div class="story-title story-title-frame">Esto es lo (mucho) que puedes ahorrar al compartir Netflix, Prime Video y HBO Max con el máximo número de personas posible</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24437/?frame=bb8a03373c81bc85a2bd&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24437%2F%3Fframe%3D3f5b1bd8edfe5fa66f17%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666527332000" data-slick-index="15" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 5;">
+            <img src="./1024_2000(4).jpg" alt="Qué fue de RealPlayer, la aplicación con la que oímos hablar del &#39;streaming&#39; por primera vez" style="--index: 5;">
+        </div>
+        <div class="story-title story-title-frame">Qué fue de RealPlayer, la aplicación con la que oímos hablar del 'streaming' por primera vez</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24437/?frame=3f5b1bd8edfe5fa66f17&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24437%2F%3Fframe%3Da3e0ac5640f19059d07a%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666363375000" data-slick-index="16" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 6;">
+            <img src="./1366_521(10).jpg" alt="Muchos empleados han perdido confianza en sus empresas. La culpa no es del teletrabajo, sino de los jefes poco empáticos" style="--index: 6;">
+        </div>
+        <div class="story-title story-title-frame">Muchos empleados han perdido confianza en sus empresas. La culpa no es del teletrabajo, sino de los jefes poco empáticos</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24437/?frame=a3e0ac5640f19059d07a&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24437%2F%3Fframe%3D8dfebf72083e59e74d08%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666286598000" data-slick-index="17" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 7;">
+            <img src="./1366_521(11).jpg" alt="Estos son los mejores atajos de teclado para Windows 11" style="--index: 7;">
+        </div>
+        <div class="story-title story-title-frame">Estos son los mejores atajos de teclado para Windows 11</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24437/?frame=8dfebf72083e59e74d08&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24437%2F%3Fframe%3Dff2d907297891eb96b1c%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666275978000" data-slick-index="18" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 8;">
+            <img src="./1366_521(12).jpg" alt="Frente a los haters, entre los adolescentes triunfa una nueva red social: Gas, donde solo vale ser majos" style="--index: 8;">
+        </div>
+        <div class="story-title story-title-frame">Frente a los haters, entre los adolescentes triunfa una nueva red social: Gas, donde solo vale ser majos</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24437/?frame=ff2d907297891eb96b1c&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24437%2F%3Fframe%3D564ec473e8512e7fbaf6%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666270233000" data-slick-index="19" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 9;">
+            <img src="./1024_2000(5).jpg" alt="Ya puedes actualizar a Windows 10 22H2: cómo instalarla y todas las novedades" style="--index: 9;">
+        </div>
+        <div class="story-title story-title-frame">Ya puedes actualizar a Windows 10 22H2: cómo instalarla y todas las novedades</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24436/?frame=45e01953d75ee789ec0a&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24436%2F%3Fframe%3D8d5704aa3a2880ad72c2%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666870758000" data-slick-index="20" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 0;">
+            <img src="./1024_2000(6).jpg" alt="Cómo cambiar tu dirección de la DGT, la Policía, Hacienda y la Seguridad Social en un solo paso online" style="--index: 0;">
+        </div>
+        <div class="story-title story-title-frame">Cómo cambiar tu dirección de la DGT, la Policía, Hacienda y la Seguridad Social en un solo paso online</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24436/?frame=8d5704aa3a2880ad72c2&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24436%2F%3Fframe%3Dc984635a5f7482d528bc%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666870755000" data-slick-index="21" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 1;">
+            <img src="./1366_521(13).jpg" alt="Con este truco para Windows 10 y 11 abro directamente &#39;Este equipo&#39; al acceder al Explorador de archivos" style="--index: 1;">
+        </div>
+        <div class="story-title story-title-frame">Con este truco para Windows 10 y 11 abro directamente 'Este equipo' al acceder al Explorador de archivos</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24436/?frame=c984635a5f7482d528bc&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24436%2F%3Fframe%3D05bfca581bb82a2285a6%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666787086000" data-slick-index="22" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 2;">
+            <img src="./1366_521(14).jpg" alt="Pluto TV es tele online gratis, y mucho más: así puedes encontrar sus mejores películas y series" style="--index: 2;">
+        </div>
+        <div class="story-title story-title-frame">Pluto TV es tele online gratis, y mucho más: así puedes encontrar sus mejores películas y series</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24436/?frame=05bfca581bb82a2285a6&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24436%2F%3Fframe%3D7df84480450e7d9ff46d%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666775594000" data-slick-index="23" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 3;">
+            <img src="./1024_2000(7).jpg" alt="Cómo solicitar el cheque escolar de 100 euros en Andalucía: requisitos y pasos a seguir" style="--index: 3;">
+        </div>
+        <div class="story-title story-title-frame">Cómo solicitar el cheque escolar de 100 euros en Andalucía: requisitos y pasos a seguir</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24436/?frame=7df84480450e7d9ff46d&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24436%2F%3Fframe%3D833d52cdc36a49a81ed3%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666614436000" data-slick-index="24" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 4;">
+            <img src="./1366_521(15).jpg" alt="Cómo activar o desactivar las pestañas del Explorador de archivos en Windows 11" style="--index: 4;">
+        </div>
+        <div class="story-title story-title-frame">Cómo activar o desactivar las pestañas del Explorador de archivos en Windows 11</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24436/?frame=833d52cdc36a49a81ed3&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24436%2F%3Fframe%3Dae2d90dcf82a4d81ca90%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666456154000" data-slick-index="25" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 5;">
+            <img src="./1366_521.jpeg" alt="Cinco webs donde ya puedes dibujar con inteligencia artificial y convertirte en todo un artista" style="--index: 5;">
+        </div>
+        <div class="story-title story-title-frame">Cinco webs donde ya puedes dibujar con inteligencia artificial y convertirte en todo un artista</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24436/?frame=ae2d90dcf82a4d81ca90&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24436%2F%3Fframe%3D91f6c3beaac14712a4c9%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666439910000" data-slick-index="26" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 6;">
+            <img src="./1366_521(16).jpg" alt="Cómo hacer que WhatsApp muestre solo los mensajes no leídos en Windows 10 y 11" style="--index: 6;">
+        </div>
+        <div class="story-title story-title-frame">Cómo hacer que WhatsApp muestre solo los mensajes no leídos en Windows 10 y 11</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24436/?frame=91f6c3beaac14712a4c9&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24436%2F%3Fframe%3Dddd71fa43215e299db20%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666385164000" data-slick-index="27" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 7;">
+            <img src="./1366_521(17).jpg" alt="Cómo cambiar la contraseña (o el PIN) de Windows 11" style="--index: 7;">
+        </div>
+        <div class="story-title story-title-frame">Cómo cambiar la contraseña (o el PIN) de Windows 11</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24436/?frame=ddd71fa43215e299db20&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24436%2F%3Fframe%3D39ee96a63d774737b8be%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666374065000" data-slick-index="28" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 8;">
+            <img src="./1366_521(18).jpg" alt="La Unión Europea regala un mapa impreso en A1 a todos los ciudadanos: así puedes pedir por Internet que te lo envíen" style="--index: 8;">
+        </div>
+        <div class="story-title story-title-frame">La Unión Europea regala un mapa impreso en A1 a todos los ciudadanos: así puedes pedir por Internet que te lo envíen</div>
+    </div>
+</a><a class="story story-frame slick-slide" href="https://stories.genbeta.com/media/24436/?frame=39ee96a63d774737b8be&amp;utm_source=basic-stories&amp;r=MATSPC&amp;goto=https%3A%2F%2Fstories.genbeta.com%2Fmedia%2F24436%2F%3Fframe%3D45e01953d75ee789ec0a%26utm_source%3Dbasic-stories%26r%3DMATSPC" target="_top" data-tpl="item" data-story-type="frame" data-story-id="1666347088000" data-slick-index="29" aria-hidden="true" tabindex="-1" style="width: 82px;">
+    <div class="story-content story-content-frame">
+        <div class="story-content-img story-content-img-frame" style="--index: 9;">
+            <img src="./1366_521(19).jpg" alt="Te apuntaste a la Lista Robinson, pero te siguen llegando llamadas comerciales: así puedes reclamar ante la AEPD" style="--index: 9;">
+        </div>
+        <div class="story-title story-title-frame">Te apuntaste a la Lista Robinson, pero te siguen llegando llamadas comerciales: así puedes reclamar ante la AEPD</div>
+    </div>
+</a></div></div>                </div>
+                                    </div>
+        <script src="./jquery-3.4.1.min.js.descarga" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+                    <script>
+                var MIX_Anchor_226_3_isHTML = false;
+                var MIX_Anchor_226_3_anchorId = "MIX_Anchor_226_3";
+                var MIX_Anchor_226_3_anchorModel = "basic-stories";
+                var MIX_Anchor_226_3_pingData = {"anchor_type":"MIX","anchor_id":"226","anchor_model":"basic-stories","media_id":"299","media_token":"WEBE_635_001_735","media_client":"WEBE","category":""};
+                var MIX_Anchor_226_3_ampPlayer = {"useAmpPlayer":"0","mediaDomain":"stories.genbeta.com"};
+                                var MIX_Anchor_226_3_brandDayStyles = "Ym9keSB7CiAgICAvKiBmb250LWZhbWlseTogJ1ZvbHRhaXJlJywgc2Fucy1zZXJpZjsgKi8KICAgIC8qIGJhY2tncm91bmQtY29sb3I6ICNmZmY7ICovCiAgICBjb2xvcjogIzAwMDsKICAgIHRleHQtYWxpZ246IGNlbnRlcjsKICAgIG92ZXJmbG93OiBoaWRkZW47Cn0KaDEgewogICAgbWFyZ2luLWJvdHRvbTogNXB4OwogICAgcGFkZGluZy1ib3R0b206IDJweDsKICAgIGZvbnQtd2VpZ2h0OiBib2xkOwogICAgY29sb3I6ICMyMTIxMjE7CiAgICB0ZXh0LWFsaWduOiBsZWZ0OwogICAgZm9udC1zaXplOiAxNnB4OwogICAgbWFyZ2luLXRvcDogMTBweDsKICAgIGZvbnQtZmFtaWx5OiAiUm9ib3RvIixBcmlhbCxzYW5zLXNlcmlmOwogICAgcGFkZGluZy1sZWZ0OiA1cHg7Cn0KLnN0b3JpZXMsCi5lbXB0eS1yZXN1bHRzIHsKICAgIGRpc3BsYXk6IGZsZXg7CiAgICBmbGV4LWRpcmVjdGlvbjogcm93OwogICAgLyoganVzdGlmeS1jb250ZW50OiBsZWZ0OyAqLwogICAgY29sb3I6ICNmZmY7CiAgICBwYWRkaW5nOiAwIDVweDsKICAgIHBvc2l0aW9uOiByZWxhdGl2ZTsKICAgIGhlaWdodDogMTAwcHg7CiAgICBvdmVyZmxvdzogYXV0byBoaWRkZW47Cn0KCmEuc3RvcnksCmEuc3Rvcnk6bGluaywKYS5zdG9yeTpob3ZlciwKYS5zdG9yeTp2aXNpdGVkIHsKICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTsKICAgIHdpZHRoOiAxMDBweDsKICAgIG1hcmdpbjogNnB4IGF1dG87CiAgICBjb2xvcjogI2ZmZjsKICAgIHBhZGRpbmc6IDZweCAwcHg7CiAgICBwb3NpdGlvbjogcmVsYXRpdmU7Cn0KCmEuc3RvcnkgPiAqIHsKICAgIHBvaW50ZXItZXZlbnRzOiBub25lOwp9CgppZnJhbWUuc3RvcnktYmQgewogICAgd2lkdGg6IDc1cHg7CiAgICBtYXJnaW46IDAgYXV0bzsKfQoKLnN0b3J5IGltZyB7CiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7CiAgICB2ZXJ0aWNhbC1hbGlnbjogdG9wOwogICAgd2lkdGg6IDU0cHg7CiAgICBoZWlnaHQ6IDU0cHg7CiAgICBvYmplY3QtZml0OiBjb3ZlcjsKICAgIGJvcmRlci1yYWRpdXM6IDEwMCU7CiAgICBib3JkZXI6IDJweCBzb2xpZCB3aGl0ZTsKICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlOwogICAgYm94LXNpemluZzogYm9yZGVyLWJveDsKfQouc3RvcnktY29udGVudC1pbWcgaW1nIHsKICAgIGJhY2tncm91bmQ6IHdoaXRlOwp9Ci5zdG9yeS10aXRsZSB7CiAgICBmb250LXNpemU6IDEycHg7CiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7CiAgICBjb2xvcjogIzI2MjYyNjsKICAgIHdpZHRoOiA3NXB4OwogICAgbWFyZ2luLXRvcDogNXB4OwogICAgZm9udC1mYW1pbHk6ICJSb2JvdG8iLEFyaWFsLHNhbnMtc2VyaWY7CiAgICB3aGl0ZS1zcGFjZTogbm93cmFwOwogICAgb3ZlcmZsb3c6IGhpZGRlbjsKICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzOwp9Cgouc3RvcnktYnJhbmRlZC1pY29uIHsKICAgIC8qcG9zaXRpb246IGFic29sdXRlOwogICAgZm9udC1mYW1pbHk6ICJSb2JvdG8iLCBBcmlhbCwgc2Fucy1zZXJpZjsKICAgIGZvbnQtc2l6ZTogOHB4OwogICAgYm90dG9tOiA0OHB4OwogICAgY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTsqLwogICAgcG9zaXRpb246IGFic29sdXRlOwogICAgdG9wOiAwOwogICAgbGVmdDogY2FsYyg1MCUgKyA4cHgpOwogICAgei1pbmRleDogMjsKICAgIHdpZHRoOiAxNnB4OwogICAgaGVpZ2h0OiAxNnB4OwogICAgY29sb3I6ICNmZmY7CiAgICBiYWNrZ3JvdW5kOiByZ2IoMTE4LDYxLDE4NCk7CiAgICBib3JkZXItcmFkaXVzOiA1MCU7CiAgICBwYWRkaW5nOiAycHg7CiAgICBmb250LXNpemU6IDEwcHg7CiAgICBmb250LWZhbWlseTogQXJpYWwsIHNhbnMtc2VyaWY7CiAgICBmb250LXdlaWdodDogYm9sZDsKICAgIGxpbmUtaGVpZ2h0OiAxNnB4OwogICAgYm94LXNpemluZzogY29udGVudC1ib3g7Cn0KCi5zdG9yeS1jb250ZW50IHsKICAgIGRpc3BsYXk6IGZsZXg7CiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uOwogICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7CiAgICBhbGlnbi1pdGVtczogY2VudGVyOwp9Cgouc3RvcnktY29udGVudC1pbWcgewogICAgd2lkdGg6IDU0cHg7CiAgICBoZWlnaHQ6IDU0cHg7CiAgICBwYWRkaW5nOiAycHg7CiAgICBib3JkZXItcmFkaXVzOiA1MCU7CiAgICBiYWNrZ3JvdW5kLXNpemU6IDQwMCUgNDAwJSAhaW1wb3J0YW50OwogICAgYmFja2dyb3VuZDogcmdiKDExOCw2MSwxODQpOwogICAgYmFja2dyb3VuZDogLW1vei1saW5lYXItZ3JhZGllbnQoNDVkZWcsIHJnYmEoMTE4LDYxLDE4NCwxKSAwJSwgcmdiYSgyMjUsNjMsMTIyLDEpIDQwJSwgcmdiYSgyNTUsMjEyLDExMCwxKSA4MCUsIHJnYmEoMjQ3LDE1OCw4MiwxKSAxMDAlKTsKICAgIGJhY2tncm91bmQ6IC13ZWJraXQtbGluZWFyLWdyYWRpZW50KDQ1ZGVnLCByZ2JhKDExOCw2MSwxODQsMSkgMCUsIHJnYmEoMjI1LDYzLDEyMiwxKSA0MCUsIHJnYmEoMjU1LDIxMiwxMTAsMSkgODAlLCByZ2JhKDI0NywxNTgsODIsMSkgMTAwJSk7CiAgICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoNDVkZWcsIHJnYmEoMTE4LDYxLDE4NCwxKSAwJSwgcmdiYSgyMjUsNjMsMTIyLDEpIDQwJSwgcmdiYSgyNTUsMjEyLDExMCwxKSA4MCUsIHJnYmEoMjQ3LDE1OCw4MiwxKSAxMDAlKTsKICAgIGZpbHRlcjogcHJvZ2lkOkRYSW1hZ2VUcmFuc2Zvcm0uTWljcm9zb2Z0LmdyYWRpZW50KHN0YXJ0Q29sb3JzdHI9IiM3NjNkYjgiLGVuZENvbG9yc3RyPSIjZjc5ZTUyIixHcmFkaWVudFR5cGU9MSk7Cn0KCmEuc3RvcnkgewogICAgZGlzcGxheTogZmxleDsKICAgIC8qbWFyZ2luOiA2cHggMTBweCAhaW1wb3J0YW50OyovCiAgICAvKiBmbGV4OiAwIDAgMDsgKi8KICAgIC8qIG1pbi13aWR0aDogNzBweCAhaW1wb3J0YW50OyAqLwogICAgbWF4LXdpZHRoOiAxMDAlICFpbXBvcnRhbnQ7CiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uOwogICAgYWxpZ24taXRlbXM6IGNlbnRlcjsKfQoKLyogU29sbyBmdW5jaW9uYSBlbiBtb3ZpbCAqLwouc3Rvcmllczo6LXdlYmtpdC1zY3JvbGxiYXIgewogICAgZGlzcGxheTogbm9uZTsKICAgIC1tcy1vdmVyZmxvdy1zdHlsZTogbm9uZTsKfQoKLnN0b3JpZXM6YWZ0ZXIgewogICAgY29udGVudDogIiI7CiAgICBmbGV4OiAwIDAgNXB4Owp9Cgouc2xpY2stc2xpZGUgewogICAgYm9yZGVyOiBub25lICFpbXBvcnRhbnQ7CiAgICBvdXRsaW5lOiBub25lICFpbXBvcnRhbnQ7Cn1hLnN0b3J5ew0KICAgIG1hcmdpbjogNnB4Ow0KfQ0KDQouc3RvcnktY29udGVudC1pbWcsIC5zdG9yeS1jb250ZW50LWltZyBpbWd7DQogICAgd2lkdGg6IDYwcHggIWltcG9ydGFudDsNCiAgICBoZWlnaHQ6IDYwcHggIWltcG9ydGFudDsNCn0NCg0KLnN0b3J5ew0KICAgIG1hcmdpbi10b3A6M3B4ICFpbXBvcnRhbnQ7DQp9DQoNCi50aXRsZS1jb250YWluZXIgaDF7DQogICAgcGFkZGluZy1ib3R0b206IDBweCAhaW1wb3J0YW50Ow0KICAgIG1hcmdpbi1ib3R0b206IDBweCAhaW1wb3J0YW50Ow0KfQ0KDQouc3RvcnktY29udGVudC1pbWd7DQogICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDkwZGVnLCByZ2JhKDAsNzYsMTUyLDEpIDAlLCByZ2JhKDIsMzAsNTgsMSkgNDAlLCByZ2JhKDAsNzYsMTUyLDEpIDgwJSwgcmdiYSgyLDMwLDU4LDEpIDEwMCUpICFpbXBvcnRhbnQ7DQp9";
+                            </script>
+            <script>// Check for mobile
+function MIX_Anchor_226_3_isMobile() {
+    return !!(navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i))
+}
+
+function MIX_Anchor_226_3_checkPlatform() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+        return 'windows';
+    }
+
+    // Android detection
+    if (/android/i.test(userAgent)) {
+        return 'android';
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return 'ios';
+    }
+
+    // Desktop detection
+    if (!MIX_Anchor_226_3_isMobile()) {
+        return 'desktop';
+    }
+    return 'unknown';
+}
+
+// Get UTC Unix Time
+function MIX_Anchor_226_3_getUtcUnixTime() {
+    var now = new Date();
+    var utcTimestamp = Date.UTC(
+        now.getUTCFullYear(),
+        now.getUTCMonth(),
+        now.getUTCDate(),
+        now.getUTCHours(),
+        now.getUTCMinutes(),
+        now.getUTCSeconds(),
+        now.getUTCMilliseconds()
+    );
+    return Math.round(utcTimestamp / 1000);
+}
+
+// Send PING
+function MIX_Anchor_226_3_sendPing(origin, data) {
+    //console.log(`Sending MIX PING "${origin} - ${data.event}"`, data);
+    fetch('https://p1.socy.es/p1.json?' + new URLSearchParams({
+        o: origin,
+        d: btoa(JSON.stringify(data))
+    }));
+}
+
+// Open AMP Player
+function MIX_Anchor_226_3_openAmpPlayer(evt) {
+    var storyLink = evt.target.closest('a');
+    if (storyLink) {
+        evt.preventDefault();
+
+        var ampPlayerIframe = document.createElement('iframe');
+        ampPlayerIframe.setAttribute('id', MIX_Anchor_226_3_anchorId + '_AMP_Player');
+        ampPlayerIframe.setAttribute('style', 'border:none; width:100%; height:100%; position:fixed; top:0; left:0; z-index:2147483648;');
+        ampPlayerIframe.setAttribute('src', storyLink.href + '&return=method:closePlayer');
+        document.body.appendChild(ampPlayerIframe);
+
+        // Set FullScreen (mobile only)
+        if (MIX_Anchor_226_3_isMobile()) {
+            MIX_Anchor_226_3_fullscreen(true);
+        }
+
+        document.body.style.overflowY = 'hidden';
+    }
+}
+
+// Close AMP Player
+function MIX_Anchor_226_3_closeAmpPlayer() {
+    document.body.style.overflowY = 'auto';
+
+    // Remove iframe
+    var ampPlayerIframe = document.querySelector('#' + MIX_Anchor_226_3_anchorId + '_AMP_Player');
+    if (ampPlayerIframe) {
+        ampPlayerIframe.parentNode.removeChild(ampPlayerIframe);
+    }
+
+    // Remove FullScreen (mobile only)
+    if (MIX_Anchor_226_3_isMobile()) {
+        MIX_Anchor_226_3_fullscreen(false);
+    }
+}
+
+// Toggle FullScreen
+function MIX_Anchor_226_3_fullscreen(full) {
+    if (document.fullscreenEnabled) {
+        var elem = document.body;
+        var func = 'RequestFullScreen';
+        var elFunc = 'requestFullScreen';
+
+        try {
+            if (!full) {
+                if (
+                    document.fullscreenElement ||
+                    document.webkitFullscreenElement ||
+                    document.mozFullScreenElement ||
+                    document.msFullscreenElement
+                ) {
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen().catch(function () {});
+                    } else if (document.mozCancelFullScreen) {
+                        document.mozCancelFullScreen().catch(function () {});
+                    } else if (document.webkitExitFullscreen) {
+                        document.webkitExitFullscreen().catch(function () {});
+                    }
+                }
+            } else {
+                if (elem[elFunc]) {
+                    elem[elFunc]();
+                } else if (elem[`ms${func}`]) {
+                    elem[`ms${func}`]();
+                } else if (elem[`moz${func}`]) {
+                    elem[`moz${func}`]();
+                } else if (elem[`webkit${func}`]) {
+                    elem[`webkit${func}`]();
+                }
+            }
+        } catch (e) {
+            // No se puede acceder a pantalla completa
+        }
+    }
+}
+
+function MIX_Anchor_226_3_check_storage() {
+    try {
+        var key = "__MIX_Test__"
+        window.localStorage.setItem(key, key)
+        window.localStorage.removeItem(key)
+        return true
+    } catch (e) {
+        return false
+    }
+}
+
+// Sort by viewed
+function MIX_Anchor_226_3_sort_viewed(op, storyId = null, exp = null) {
+    if (MIX_Anchor_226_3_check_storage()) {
+        var MIX_Anchor_226_3_exp = exp && !isNaN(exp) ? parseInt(exp) * 60 * 60 : 0;
+        var MIX_Anchor_226_3_storage = window.localStorage.getItem('_MAT_MIX_Storage_');
+        if (MIX_Anchor_226_3_storage) {
+            MIX_Anchor_226_3_storage = JSON.parse(MIX_Anchor_226_3_storage);
+        }
+        if (!MIX_Anchor_226_3_storage || !Array.isArray(MIX_Anchor_226_3_storage) || MIX_Anchor_226_3_storage.length === 0) {
+            MIX_Anchor_226_3_storage = [];
+        } else {
+            if (MIX_Anchor_226_3_exp > 0) {
+                var MIX_Anchor_226_3_now = MIX_Anchor_226_3_getUtcUnixTime();
+                var MIX_Anchor_226_3_changed = false;
+                MIX_Anchor_226_3_storage.forEach(function (saved, index) {
+                    if (MIX_Anchor_226_3_now > saved.time) {
+                        MIX_Anchor_226_3_storage.splice(index, 1);
+                        MIX_Anchor_226_3_changed = true;
+                    }
+                });
+                if (MIX_Anchor_226_3_changed) {
+                    window.localStorage.setItem('_MAT_MIX_Storage_', JSON.stringify(MIX_Anchor_226_3_storage));
+                }
+            }
+        }
+        switch(op) {
+            case 'sort':
+                if (MIX_Anchor_226_3_storage.length > 0) {
+                    var MIX_Anchor_226_3_sorted = [];
+                    var MIX_Anchor_226_3_parent = null;
+                    var MIX_Anchor_226_3_links = document.querySelectorAll('#' + MIX_Anchor_226_3_anchorId + ' a.story');
+                    MIX_Anchor_226_3_links = Array.from(MIX_Anchor_226_3_links);
+                    MIX_Anchor_226_3_links.forEach(function (link) {
+                        MIX_Anchor_226_3_parent = link.parentElement;
+                        var MIX_Anchor_226_3_contains = false;
+                        MIX_Anchor_226_3_storage.forEach(function (saved) {
+                            if (saved.id === link.dataset.storyId) {
+                                MIX_Anchor_226_3_contains = true;
+                            }
+                        });
+                        if (!MIX_Anchor_226_3_contains) {
+                            MIX_Anchor_226_3_sorted.push(link);
+                        }
+                    });
+                    MIX_Anchor_226_3_storage.forEach(function (saved) {
+                        MIX_Anchor_226_3_links.forEach(function (link) {
+                            if (saved.id === link.dataset.storyId) {
+                                MIX_Anchor_226_3_sorted.push(link);
+                            }
+                        });
+                    });
+                    MIX_Anchor_226_3_parent.innerHTML = '';
+                    MIX_Anchor_226_3_sorted.forEach(function (link) {
+                        MIX_Anchor_226_3_parent.appendChild(link);
+                    });
+                }
+                break;
+            case 'click':
+                if (!MIX_Anchor_226_3_storage.includes(storyId)) {
+                    MIX_Anchor_226_3_storage.push({
+                        id: storyId,
+                        time: MIX_Anchor_226_3_getUtcUnixTime() + MIX_Anchor_226_3_exp
+                    });
+                    window.localStorage.setItem('_MAT_MIX_Storage_', JSON.stringify(MIX_Anchor_226_3_storage));
+                    MIX_Anchor_226_3_sort_viewed('sort', null, exp);
+                }
+                break;
+        }
+    }
+}
+
+// INIT
+function MIX_Anchor_226_3_init() {
+
+    // Send a message to MAT to adjust the iframe height
+    if (document.documentElement.hasAttribute('data-mix-anchor')) {
+        var MIX_Anchor_226_3_body = document.body;
+        var MIX_Anchor_226_3_html = document.documentElement;
+
+        var MIX_Anchor_226_3_contentHeight = Math.max(
+            MIX_Anchor_226_3_body.scrollHeight,
+            MIX_Anchor_226_3_body.offsetHeight,
+            MIX_Anchor_226_3_html.clientHeight,
+            MIX_Anchor_226_3_html.scrollHeight,
+            MIX_Anchor_226_3_html.offsetHeight
+        );
+        window.top.postMessage({
+            state: 'MIX_AnchorHeight',
+            height: MIX_Anchor_226_3_contentHeight,
+            model: MIX_Anchor_226_3_body.dataset.model,
+            anchor: MIX_Anchor_226_3_body.dataset.anchor,
+            anchorNum: MIX_Anchor_226_3_body.dataset.anchorNum
+        }, '*');
+        setInterval(function () {
+            MIX_Anchor_226_3_contentHeight = $('html[data-mix-anchor]').outerHeight();
+            window.top.postMessage({
+                state: 'MIX_AnchorHeight',
+                height: MIX_Anchor_226_3_contentHeight,
+                model: MIX_Anchor_226_3_body.dataset.model,
+                anchor: MIX_Anchor_226_3_body.dataset.anchor,
+                anchorNum: MIX_Anchor_226_3_body.dataset.anchorNum
+            }, '*');
+        }, 10000);
+    }
+
+    // AMP PLAYER
+    if (MIX_Anchor_226_3_anchorId && MIX_Anchor_226_3_ampPlayer && MIX_Anchor_226_3_ampPlayer.useAmpPlayer !== '0') {
+        var MIX_Anchor_226_3_platform = MIX_Anchor_226_3_checkPlatform();
+        var MIX_Anchor_226_3_ampStories = document.querySelectorAll('#' + MIX_Anchor_226_3_anchorId + ' a.story-amp');
+        if (MIX_Anchor_226_3_ampStories.length > 0) {
+            var MIX_Anchor_226_3_stories_id = [];
+            for (var i = 0; i < MIX_Anchor_226_3_ampStories.length; i++) {
+                MIX_Anchor_226_3_stories_id.push(MIX_Anchor_226_3_ampStories[i].getAttribute('data-story-id'));
+            }
+            for (var i = 0; i < MIX_Anchor_226_3_ampStories.length; i++) {
+                var MIX_Anchor_226_3_story_index_id = MIX_Anchor_226_3_ampStories[i].getAttribute('data-story-id');
+                MIX_Anchor_226_3_ampStories[i].href = 'https://' + MIX_Anchor_226_3_ampPlayer.mediaDomain + '/home/?stories_id=' + MIX_Anchor_226_3_stories_id.join('_') + '&story_index_id=' + MIX_Anchor_226_3_story_index_id; // TODO: Add "MODEL_DATA stories_url_params"
+
+                // Show AMP Player inside iframe (except iOS)
+                if (MIX_Anchor_226_3_isHTML && MIX_Anchor_226_3_ampPlayer.useAmpPlayer === '2') {
+                    if (MIX_Anchor_226_3_platform !== 'ios') {
+                        MIX_Anchor_226_3_ampStories[i].addEventListener('click', MIX_Anchor_226_3_openAmpPlayer);
+                    } else {
+                        MIX_Anchor_226_3_ampStories[i].target = '_top';
+                    }
+                }
+            }
+        }
+
+        // Close AMP Player iframe
+        if (MIX_Anchor_226_3_isHTML && MIX_Anchor_226_3_ampPlayer.useAmpPlayer === '2' && MIX_Anchor_226_3_platform !== 'ios') {
+            window.addEventListener('message', function (event) {
+                if (event.data.action && event.data.action === 'SPC_closePlayer') {
+                    MIX_Anchor_226_3_closeAmpPlayer();
+                }
+            });
+        }
+    }
+
+    // SORT VIEWED Stories
+    var MIX_Anchor_226_3_mixContent = document.querySelector('#' + MIX_Anchor_226_3_anchorId + ' .MIX_Content');
+    if (MIX_Anchor_226_3_mixContent.hasAttribute('data-sort-viewed') &&
+        MIX_Anchor_226_3_mixContent.hasAttribute('data-sort-viewed-exp') &&
+        MIX_Anchor_226_3_mixContent.dataset.sortViewed === '1')
+    {
+        if (MIX_Anchor_226_3_mixContent.hasAttribute('data-sortable') &&
+            MIX_Anchor_226_3_mixContent.dataset.sortable !== 'portada' &&
+            MIX_Anchor_226_3_mixContent.dataset.sortable !== 'frame')
+        {
+            var MIX_Anchor_226_3_stories_links = document.querySelectorAll('#' + MIX_Anchor_226_3_anchorId + ' a.story:not(.story-branded)');
+            if (MIX_Anchor_226_3_stories_links.length > 0) {
+                MIX_Anchor_226_3_sort_viewed('sort', null, MIX_Anchor_226_3_mixContent.dataset.sortViewedExp);
+                document.addEventListener('click', function (evt) {
+                    if (evt.target &&
+                        evt.target.tagName === 'A' &&
+                        evt.target.hasAttribute('data-tpl') &&
+                        evt.target.hasAttribute('data-story-type') &&
+                        evt.target.hasAttribute('data-story-id') &&
+                        evt.target.classList &&
+                        evt.target.classList.contains('story') &&
+                        !evt.target.classList.contains('story-branded'))
+                    {
+                        MIX_Anchor_226_3_sort_viewed('click', evt.target.dataset.storyId, MIX_Anchor_226_3_mixContent.dataset.sortViewedExp);
+                    }
+                });
+            }
+        }
+    }
+
+    // PINGS
+    if (MIX_Anchor_226_3_anchorId && MIX_Anchor_226_3_pingData) {
+
+        // Impression PING
+        MIX_Anchor_226_3_pingData.event = 'onPrint';
+        MIX_Anchor_226_3_pingData.unixtime_utc = MIX_Anchor_226_3_getUtcUnixTime();
+        MIX_Anchor_226_3_sendPing('AN', MIX_Anchor_226_3_pingData);
+
+        // Show PING
+        var MIX_Anchor_226_3_isShown = false;
+        var MIX_Anchor_226_3_element = document.getElementById(MIX_Anchor_226_3_anchorId);
+        var MIX_Anchor_226_3_options = {
+            threshold: [0.6]
+        };
+        var MIX_Anchor_226_3_callback = function (isNotView) {
+            if (!isNotView && !MIX_Anchor_226_3_isShown) {
+                MIX_Anchor_226_3_isShown = true;
+                MIX_Anchor_226_3_pingData.event = 'onShow';
+                MIX_Anchor_226_3_pingData.unixtime_utc = MIX_Anchor_226_3_getUtcUnixTime();
+                MIX_Anchor_226_3_sendPing('AN', MIX_Anchor_226_3_pingData);
+            }
+        };
+        function MIX_Anchor_226_3_intersectionObserver(callback) {
+            function MIX_Anchor_226_3_callbackObserver(entries, observer) {
+                entries.forEach(function(entry) {
+                    callback.call(this, entry.intersectionRatio == 0);
+                });
+            }
+            var MIX_Anchor_226_3_observer = new IntersectionObserver(MIX_Anchor_226_3_callbackObserver, MIX_Anchor_226_3_options);
+            MIX_Anchor_226_3_observer.observe(MIX_Anchor_226_3_element);
+        }
+        MIX_Anchor_226_3_intersectionObserver(MIX_Anchor_226_3_callback); // Not iOS
+
+        function MIX_Anchor_226_3_reqAnimFrame(callback) {
+            var MIX_Anchor_226_3_lastCalled;
+            var MIX_Anchor_226_3_fps;
+            var MIX_Anchor_226_3_timediff;
+            function MIX_Anchor_226_3_requestAnimFrame() {
+                if (!MIX_Anchor_226_3_lastCalled) {
+                    MIX_Anchor_226_3_lastCalled = Date.now();
+                    MIX_Anchor_226_3_fps = 0;
+                }
+                MIX_Anchor_226_3_timediff = (Date.now() - MIX_Anchor_226_3_lastCalled);
+
+                if (MIX_Anchor_226_3_timediff <= 1000) {
+                    MIX_Anchor_226_3_fps++;
+                } else {
+                    MIX_Anchor_226_3_lastCalled = Date.now();
+                    MIX_Anchor_226_3_fps = 0;
+                }
+                callback.call(this, MIX_Anchor_226_3_fps <= 10);
+                window.requestAnimationFrame(MIX_Anchor_226_3_requestAnimFrame);
+            }
+            window.requestAnimationFrame(MIX_Anchor_226_3_requestAnimFrame);
+        }
+        MIX_Anchor_226_3_reqAnimFrame(MIX_Anchor_226_3_callback); // iOS
+
+        // Click PING
+        var MIX_Anchor_226_3_stories_links = document.querySelectorAll('#' + MIX_Anchor_226_3_anchorId + ' a.story');
+        if (MIX_Anchor_226_3_stories_links.length > 0) {
+            document.addEventListener('click', function (evt) {
+                if (evt.target &&
+                    evt.target.tagName === 'A' &&
+                    evt.target.hasAttribute('data-tpl') &&
+                    evt.target.hasAttribute('data-story-type') &&
+                    evt.target.hasAttribute('data-story-id') &&
+                    evt.target.classList &&
+                    evt.target.classList.contains('story'))
+                {
+                    MIX_Anchor_226_3_pingData.event = 'onClick';
+                    MIX_Anchor_226_3_pingData.unixtime_utc = MIX_Anchor_226_3_getUtcUnixTime();
+                    MIX_Anchor_226_3_pingData.story_id = evt.target.dataset.storyId;
+                    MIX_Anchor_226_3_pingData.story_type = evt.target.dataset.storyType;
+                    MIX_Anchor_226_3_sendPing('AN', MIX_Anchor_226_3_pingData);
+                }
+            });
+        }
+    }
+
+    // BRAND DAY
+    if (MIX_Anchor_226_3_anchorModel && (MIX_Anchor_226_3_anchorModel === 'basic' || MIX_Anchor_226_3_anchorModel === 'basic-minimal' || MIX_Anchor_226_3_anchorModel === 'basic-stories')) {
+        var MIX_Anchor_226_3_urlParams = new URLSearchParams(window.location.search);
+        var MIX_Anchor_226_3_bdShortParam = MIX_Anchor_226_3_urlParams.get('bd');
+        if (MIX_Anchor_226_3_bdShortParam) {
+            var MIX_Anchor_226_3_shortParam = new FormData();
+            MIX_Anchor_226_3_shortParam.append('bdShortParam', MIX_Anchor_226_3_bdShortParam);
+
+            fetch('https://mat.socy.es/mat.php/api/getMixBrandDayContent', {
+                method: 'POST',
+                //mode: 'no-cors',
+                body: MIX_Anchor_226_3_shortParam
+            })
+            .then(resp => {
+                return resp.json();
+            })
+            .then(data => {
+                if (data.content) {
+                    var MIX_Anchor_226_3_container = document.querySelector('#MIX_Content > .stories');
+                    var MIX_Anchor_226_3_bdStory = document.createElement('iframe');
+                    MIX_Anchor_226_3_bdStory.setAttribute('class', 'story-bd');
+                    MIX_Anchor_226_3_bdStory.setAttribute('style', 'border:none;');
+                    if (MIX_Anchor_226_3_brandDayStyles) {
+                        data.content = data.content.replace('data-bd-styles="{BD_STYLES}"', 'data-bd-styles="' + MIX_Anchor_226_3_brandDayStyles + '"');
+                    } else {
+                        data.content = data.content.replace('data-bd-styles="{BD_STYLES}"', '');
+                    }
+                    MIX_Anchor_226_3_bdStory.srcdoc = data.content;
+                    MIX_Anchor_226_3_container.insertBefore(MIX_Anchor_226_3_bdStory, MIX_Anchor_226_3_container.firstChild);
+                }
+            })
+            .catch(err => {
+                console.error('MIX Anchor - Could not retrieve BrandDay content (' + MIX_Anchor_226_3_bdShortParam + ')');
+                console.log(err);
+            });
+        }
+    }
+}
+
+if (document.documentElement.hasAttribute('data-mix-anchor')) {
+    document.addEventListener("DOMContentLoaded", MIX_Anchor_226_3_init);
+} else {
+    MIX_Anchor_226_3_init();
+}</script>
+                            <script src="./slick.min.js.descarga"></script>
+            <script>
+                var MIX_Anchor_226_3_slick = {"flex":true,"arrows":false,"prevArrow":"<button type=\"button\" class=\"slick-prev\"><span>&lt;<\/span><\/button>","nextArrow":"<button type=\"button\" class=\"slick-next\"><span>&gt;<\/span><\/button>","infinite":false,"swipeToSlide":true,"slidesToShow":3.5,"slidesToScroll":3.5,"speed":700,"responsive":[]};
+            </script>
+                                    <script>$(document).ready(function() {
+    if (!MIX_Anchor_226_3_isMobile() && MIX_Anchor_226_3_anchorId && MIX_Anchor_226_3_slick) {
+        $('#' + MIX_Anchor_226_3_anchorId + ' .stories').slick(MIX_Anchor_226_3_slick);
+        if (MIX_Anchor_226_3_slick.flex) {
+            $('#' + MIX_Anchor_226_3_anchorId + ' .slick-track').css('display', 'flex');
+        }
+    }
+});</script>
+            
+</body></html>
