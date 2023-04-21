@@ -1,0 +1,12 @@
+C:\GitPerson\Desarrollo_Anteriores\ConsultaSTP\obj\Debug\ConsultaSTP.csproj.AssemblyReference.cache
+C:\GitPerson\Desarrollo_Anteriores\ConsultaSTP\obj\Debug\ConsultaSTP.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\ConsultaSTP\bin\Debug\ConsultaSTP.dll
+C:\GitPerson\Desarrollo_Anteriores\ConsultaSTP\bin\Debug\ConsultaSTP.pdb
+C:\GitPerson\Desarrollo_Anteriores\ConsultaSTP\obj\Debug\ConsultaSTP.dll
+C:\GitPerson\Desarrollo_Anteriores\ConsultaSTP\obj\Debug\ConsultaSTP.pdb
+C:\GitPerson\Desarrollo_Anteriores\ConsultaSTP\bin\Debug\ConsultaSTP.dll.config
+C:\GitPerson\Desarrollo_Anteriores\ConsultaSTP\bin\Debug\BouncyCastle.Crypto.dll
+C:\GitPerson\Desarrollo_Anteriores\ConsultaSTP\bin\Debug\OC.Core.dll
+C:\GitPerson\Desarrollo_Anteriores\ConsultaSTP\bin\Debug\BouncyCastle.Crypto.pdb
+C:\GitPerson\Desarrollo_Anteriores\ConsultaSTP\bin\Debug\OC.Core.pdb
+C:\GitPerson\Desarrollo_Anteriores\ConsultaSTP\obj\Debug\ConsultaSTP.csproj.CopyComplete

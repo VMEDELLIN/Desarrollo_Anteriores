@@ -18,31 +18,31 @@ namespace EnvioCorreo
         {
             InitializeComponent();
 
-            //try
-            //{
-            //    MailMessage correo = new MailMessage();
-            //    correo.From = new MailAddress("admin@paynau.com", "Valentin", System.Text.Encoding.UTF8);//Correo de salida          
+            try
+            {
+                MailMessage correo = new MailMessage();
+                correo.From = new MailAddress("admin@paynau.com", "Valentin", System.Text.Encoding.UTF8);//Correo de salida          
 
-            //    correo.To.Add("vmedellin@redefectiva.com"); //Correo destino?
-            //    correo.Subject = "Prueba"; //Asunto
-            //    correo.Body = "Prueba de envio de correo"; //Mensaje del correo
-            //    correo.IsBodyHtml = true;
-            //    correo.Priority = MailPriority.Normal;
-            //    SmtpClient smtp = new SmtpClient();
-            //    smtp.UseDefaultCredentials = false;
-            //    smtp.Host = "smtp.office365.com"; //Host del servidor de correo
-            //    smtp.Port = 587; //Puerto de salida                
-            //    smtp.Credentials = new System.Net.NetworkCredential("admin@paynau.com", "Septiembre2020");
-            //    //smtp.Credentials = new System.Net.NetworkCredential("frankrochin", "Estrategia2008");//Cuenta de correo
-            //    //ServicePointManager.ServerCertificateValidationCallback = delegate (object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) { return true; };
-            //    smtp.EnableSsl = true;//True si el servidor de correo permite ssl
-            //    smtp.Send(correo);
-            //    MessageBox.Show("Enviado", "AVISO");
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message, "AVISO");
-            //}
+                correo.To.Add("vmedellin@redefectiva.com"); //Correo destino?
+                correo.Subject = "Prueba"; //Asunto
+                correo.Body = "Prueba de envio de correo"; //Mensaje del correo
+                correo.IsBodyHtml = true;
+                correo.Priority = MailPriority.Normal;
+                SmtpClient smtp = new SmtpClient();
+                smtp.UseDefaultCredentials = false;
+                smtp.Host = "smtp.office365.com"; //Host del servidor de correo
+                smtp.Port = 587; //Puerto de salida                
+                smtp.Credentials = new System.Net.NetworkCredential("admin@paynau.com", "Septiembre2020");
+                //smtp.Credentials = new System.Net.NetworkCredential("frankrochin", "Estrategia2008");//Cuenta de correo
+                //ServicePointManager.ServerCertificateValidationCallback = delegate (object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) { return true; };
+                smtp.EnableSsl = true;//True si el servidor de correo permite ssl
+                smtp.Send(correo);
+                MessageBox.Show("Enviado", "AVISO");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "AVISO");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

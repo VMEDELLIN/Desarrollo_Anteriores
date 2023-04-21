@@ -1,0 +1,13 @@
+C:\GitPerson\Desarrollo_Anteriores\STP\bin\Debug\STP.exe.config
+C:\GitPerson\Desarrollo_Anteriores\STP\bin\Debug\STP.exe
+C:\GitPerson\Desarrollo_Anteriores\STP\bin\Debug\STP.pdb
+C:\GitPerson\Desarrollo_Anteriores\STP\bin\Debug\Newtonsoft.Json.dll
+C:\GitPerson\Desarrollo_Anteriores\STP\bin\Debug\Newtonsoft.Json.xml
+C:\GitPerson\Desarrollo_Anteriores\STP\obj\Debug\STP.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\STP\obj\Debug\STP.csproj.CopyComplete
+C:\GitPerson\Desarrollo_Anteriores\STP\obj\Debug\STP.exe
+C:\GitPerson\Desarrollo_Anteriores\STP\obj\Debug\STP.pdb
+C:\GitPerson\Desarrollo_Anteriores\STP\obj\Debug\STP.csproj.AssemblyReference.cache
+C:\GitPerson\Desarrollo_Anteriores\STP\bin\Debug\ConsultaSTP.dll
+C:\GitPerson\Desarrollo_Anteriores\STP\bin\Debug\ConsultaSTP.pdb
+C:\GitPerson\Desarrollo_Anteriores\STP\bin\Debug\ConsultaSTP.dll.config

@@ -40,3 +40,45 @@ C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\SignalR\
 C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\SignalR\SignalR\obj\Debug\net5.0\SignalR.pdb
 C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\SignalR\SignalR\obj\Debug\net5.0\SignalR.genruntimeconfig.cache
 C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos Elaborados Pruebas\SignalR\SignalR\obj\Debug\net5.0\SignalR.csproj.CopyComplete
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\bin\Debug\net5.0\appsettings.Development.json
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\bin\Debug\net5.0\appsettings.json
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\bin\Debug\net5.0\libman.json
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\bin\Debug\net5.0\SignalR.StaticWebAssets.xml
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\bin\Debug\net5.0\SignalR.exe
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\bin\Debug\net5.0\SignalR.deps.json
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\bin\Debug\net5.0\SignalR.runtimeconfig.json
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\bin\Debug\net5.0\SignalR.runtimeconfig.dev.json
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\bin\Debug\net5.0\SignalR.dll
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\bin\Debug\net5.0\ref\SignalR.dll
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\bin\Debug\net5.0\SignalR.pdb
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\bin\Debug\net5.0\SignalR.Views.dll
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\bin\Debug\net5.0\SignalR.Views.pdb
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.csproj.AssemblyReference.cache
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.AssemblyInfoInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.AssemblyInfo.cs
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.MvcApplicationPartsAssemblyInfo.cache
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.RazorAssemblyInfo.cache
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.RazorAssemblyInfo.cs
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\scopedcss\bundle\SignalR.styles.css
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\staticwebassets\SignalR.StaticWebAssets.Manifest.cache
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.TagHelpers.input.cache
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.TagHelpers.output.cache
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.RazorCoreGenerate.cache
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\Razor\Views\Home\BeerForm.cshtml.g.cs
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.RazorTargetAssemblyInfo.cache
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.RazorTargetAssemblyInfo.cs
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.Views.pdb
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.dll
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\ref\SignalR.dll
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.pdb
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.genruntimeconfig.cache
+C:\GitPerson\Desarrollo_Anteriores\SignalR\SignalR\obj\Debug\net5.0\SignalR.csproj.CopyComplete

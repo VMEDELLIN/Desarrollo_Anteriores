@@ -1,0 +1,7 @@
+C:\GitPerson\Desarrollo_Anteriores\EstresCobroRemesa\bin\Debug\EstresCobroRemesa.exe.config
+C:\GitPerson\Desarrollo_Anteriores\EstresCobroRemesa\bin\Debug\EstresCobroRemesa.exe
+C:\GitPerson\Desarrollo_Anteriores\EstresCobroRemesa\bin\Debug\EstresCobroRemesa.pdb
+C:\GitPerson\Desarrollo_Anteriores\EstresCobroRemesa\obj\Debug\EstresCobroRemesa.csproj.AssemblyReference.cache
+C:\GitPerson\Desarrollo_Anteriores\EstresCobroRemesa\obj\Debug\EstresCobroRemesa.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\EstresCobroRemesa\obj\Debug\EstresCobroRemesa.exe
+C:\GitPerson\Desarrollo_Anteriores\EstresCobroRemesa\obj\Debug\EstresCobroRemesa.pdb

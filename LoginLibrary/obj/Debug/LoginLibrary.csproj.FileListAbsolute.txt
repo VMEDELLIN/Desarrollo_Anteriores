@@ -1,0 +1,6 @@
+C:\GitPerson\Desarrollo_Anteriores\LoginLibrary\bin\Debug\LoginLibrary.dll
+C:\GitPerson\Desarrollo_Anteriores\LoginLibrary\bin\Debug\LoginLibrary.pdb
+C:\GitPerson\Desarrollo_Anteriores\LoginLibrary\obj\Debug\LoginLibrary.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\LoginLibrary\obj\Debug\LoginLibrary.dll
+C:\GitPerson\Desarrollo_Anteriores\LoginLibrary\obj\Debug\LoginLibrary.pdb
+C:\GitPerson\Desarrollo_Anteriores\LoginLibrary\obj\Debug\LoginLibrary.csproj.AssemblyReference.cache

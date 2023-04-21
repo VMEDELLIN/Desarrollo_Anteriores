@@ -1,0 +1,8 @@
+C:\Publicaciones\WorkerService\appsettings.Development.json
+C:\Publicaciones\WorkerService\appsettings.json
+C:\Publicaciones\WorkerService\WorkerService1.pdb
+C:\Publicaciones\WorkerService\clrcompression.dll
+C:\Publicaciones\WorkerService\clrjit.dll
+C:\Publicaciones\WorkerService\coreclr.dll
+C:\Publicaciones\WorkerService\mscordaccore.dll
+C:\Publicaciones\WorkerService\WorkerService1.exe

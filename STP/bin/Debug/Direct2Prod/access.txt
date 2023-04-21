@@ -1,0 +1,2 @@
+alias: TRANSPAY_MEXICO
+password: D1r3ct2GlobalTp#4

@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div id="divLista">
+
+</div>
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+<script>
+    var connection = new signalR.HubConnectionBuilder().withUrl("/personHub").build();
+
+    connection.start().then(function () {
+        console.log("Conexión exitosa");
+    }).catch(function (err) {
+        console.error(err);
+    });
+
+    connection.on("Receive", function (Clave, Name, Date) {
+        let divBloqueo = document.createElement("div");
+        divBloqueo.textContent = Clave + Name + Date;
+        document.getElementById("divLista").appendChild(divBloqueo);
+    });
+</script>

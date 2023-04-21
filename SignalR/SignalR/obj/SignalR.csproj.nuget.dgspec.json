@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\VMedellin\\OneDrive - Red Efectiva\\Proyectos Elaborados Pruebas\\SignalR\\SignalR\\SignalR.csproj": {}
+    "C:\\GitPerson\\Desarrollo_Anteriores\\SignalR\\SignalR\\SignalR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\VMedellin\\OneDrive - Red Efectiva\\Proyectos Elaborados Pruebas\\SignalR\\SignalR\\SignalR.csproj": {
+    "C:\\GitPerson\\Desarrollo_Anteriores\\SignalR\\SignalR\\SignalR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\VMedellin\\OneDrive - Red Efectiva\\Proyectos Elaborados Pruebas\\SignalR\\SignalR\\SignalR.csproj",
+        "projectUniqueName": "C:\\GitPerson\\Desarrollo_Anteriores\\SignalR\\SignalR\\SignalR.csproj",
         "projectName": "SignalR",
-        "projectPath": "C:\\Users\\VMedellin\\OneDrive - Red Efectiva\\Proyectos Elaborados Pruebas\\SignalR\\SignalR\\SignalR.csproj",
+        "projectPath": "C:\\GitPerson\\Desarrollo_Anteriores\\SignalR\\SignalR\\SignalR.csproj",
         "packagesPath": "C:\\Users\\VMedellin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\VMedellin\\OneDrive - Red Efectiva\\Proyectos Elaborados Pruebas\\SignalR\\SignalR\\obj\\",
+        "outputPath": "C:\\GitPerson\\Desarrollo_Anteriores\\SignalR\\SignalR\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\VMedellin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,6 +54,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.16, 5.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -57,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

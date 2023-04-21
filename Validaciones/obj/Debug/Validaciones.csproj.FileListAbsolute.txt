@@ -1,0 +1,6 @@
+C:\GitPerson\Desarrollo_Anteriores\Validaciones\bin\Debug\Validaciones.exe
+C:\GitPerson\Desarrollo_Anteriores\Validaciones\bin\Debug\Validaciones.pdb
+C:\GitPerson\Desarrollo_Anteriores\Validaciones\obj\Debug\Validaciones.csproj.AssemblyReference.cache
+C:\GitPerson\Desarrollo_Anteriores\Validaciones\obj\Debug\Validaciones.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\Validaciones\obj\Debug\Validaciones.exe
+C:\GitPerson\Desarrollo_Anteriores\Validaciones\obj\Debug\Validaciones.pdb

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1Qr5oiuG7V1/xaQtgKQMaTMiZqU8W27e2GkZfg1hf7L9DbYh9ae+a/Ywz0gfi1mhLrEa3XoH3tS8AD0c+id+jA==",
+  "success": true,
+  "projectFilePath": "C:\\GitPerson\\Desarrollo_Anteriores\\AdminLNegras\\AdminLNegras.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\VMedellin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

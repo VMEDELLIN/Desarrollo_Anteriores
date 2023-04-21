@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerService1", "WorkerService1.csproj", "{82F1D566-1294-45DD-A776-BD3A4FC10959}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupWorkerervice", "..\SetupWorkerervice\SetupWorkerervice.vdproj", "{E9FA9CC6-31ED-43F1-83C7-F994AF014D94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkServiceRun", "..\WorkServiceRun\WorkServiceRun.csproj", "{03167F90-5F47-4B0A-9E4F-AD0C5C40D93C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicioWS", "..\ServicioWS\ServicioWS.csproj", "{DF3D2FC0-69E5-410B-8C6F-596E86397930}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LBWorkerService", "..\LBWorkerService\LBWorkerService.csproj", "{00DE0DFB-AF54-4894-9BF3-C673064C5CBC}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupWorkerServiceV2", "..\SetupWorkerServiceV2\SetupWorkerServiceV2.vdproj", "{90B5F216-C252-4DB7-B95B-B99DCB4CAAE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82F1D566-1294-45DD-A776-BD3A4FC10959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F1D566-1294-45DD-A776-BD3A4FC10959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F1D566-1294-45DD-A776-BD3A4FC10959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F1D566-1294-45DD-A776-BD3A4FC10959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9FA9CC6-31ED-43F1-83C7-F994AF014D94}.Debug|Any CPU.ActiveCfg = Debug
+		{E9FA9CC6-31ED-43F1-83C7-F994AF014D94}.Release|Any CPU.ActiveCfg = Release
+		{03167F90-5F47-4B0A-9E4F-AD0C5C40D93C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03167F90-5F47-4B0A-9E4F-AD0C5C40D93C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03167F90-5F47-4B0A-9E4F-AD0C5C40D93C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03167F90-5F47-4B0A-9E4F-AD0C5C40D93C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF3D2FC0-69E5-410B-8C6F-596E86397930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF3D2FC0-69E5-410B-8C6F-596E86397930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF3D2FC0-69E5-410B-8C6F-596E86397930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF3D2FC0-69E5-410B-8C6F-596E86397930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00DE0DFB-AF54-4894-9BF3-C673064C5CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00DE0DFB-AF54-4894-9BF3-C673064C5CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00DE0DFB-AF54-4894-9BF3-C673064C5CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00DE0DFB-AF54-4894-9BF3-C673064C5CBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90B5F216-C252-4DB7-B95B-B99DCB4CAAE6}.Debug|Any CPU.ActiveCfg = Debug
+		{90B5F216-C252-4DB7-B95B-B99DCB4CAAE6}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {227D1E9E-EBDC-4DDD-8E36-0789E1AEB3CE}
+	EndGlobalSection
+EndGlobal

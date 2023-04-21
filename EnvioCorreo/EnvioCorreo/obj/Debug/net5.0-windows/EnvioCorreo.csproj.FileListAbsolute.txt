@@ -33,3 +33,21 @@ C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Prueba
 C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\EnvioCorreo\EnvioCorreo\obj\Debug\net5.0-windows\ref\EnvioCorreo.dll
 C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\EnvioCorreo\EnvioCorreo\obj\Debug\net5.0-windows\EnvioCorreo.pdb
 C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\Proyectos Elaborados Pruebas\EnvioCorreo\EnvioCorreo\obj\Debug\net5.0-windows\EnvioCorreo.genruntimeconfig.cache
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\bin\Debug\net5.0-windows\EnvioCorreo.exe
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\bin\Debug\net5.0-windows\EnvioCorreo.deps.json
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\bin\Debug\net5.0-windows\EnvioCorreo.runtimeconfig.json
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\bin\Debug\net5.0-windows\EnvioCorreo.runtimeconfig.dev.json
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\bin\Debug\net5.0-windows\EnvioCorreo.dll
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\bin\Debug\net5.0-windows\ref\EnvioCorreo.dll
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\bin\Debug\net5.0-windows\EnvioCorreo.pdb
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\obj\Debug\net5.0-windows\EnvioCorreo.Form1.resources
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\obj\Debug\net5.0-windows\EnvioCorreo.csproj.GenerateResource.cache
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\obj\Debug\net5.0-windows\EnvioCorreo.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\obj\Debug\net5.0-windows\EnvioCorreo.AssemblyInfoInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\obj\Debug\net5.0-windows\EnvioCorreo.AssemblyInfo.cs
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\obj\Debug\net5.0-windows\EnvioCorreo.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\obj\Debug\net5.0-windows\EnvioCorreo.dll
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\obj\Debug\net5.0-windows\ref\EnvioCorreo.dll
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\obj\Debug\net5.0-windows\EnvioCorreo.pdb
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\obj\Debug\net5.0-windows\EnvioCorreo.genruntimeconfig.cache
+C:\GitPerson\Desarrollo_Anteriores\EnvioCorreo\EnvioCorreo\obj\Debug\net5.0-windows\EnvioCorreo.csproj.AssemblyReference.cache

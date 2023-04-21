@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OXglbZFRuk2pmvqqtd8TXCSelEjmBOQaTjK6mvhA6/HRMZlWwRX0FdMQt1/Ir/jt7+dDfl97J5+FQwY+pGJc0Q==",
+  "dgSpecHash": "YPnaXsktZ5RjDiTLzJvsbwZt0Gq3P1KGIDY+HbwgeV4yXzdxjqeipdahleoM+DjBGqdgXkBgTkfXHH/N0MtM0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\VMedellin\\OneDrive - Red Efectiva\\Proyectos Elaborados Pruebas\\Envio_Correo_3\\Envio_Correo_3\\Envio_Correo_3.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\GitPerson\\Desarrollo_Anteriores\\Envio_Correo_3\\Envio_Correo_3\\Envio_Correo_3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\VMedellin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
   "logs": []
 }

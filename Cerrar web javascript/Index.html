@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+
+</HEAD>
+<BODY>
+    <button class="myButton" href="javascript:finestraSecundaria('ladin.php')">Haz clic aqui</button>
+
+
+    <a class="myButton" href="http://google.com" onclick="finestraSecundaria2">Haz clic en el link</a>
+</BODY>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    function finestraSecundaria(url) {
+  var ventana = window.open(url, "_blank");
+  // Hay que esperar a que se cargue la página
+  ventana.onload = function() {
+    if (window.close(url)) {
+      var ventana = window.open(url, "_blank");
+      ventana.onbeforeunload = function() {
+        console.log("Se cerró la ventana o el usuario cambió de página");
+        alert("No debes de serrar la pagina");
+      };
+    }
+    // Ya se cargó la página y se puede asignar el evento final
+  };
+}
+function finestraSecundaria2 (url){
+
+alert("Usted sera redirigido a " + url);
+
+var ventana = window.open(url, '_blank');
+// Hay que esperar a que se cargue la página
+ventana.onload = function() {
+// Ya se cargó la página y se puede asignar el evento final
+    };
+}
+</script>
+</HTML>
