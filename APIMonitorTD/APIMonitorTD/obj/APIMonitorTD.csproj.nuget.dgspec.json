@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\GitPerson\\Desarrollo_Anteriores\\APIMonitorTD\\APIMonitorTD\\APIMonitorTD.csproj": {}
+  },
+  "projects": {
+    "C:\\GitPerson\\Desarrollo_Anteriores\\APIMonitorTD\\APIMonitorTD\\APIMonitorTD.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GitPerson\\Desarrollo_Anteriores\\APIMonitorTD\\APIMonitorTD\\APIMonitorTD.csproj",
+        "projectName": "APIMonitorTD",
+        "projectPath": "C:\\GitPerson\\Desarrollo_Anteriores\\APIMonitorTD\\APIMonitorTD\\APIMonitorTD.csproj",
+        "packagesPath": "C:\\Users\\VMedellin\\.nuget\\packages\\",
+        "outputPath": "C:\\GitPerson\\Desarrollo_Anteriores\\APIMonitorTD\\APIMonitorTD\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\VMedellin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.16, 5.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

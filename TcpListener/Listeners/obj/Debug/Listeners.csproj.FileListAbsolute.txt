@@ -1,0 +1,6 @@
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\Listeners\bin\Debug\Listeners.dll
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\Listeners\bin\Debug\Listeners.pdb
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\Listeners\obj\Debug\Listeners.csproj.AssemblyReference.cache
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\Listeners\obj\Debug\Listeners.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\Listeners\obj\Debug\Listeners.dll
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\Listeners\obj\Debug\Listeners.pdb

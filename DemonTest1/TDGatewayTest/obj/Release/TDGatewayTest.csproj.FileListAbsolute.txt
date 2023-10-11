@@ -1,0 +1,9 @@
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayTest\bin\Release\TDGatewayTest.exe.config
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayTest\bin\Release\TDGatewayTest.exe
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayTest\bin\Release\TDGatewayTest.pdb
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayTest\obj\Release\TDGatewayTest.csproj.AssemblyReference.cache
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayTest\obj\Release\TDGatewayTest.Installer1.resources
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayTest\obj\Release\TDGatewayTest.csproj.GenerateResource.cache
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayTest\obj\Release\TDGatewayTest.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayTest\obj\Release\TDGatewayTest.exe
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayTest\obj\Release\TDGatewayTest.pdb

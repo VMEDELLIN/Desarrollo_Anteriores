@@ -1,0 +1,12 @@
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\Guardian\bin\Debug\Guardian.exe.config
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\Guardian\bin\Debug\Guardian.exe
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\Guardian\bin\Debug\Guardian.pdb
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\Guardian\obj\Debug\Guardian.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\Guardian\obj\Debug\Guardian.exe
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\Guardian\obj\Debug\Guardian.pdb
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\Guardian\bin\Debug\GuardianRun.dll
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\Guardian\bin\Debug\GuardianRun.pdb
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\Guardian\obj\Debug\Guardian.csproj.AssemblyReference.cache
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\Guardian\obj\Debug\Guardian.Installer1.resources
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\Guardian\obj\Debug\Guardian.csproj.GenerateResource.cache
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\Guardian\obj\Debug\Guardian.csproj.CopyComplete

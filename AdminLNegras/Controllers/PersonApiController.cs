@@ -21,7 +21,7 @@ namespace AdminLNegras.Controllers
         }
         [HttpPost]
         public async Task<IActionResult> AddPerson(Person person) {
-            await _hubcontext.Clients.All.SendAsync("Receive", person.Clave, person.Name,person.Date); ; 
+            await _hubcontext.Clients.All.SendAsync("Receive", person.Clave, person.Name,person.Date,"HOLA"); 
             return Ok();
         }
     }

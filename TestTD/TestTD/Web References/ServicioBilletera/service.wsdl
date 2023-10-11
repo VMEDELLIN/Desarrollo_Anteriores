@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://www.redefectiva.net/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="https://www.redefectiva.net/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://www.redefectiva.net/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistraCuenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClientId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Timestamp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Telefono" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Correo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RFC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PIN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RazonSocial" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistraCuentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegistraCuentaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaSaldo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClientId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Timestamp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NumCuenta" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaSaldoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaSaldoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaMovimiento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClientId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Timestamp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NumCuenta" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Periodo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaMovimientoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaMovimientoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Abono">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClientId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Timestamp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NumCuenta" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TipoRecurso" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Referencia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Monto" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AbonoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AbonoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Cargo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClientId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Timestamp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NumCuenta" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TipoRecurso" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Referencia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Monto" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CargoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CargoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Retiro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClientId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Timestamp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NumCuenta" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Banco" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CLABE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RefNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RefAlfa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Monto" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetiroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetiroResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegistraCuentaSoapIn">
+    <wsdl:part name="parameters" element="tns:RegistraCuenta" />
+  </wsdl:message>
+  <wsdl:message name="RegistraCuentaSoapOut">
+    <wsdl:part name="parameters" element="tns:RegistraCuentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaSaldoSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaSaldo" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaSaldoSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaSaldoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaMovimientoSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaMovimiento" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaMovimientoSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaMovimientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="AbonoSoapIn">
+    <wsdl:part name="parameters" element="tns:Abono" />
+  </wsdl:message>
+  <wsdl:message name="AbonoSoapOut">
+    <wsdl:part name="parameters" element="tns:AbonoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CargoSoapIn">
+    <wsdl:part name="parameters" element="tns:Cargo" />
+  </wsdl:message>
+  <wsdl:message name="CargoSoapOut">
+    <wsdl:part name="parameters" element="tns:CargoResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetiroSoapIn">
+    <wsdl:part name="parameters" element="tns:Retiro" />
+  </wsdl:message>
+  <wsdl:message name="RetiroSoapOut">
+    <wsdl:part name="parameters" element="tns:RetiroResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistraCuenta">
+      <wsdl:input message="tns:RegistraCuentaSoapIn" />
+      <wsdl:output message="tns:RegistraCuentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaSaldo">
+      <wsdl:input message="tns:ConsultaSaldoSoapIn" />
+      <wsdl:output message="tns:ConsultaSaldoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaMovimiento">
+      <wsdl:input message="tns:ConsultaMovimientoSoapIn" />
+      <wsdl:output message="tns:ConsultaMovimientoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Abono">
+      <wsdl:input message="tns:AbonoSoapIn" />
+      <wsdl:output message="tns:AbonoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cargo">
+      <wsdl:input message="tns:CargoSoapIn" />
+      <wsdl:output message="tns:CargoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Retiro">
+      <wsdl:input message="tns:RetiroSoapIn" />
+      <wsdl:output message="tns:RetiroSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="https://www.redefectiva.net/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistraCuenta">
+      <soap:operation soapAction="https://www.redefectiva.net/RegistraCuenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaSaldo">
+      <soap:operation soapAction="https://www.redefectiva.net/ConsultaSaldo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaMovimiento">
+      <soap:operation soapAction="https://www.redefectiva.net/ConsultaMovimiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Abono">
+      <soap:operation soapAction="https://www.redefectiva.net/Abono" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cargo">
+      <soap:operation soapAction="https://www.redefectiva.net/Cargo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Retiro">
+      <soap:operation soapAction="https://www.redefectiva.net/Retiro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="https://www.redefectiva.net/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistraCuenta">
+      <soap12:operation soapAction="https://www.redefectiva.net/RegistraCuenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaSaldo">
+      <soap12:operation soapAction="https://www.redefectiva.net/ConsultaSaldo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaMovimiento">
+      <soap12:operation soapAction="https://www.redefectiva.net/ConsultaMovimiento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Abono">
+      <soap12:operation soapAction="https://www.redefectiva.net/Abono" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cargo">
+      <soap12:operation soapAction="https://www.redefectiva.net/Cargo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Retiro">
+      <soap12:operation soapAction="https://www.redefectiva.net/Retiro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="https://sandbox-misuerte.redefectiva.net/wsewallet/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="https://sandbox-misuerte.redefectiva.net/wsewallet/service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

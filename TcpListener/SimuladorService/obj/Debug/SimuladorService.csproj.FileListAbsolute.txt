@@ -1,0 +1,6 @@
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\SimuladorService\obj\Debug\SimuladorService.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\SimuladorService\bin\Debug\SimuladorService.exe.config
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\SimuladorService\bin\Debug\SimuladorService.exe
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\SimuladorService\bin\Debug\SimuladorService.pdb
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\SimuladorService\obj\Debug\SimuladorService.exe
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\SimuladorService\obj\Debug\SimuladorService.pdb

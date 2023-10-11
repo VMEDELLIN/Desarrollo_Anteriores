@@ -1,0 +1,9 @@
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\ClienteSimulador\bin\Debug\ClienteSimulador.exe.config
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\ClienteSimulador\bin\Debug\ClienteSimulador.exe
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\ClienteSimulador\bin\Debug\ClienteSimulador.pdb
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\ClienteSimulador\bin\Debug\TDTcpListener.dll
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\ClienteSimulador\bin\Debug\TDTcpListener.pdb
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\ClienteSimulador\obj\Debug\ClienteSimulador.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\ClienteSimulador\obj\Debug\ClienteSimulador.csproj.CopyComplete
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\ClienteSimulador\obj\Debug\ClienteSimulador.exe
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\ClienteSimulador\obj\Debug\ClienteSimulador.pdb

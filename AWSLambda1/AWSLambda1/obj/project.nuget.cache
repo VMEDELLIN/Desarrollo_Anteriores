@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vW3mNjd+a+GObOsJ7QtCPYhZ36QchJvqD4AnG/XNGfv1Kg/PjanjYsYaX40uNfsETQ243J6Gub4sifx6EIMbEw==",
+  "dgSpecHash": "Laysx0PTsz57z04ibj1rP1i6pnaL7XY4lxMNYI0BjqqBDGw34pLKxb/QPlxugGsD6T5p8ZRysySt3a4rN8Rb4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vmedellin\\source\\repos\\AWSLambda1\\AWSLambda1\\AWSLambda1.csproj",
+  "projectFilePath": "C:\\GitPerson\\Desarrollo_Anteriores\\AWSLambda1\\AWSLambda1\\AWSLambda1.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vmedellin\\.nuget\\packages\\amazon.lambda.core\\2.0.0\\amazon.lambda.core.2.0.0.nupkg.sha512",
-    "C:\\Users\\vmedellin\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.1.0\\amazon.lambda.serialization.systemtextjson.2.1.0.nupkg.sha512"
+    "C:\\Users\\VMedellin\\.nuget\\packages\\amazon.lambda.core\\2.0.0\\amazon.lambda.core.2.0.0.nupkg.sha512",
+    "C:\\Users\\VMedellin\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.1.0\\amazon.lambda.serialization.systemtextjson.2.1.0.nupkg.sha512"
   ],
   "logs": []
 }

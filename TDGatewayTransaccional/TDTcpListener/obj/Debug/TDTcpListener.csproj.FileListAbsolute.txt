@@ -1,0 +1,6 @@
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\TDTcpListener\bin\Debug\TDTcpListener.dll
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\TDTcpListener\bin\Debug\TDTcpListener.pdb
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\TDTcpListener\obj\Debug\TDTcpListener.csproj.AssemblyReference.cache
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\TDTcpListener\obj\Debug\TDTcpListener.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\TDTcpListener\obj\Debug\TDTcpListener.dll
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\TDTcpListener\obj\Debug\TDTcpListener.pdb

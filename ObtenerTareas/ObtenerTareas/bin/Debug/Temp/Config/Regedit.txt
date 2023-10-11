@@ -1,0 +1,21 @@
+SOFTWARE\AquiMisPagos
+SOFTWARE\Facturacion
+SOFTWARE\MisPagos
+SOFTWARE\MiSuerte
+SOFTWARE\Nautilus
+SOFTWARE\PayCash
+SOFTWARE\PayCashOne
+SOFTWARE\PayNau
+SOFTWARE\Red Efectiva
+SOFTWARE\Transfer Directo
+SOFTWARE\TransferDirecto
+SOFTWARE\ZeroPago
+SOFTWARE\Wow6432Node\AquiMisPagos
+SOFTWARE\Wow6432Node\Facturacion
+SOFTWARE\Wow6432Node\PayCash
+SOFTWARE\Wow6432Node\PayCashOne
+SOFTWARE\Wow6432Node\Red Efectiva
+SOFTWARE\Wow6432Node\RedEfectivañ
+SOFTWARE\Wow6432Node\Transfer Directo
+SOFTWARE\Wow6432Node\TransferDirecto
+SOFTWARE\Wow6432Node\ZeroPago

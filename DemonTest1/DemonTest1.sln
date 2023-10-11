@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemonTest1", "DemonTest1\DemonTest1.csproj", "{81F01D0C-858C-4EF3-A135-8073EF93BB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guardian", "Guardian\Guardian.csproj", "{B77C8745-E6BD-4820-B53B-3D3C4EDC9798}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuardianRun", "GuardianRun\GuardianRun.csproj", "{64F85480-75BC-4D18-A7BF-D7EBE30B001C}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{AA0CCDBB-BD92-46FD-B999-21A0BFB5372A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDGatewayGuardian", "TDGatewayGuardian\TDGatewayGuardian.csproj", "{CCFBFAEA-A456-4117-95A9-07F2F8855B73}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupTDGatewayGuardian", "SetupTDGatewayGuardian\SetupTDGatewayGuardian.vdproj", "{CCB8432C-C114-4292-A428-9BB45567CA4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDGatewayTest", "TDGatewayTest\TDGatewayTest.csproj", "{5E43229C-E0B8-4457-93D4-EDCD225C243A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetuTDGatewayTest", "SetuTDGatewayTest\SetuTDGatewayTest.vdproj", "{762301BB-DEE3-472E-8225-3C2B27F3957F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81F01D0C-858C-4EF3-A135-8073EF93BB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F01D0C-858C-4EF3-A135-8073EF93BB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F01D0C-858C-4EF3-A135-8073EF93BB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F01D0C-858C-4EF3-A135-8073EF93BB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B77C8745-E6BD-4820-B53B-3D3C4EDC9798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B77C8745-E6BD-4820-B53B-3D3C4EDC9798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B77C8745-E6BD-4820-B53B-3D3C4EDC9798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B77C8745-E6BD-4820-B53B-3D3C4EDC9798}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64F85480-75BC-4D18-A7BF-D7EBE30B001C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64F85480-75BC-4D18-A7BF-D7EBE30B001C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64F85480-75BC-4D18-A7BF-D7EBE30B001C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64F85480-75BC-4D18-A7BF-D7EBE30B001C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA0CCDBB-BD92-46FD-B999-21A0BFB5372A}.Debug|Any CPU.ActiveCfg = Debug
+		{AA0CCDBB-BD92-46FD-B999-21A0BFB5372A}.Release|Any CPU.ActiveCfg = Release
+		{CCFBFAEA-A456-4117-95A9-07F2F8855B73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFBFAEA-A456-4117-95A9-07F2F8855B73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFBFAEA-A456-4117-95A9-07F2F8855B73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFBFAEA-A456-4117-95A9-07F2F8855B73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB8432C-C114-4292-A428-9BB45567CA4D}.Debug|Any CPU.ActiveCfg = Debug
+		{CCB8432C-C114-4292-A428-9BB45567CA4D}.Release|Any CPU.ActiveCfg = Release
+		{5E43229C-E0B8-4457-93D4-EDCD225C243A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E43229C-E0B8-4457-93D4-EDCD225C243A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E43229C-E0B8-4457-93D4-EDCD225C243A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E43229C-E0B8-4457-93D4-EDCD225C243A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{762301BB-DEE3-472E-8225-3C2B27F3957F}.Debug|Any CPU.ActiveCfg = Debug
+		{762301BB-DEE3-472E-8225-3C2B27F3957F}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1DDD68D-49F2-4046-9D4D-65BF6E5F7B91}
+	EndGlobalSection
+EndGlobal

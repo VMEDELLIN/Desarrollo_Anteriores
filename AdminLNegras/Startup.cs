@@ -1,3 +1,4 @@
+using AdminLNegras.Hubs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -53,6 +54,8 @@ namespace AdminLNegras
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapHub<PersonHub>("/personHub");
+
+                endpoints.MapHub<OperationH>("/operationHub");
             });            
         }
     }

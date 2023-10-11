@@ -1,0 +1,9 @@
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\GatewayTransaccional\bin\Debug\GatewayTransaccional.dll
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\GatewayTransaccional\bin\Debug\GatewayTransaccional.pdb
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\GatewayTransaccional\bin\Debug\TDTcpListener.dll
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\GatewayTransaccional\bin\Debug\TDTcpListener.pdb
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\GatewayTransaccional\obj\Debug\GatewayTransaccional.csproj.AssemblyReference.cache
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\GatewayTransaccional\obj\Debug\GatewayTransaccional.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\GatewayTransaccional\obj\Debug\GatewayTransaccional.csproj.CopyComplete
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\GatewayTransaccional\obj\Debug\GatewayTransaccional.dll
+C:\GitPerson\Desarrollo_Anteriores\TDGatewayTransaccional\GatewayTransaccional\obj\Debug\GatewayTransaccional.pdb

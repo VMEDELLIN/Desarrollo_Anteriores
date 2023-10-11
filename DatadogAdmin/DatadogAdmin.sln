@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatadogAdmin", "DatadogAdmin\DatadogAdmin.csproj", "{41B21F1D-D11F-4C24-9919-7A03CE97C13B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDAdmin", "DDAdmin\DDAdmin.csproj", "{63049F29-B8F3-4C10-9D2D-89490B7D5BAF}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupTDDatadogCambios", "SetupTDDatadogCambios\SetupTDDatadogCambios.vdproj", "{470F9415-839F-4795-8D83-70D860F52A7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41B21F1D-D11F-4C24-9919-7A03CE97C13B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41B21F1D-D11F-4C24-9919-7A03CE97C13B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41B21F1D-D11F-4C24-9919-7A03CE97C13B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41B21F1D-D11F-4C24-9919-7A03CE97C13B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63049F29-B8F3-4C10-9D2D-89490B7D5BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63049F29-B8F3-4C10-9D2D-89490B7D5BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63049F29-B8F3-4C10-9D2D-89490B7D5BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63049F29-B8F3-4C10-9D2D-89490B7D5BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{470F9415-839F-4795-8D83-70D860F52A7F}.Debug|Any CPU.ActiveCfg = Debug
+		{470F9415-839F-4795-8D83-70D860F52A7F}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83EA1314-3A97-4F3A-A5BC-55C22CFAA2A5}
+	EndGlobalSection
+EndGlobal

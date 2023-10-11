@@ -1,0 +1,22 @@
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\_Desarrollo\Lib\Common\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\_Desarrollo\Lib\Common\Common\obj\Debug\Common.dll
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\_Desarrollo\Lib\Common\Common\obj\Debug\Common.pdb
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\_Desarrollo\Lib\Common\Common\bin\Debug\Common.dll
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\_Desarrollo\Lib\Common\Common\bin\Debug\Common.pdb
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\_Desarrollo\Lib\Common\Common\bin\Debug\MySql.Data.dll
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\_Desarrollo\Lib\Common\Common\bin\Debug\Newtonsoft.Json.dll
+C:\Users\VMedellin\OneDrive - Red Efectiva\Proyectos\_Desarrollo\Lib\Common\Common\obj\Debug\Common.csproj.CopyComplete
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\bin\Debug\Common.dll
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\bin\Debug\Common.pdb
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\bin\Debug\MySql.Data.dll
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\bin\Debug\Newtonsoft.Json.dll
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\bin\Debug\xmldiffpatch.dll
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\bin\Debug\Newtonsoft.Json.xml
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\obj\Debug\Common.csproj.CopyComplete
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\obj\Debug\Common.dll
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\obj\Debug\Common.pdb
+C:\GitPerson\Desarrollo_Anteriores\BulkInsert\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\GitPerson\Desarrollo_Anteriores\BulkInsert\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\BulkInsert\Common\obj\Debug\Common.dll
+C:\GitPerson\Desarrollo_Anteriores\BulkInsert\Common\obj\Debug\Common.pdb

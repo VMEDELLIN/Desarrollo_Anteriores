@@ -1,0 +1,10 @@
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DDAdmin\bin\Debug\DDAdmin.dll
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DDAdmin\bin\Debug\DDAdmin.pdb
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DDAdmin\bin\Debug\YamlDotNet.dll
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DDAdmin\bin\Debug\YamlDotNet.xml
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DDAdmin\obj\Debug\DDAdmin.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DDAdmin\obj\Debug\DDAdmin.csproj.CopyComplete
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DDAdmin\obj\Debug\DDAdmin.dll
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DDAdmin\obj\Debug\DDAdmin.pdb
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DDAdmin\bin\Debug\Newtonsoft.Json.dll
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DDAdmin\bin\Debug\Newtonsoft.Json.xml

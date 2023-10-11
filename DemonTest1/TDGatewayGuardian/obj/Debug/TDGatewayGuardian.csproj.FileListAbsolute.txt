@@ -1,0 +1,14 @@
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayGuardian\obj\Debug\TDGatewayGuardian.csproj.AssemblyReference.cache
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayGuardian\obj\Debug\TDGatewayGuardian.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayGuardian\bin\Debug\TDGatewayGuardian.exe.config
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayGuardian\bin\Debug\TDGatewayGuardian.exe
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayGuardian\bin\Debug\TDGatewayGuardian.pdb
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayGuardian\bin\Debug\log4net.dll
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayGuardian\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayGuardian\bin\Debug\Topshelf.dll
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayGuardian\bin\Debug\log4net.xml
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayGuardian\bin\Debug\Topshelf.xml
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayGuardian\obj\Debug\TDGatewayGuardian.csproj.CopyComplete
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayGuardian\obj\Debug\TDGatewayGuardian.exe
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayGuardian\obj\Debug\TDGatewayGuardian.pdb
+C:\GitPerson\Desarrollo_Anteriores\DemonTest1\TDGatewayGuardian\bin\Debug\App.config

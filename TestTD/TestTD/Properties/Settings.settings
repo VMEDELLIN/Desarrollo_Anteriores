@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TestTD.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TestTD_TDService_TDCustomerServices" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.10.1.106:8086/service.asmx</Value>
+    </Setting>
+    <Setting Name="TestTD_ServicioBilletera_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sandbox-misuerte.redefectiva.net/wsewallet/service.asmx</Value>
+    </Setting>
+    <Setting Name="TestTD_SBTDService_TDCustomerServices" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://sandboxv2-www.transferdirecto.com:7013/TDServiceV2/Service.asmx</Value>
+    </Setting>
+    <Setting Name="TestTD_MTDService_TDCustomerServices" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:6943/Service.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,13 @@
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DatadogAdmin\bin\Debug\DatadogAdmin.exe.config
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DatadogAdmin\bin\Debug\DatadogAdmin.exe
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DatadogAdmin\bin\Debug\DatadogAdmin.pdb
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DatadogAdmin\bin\Debug\DDAdmin.dll
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DatadogAdmin\bin\Debug\DDAdmin.pdb
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DatadogAdmin\obj\Debug\DatadogAdmin.csproj.AssemblyReference.cache
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DatadogAdmin\obj\Debug\DatadogAdmin.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DatadogAdmin\obj\Debug\DatadogAdmin.csproj.CopyComplete
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DatadogAdmin\obj\Debug\DatadogAdmin.exe
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DatadogAdmin\obj\Debug\DatadogAdmin.pdb
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DatadogAdmin\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DatadogAdmin\bin\Debug\Topshelf.dll
+C:\GitPerson\Desarrollo_Anteriores\DatadogAdmin\DatadogAdmin\bin\Debug\Topshelf.xml

@@ -23,7 +23,7 @@ namespace STP
             //Iniciar();
             var urlBusqueda = "https://efws-dev.stpmex.com/efws/API/consultaSaldoCuenta";
             CryptoHandler cryptoHandler = new CryptoHandler();
-            ConsultaSaldoCuentaRequest oConsultaSaldoRequest = new ConsultaSaldoCuentaRequest() { empresa = "TRANSPAY_MEXICO", cuentaOrdenante = "646180204303000007", firma = "" };
+            ConsultaSaldoCuentaRequest oConsultaSaldoRequest = new ConsultaSaldoCuentaRequest() { empresa = "TRANSPAY_MEXICO", cuentaOrdenante = "646180204303000007", firma = "" };            
             string firmaa= cryptoHandler.cadenaOriginal("TRANSPAY_MEXICO", "646180204303000007","");
             oConsultaSaldoRequest.firma = firmaa;            
 

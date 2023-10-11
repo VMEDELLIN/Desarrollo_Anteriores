@@ -1,1 +1,0 @@
-[Nombre =ManifestUpdate] [Autor =REDEFECTIVA\VMedellin] [Detalle =At 12:00 a. m. every day] [Ruta ="C:\Program Files (x86)\MySQL\MySQL Installer for Windows\MySQLInstallerConsole.exe" Community Update]

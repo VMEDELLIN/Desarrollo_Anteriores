@@ -1,0 +1,10 @@
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\TcpListenerConector\bin\Debug\TcpListenerConector.exe.config
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\TcpListenerConector\bin\Debug\TcpListenerConector.exe
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\TcpListenerConector\bin\Debug\TcpListenerConector.pdb
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\TcpListenerConector\bin\Debug\ListenerConector.dll
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\TcpListenerConector\bin\Debug\ListenerConector.pdb
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\TcpListenerConector\obj\Debug\TcpListenerConector.csproj.AssemblyReference.cache
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\TcpListenerConector\obj\Debug\TcpListenerConector.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\TcpListenerConector\obj\Debug\TcpListenerConector.csproj.CopyComplete
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\TcpListenerConector\obj\Debug\TcpListenerConector.exe
+C:\GitPerson\Desarrollo_Anteriores\TcpListener\TcpListenerConector\obj\Debug\TcpListenerConector.pdb

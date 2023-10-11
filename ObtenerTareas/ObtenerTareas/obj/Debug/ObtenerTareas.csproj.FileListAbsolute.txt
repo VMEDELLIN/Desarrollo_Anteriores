@@ -6,3 +6,11 @@ C:\Users\vmedellin\source\repos\ObtenerTareas\ObtenerTareas\obj\Debug\ObtenerTar
 C:\Users\vmedellin\source\repos\ObtenerTareas\ObtenerTareas\obj\Debug\ObtenerTareas.csproj.CopyComplete
 C:\Users\vmedellin\source\repos\ObtenerTareas\ObtenerTareas\obj\Debug\ObtenerTareas.exe
 C:\Users\vmedellin\source\repos\ObtenerTareas\ObtenerTareas\obj\Debug\ObtenerTareas.pdb
+C:\GitPerson\Desarrollo_Anteriores\ObtenerTareas\ObtenerTareas\bin\Debug\ObtenerTareas.exe.config
+C:\GitPerson\Desarrollo_Anteriores\ObtenerTareas\ObtenerTareas\bin\Debug\ObtenerTareas.exe
+C:\GitPerson\Desarrollo_Anteriores\ObtenerTareas\ObtenerTareas\bin\Debug\ObtenerTareas.pdb
+C:\GitPerson\Desarrollo_Anteriores\ObtenerTareas\ObtenerTareas\obj\Debug\ObtenerTareas.csproj.CoreCompileInputs.cache
+C:\GitPerson\Desarrollo_Anteriores\ObtenerTareas\ObtenerTareas\obj\Debug\ObtenerTareas.csproj.CopyComplete
+C:\GitPerson\Desarrollo_Anteriores\ObtenerTareas\ObtenerTareas\obj\Debug\ObtenerTareas.exe
+C:\GitPerson\Desarrollo_Anteriores\ObtenerTareas\ObtenerTareas\obj\Debug\ObtenerTareas.pdb
+C:\GitPerson\Desarrollo_Anteriores\ObtenerTareas\ObtenerTareas\obj\Debug\ObtenerTareas.csproj.AssemblyReference.cache

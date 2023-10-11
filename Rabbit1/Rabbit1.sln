@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit1", "Rabbit1\Rabbit1.csproj", "{E8200198-F069-418B-AC59-9BEBCCB854BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit2", "Rabbit2\Rabbit2.csproj", "{2D4F9A38-B900-4C7D-8F8D-E983C8A5E41A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8200198-F069-418B-AC59-9BEBCCB854BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8200198-F069-418B-AC59-9BEBCCB854BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8200198-F069-418B-AC59-9BEBCCB854BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8200198-F069-418B-AC59-9BEBCCB854BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D4F9A38-B900-4C7D-8F8D-E983C8A5E41A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4F9A38-B900-4C7D-8F8D-E983C8A5E41A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4F9A38-B900-4C7D-8F8D-E983C8A5E41A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4F9A38-B900-4C7D-8F8D-E983C8A5E41A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8ED8A20-B124-4EB9-9673-94A7E732410B}
+	EndGlobalSection
+EndGlobal

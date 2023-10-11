@@ -1,0 +1,2044 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://transferdirecto.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://transferdirecto.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://transferdirecto.com/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_GetAvailableQuoteCurrenCyList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetAvailablesCurrencyRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAvailablesCurrencyRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoPais" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEmisor" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Header">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="idAgente" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="idAgencia" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Caja" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ticket" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CveOperador" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetAvailableQuoteCurrenCyListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetAvailableQuoteCurrenCyListResult" type="tns:GetAvailablesCurrencyResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAvailablesCurrencyResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResponseList" type="tns:ArrayOfCurrencyCountry" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCurrencyCountry">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CurrencyCountry" nillable="true" type="tns:CurrencyCountry" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CurrencyCountry">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="IdCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CurrencyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CurrencyCodeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CurrencyName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetAvailableCountryCompaniesList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetAvailableCompanyCountriesRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAvailableCompanyCountriesRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEmisor" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetAvailableCountryCompaniesListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetAvailableCountryCompaniesListResult" type="tns:GetAvailableCompanyCountriesResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAvailableCompanyCountriesResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResponseList" type="tns:ArrayOfCountryInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCountryInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CountryInfo" nillable="true" type="tns:CountryInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CountryInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nationality" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetAvailableCompaniesList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetAvailableCompaniesRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAvailableCompaniesRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoPais" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEmisor" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetAvailableCompaniesListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetAvailableCompaniesListResult" type="tns:GetAvailableCompaniesResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAvailableCompaniesResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResponseList" type="tns:ArrayOfCompaniaInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCompaniaInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CompaniaInfo" nillable="true" type="tns:CompaniaInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CompaniaInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyCd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CountryCode" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrencyCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Currency" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetAvailableCurrencyList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetAvailablesCurrencyRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_GetAvailableCurrencyListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetAvailableCurrencyListResult" type="tns:GetAvailablesCurrencyResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_GetAvailableStateList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetAvailableStateListRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAvailableStateListRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoPais" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEmisor" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetAvailableStateListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetAvailableStateListResult" type="tns:GetAvailableStateListResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAvailableStateListResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StateList" type="tns:ArrayOfStateInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfStateInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="StateInfo" nillable="true" type="tns:StateInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="StateInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shortName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetAvailableCityList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetAvailableCityListRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAvailableCityListRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoPais" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEstado" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEmisor" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetAvailableCityListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetAvailableCityListResult" type="tns:GetAvailableCityListResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAvailableCityListResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CityList" type="tns:ArrayOfCityInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCityInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CityInfo" nillable="true" type="tns:CityInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CityInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="stateId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="stateName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="stateShort" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetAgencia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetAgenciaRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAgenciaRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoPais" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEstado" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoCiudad" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEmisor" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetAgenciaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetAgenciaResult" type="tns:GetAgenciaResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAgenciaResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AgenciaList" type="tns:ArrayOfAgenciaInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAgenciaInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AgenciaInfo" nillable="true" type="tns:AgenciaInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AgenciaInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClaveAgencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sucursal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="idAgente" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NombreAgente" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="idSubAgente" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NombreSubAgente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Telefono" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Direccion" type="tns:AddressInfo" />
+          <s:element minOccurs="1" maxOccurs="1" name="MontoAcumulado" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="MontoPago" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReciboPagos" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AddressInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Calle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumInt" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumExt" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdColonia" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Colonia" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdCiudad" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ciudad" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdEstado" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoPostal" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdPais" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Pais" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetStateList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetStateListRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetStateListRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEmisor" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoPais" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetStateListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetStateListResult" type="tns:GetStateListResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetStateListResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StateList" type="tns:ArrayOfStateInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetCityList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetCityListRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetCityListRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoPais" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEstado" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetCityListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetCityListResult" type="tns:GetCityListResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetCityListResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CityList" type="tns:ArrayOfCityInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetPostalCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetPostalCodeRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetPostalCodeRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoPostal" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetPostalCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetPostalCodeResult" type="tns:GetPostalCodeResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetPostalCodeResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="tns:PostalCodeInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PostalCodeInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="postalCode" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cityId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="cityName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="stateId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="stateName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="stateShort" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetNeighborhoodList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetNeighborhoodListRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetNeighborhoodListRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoPais" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEstado" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoCiudad" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoPostal" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetNeighborhoodListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetNeighborhoodListResult" type="tns:GetNeighborhoodListResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetNeighborhoodListResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NeighborhoodList" type="tns:ArrayOfNeighborhoodInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfNeighborhoodInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="NeighborhoodInfo" nillable="true" type="tns:NeighborhoodInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="NeighborhoodInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="postalCode" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cityId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="cityName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="stateId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="stateName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="stateShort" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetGenreList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetGenreListRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetGenreListRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEmisor" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetGenreListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetGenreListResult" type="tns:GetGenreListResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetGenreListResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GenreList" type="tns:ArrayOfGenreInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfGenreInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GenreInfo" nillable="true" type="tns:GenreInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GenreInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetOcupationList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetOcupationListRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetOcupationListRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEmisor" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetOcupationListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetOcupationListResult" type="tns:GetOcupationListResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetOcupationListResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OcupationList" type="tns:ArrayOfOcupationInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfOcupationInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OcupationInfo" nillable="true" type="tns:OcupationInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OcupationInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetCountryList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetCountryListRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetCountryListRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEmisor" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetCountryListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetCountryListResult" type="tns:GetCountryListResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetCountryListResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryList" type="tns:ArrayOfCountryInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetIdList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetIdListRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetIdListRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoPais" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetIdListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetIdListResult" type="tns:GetIdListResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetIdListResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdList" type="tns:ArrayOfIdInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfIdInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="IdInfo" nillable="true" type="tns:IdInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="IdInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetEnvioParameterList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetEnvioParameterRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetEnvioParameterRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEmisor" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetEnvioParameterListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetEnvioParameterListResult" type="tns:GetEnvioParameterResposeInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetEnvioParameterResposeInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RemesaParam" type="tns:RemesaParamInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RemesaParamInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Clave" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Monto" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdEmisor" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdOrigen" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdDestino" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Msg" type="tns:ParamInfo" />
+          <s:element minOccurs="1" maxOccurs="1" name="BeneficiarioReq" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Beneficiario" type="tns:UsuarioParamInfo" />
+          <s:element minOccurs="1" maxOccurs="1" name="RemitenteReq" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remitente" type="tns:UsuarioParamInfo" />
+          <s:element minOccurs="1" maxOccurs="1" name="DetalleReq" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Detalle" type="tns:DetalleParamInfo" />
+          <s:element minOccurs="1" maxOccurs="1" name="CotizacionReq" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cotizacion" type="tns:CotizacionParamInfo" />
+          <s:element minOccurs="1" maxOccurs="1" name="OperadorReq" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Operador" type="tns:OperadorParamInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ParamInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="idSeccion" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="isEnabled" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Optional" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Capture" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:ParamType" />
+          <s:element minOccurs="0" maxOccurs="1" name="TagName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="ParamType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Number" />
+          <s:enumeration value="Text" />
+          <s:enumeration value="Date" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="UsuarioParamInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Telefono" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paterno" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Materno" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="FecNac" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="NombreCompleto" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="RFC" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="CURP" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="FIEL" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Genero" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ocupacion" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Correo" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaisNacimiento" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaisNacionalidad" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="EntidadNacimiento" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="LugarNacimiento" type="tns:ParamInfo" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdentificacionReq" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Identificacion" type="tns:DocumentoParamInfo" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdAdicionalReq" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdAdicional" type="tns:DocumentoParamInfo" />
+          <s:element minOccurs="1" maxOccurs="1" name="DireccionReq" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Direccion" type="tns:DireccionParaInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DocumentoParamInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Tipo" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Numero" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Vencimiento" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Pais" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Estado" type="tns:ParamInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DireccionParaInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Calle" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumExt" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumInt" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Colonia" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ciudad" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Estado" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="CP" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Pais" type="tns:ParamInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DetalleParamInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TotEnvio" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotCargo" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotCosto" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotPago" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="TC" type="tns:ParamInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CotizacionParamInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Clave" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdEmisor" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="AgenciaOrigen" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="AgenciaDestino" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="MonedaEnvio" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="MonedaPago" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalEnvio" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalPago" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalCargo" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalCosto" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="TC" type="tns:ParamInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OperadorParamInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paterno" type="tns:ParamInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Materno" type="tns:ParamInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetCobroParameterList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetCobroParameterRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetCobroParameterRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEmisor" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetCobroParameterListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GetCobroParameterListResult" type="tns:GetCobroParameterResposeInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetCobroParameterResposeInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RemesaParam" type="tns:RemesaParamInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_ActualizaRemesa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:ActualizaRemesaRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ActualizaRemesaRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="0" maxOccurs="1" name="FolioRemesa" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MontoEfectivo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MontoTransferencia" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MontoComision" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FormaPago" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AutorizacionStp" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_ActualizaRemesaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_ActualizaRemesaResult" type="tns:ActualizaRemesaResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ActualizaRemesaResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_ConsultaUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:TDRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TDRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestData" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_ConsultaUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_ConsultaUsuarioResult" type="tns:TDResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TDResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="Folio" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ComisionAgente" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Autorizacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResponseData" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ResponseDataType" type="tns:DataType" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResponseMessage" type="tns:ArrayOfString" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="DataType">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="RemesaInfo" />
+          <s:enumeration value="UsuarioInfo" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_ConsultaBeneficiario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:TDRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_ConsultaBeneficiarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_ConsultaBeneficiarioResult" type="tns:TDResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_RegistraBeneficiario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:TDRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_RegistraBeneficiarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_RegistraBeneficiarioResult" type="tns:TDResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_CobraEnvio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:TDRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_CobraEnvioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_CobraEnvioResult" type="tns:TDResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_ReversoCobro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:TDRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_ReversoCobroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_ReversoCobroResult" type="tns:TDResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_CotizaEnvio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:TDRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_CotizaEnvioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_CotizaEnvioResult" type="tns:TDResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_GeneraEnvio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:TDRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_GeneraEnvioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_GeneraEnvioResult" type="tns:TDResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_ReversoEnvio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:TDRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_ReversoEnvioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_ReversoEnvioResult" type="tns:TDResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_ConsultaAvisoPrivacidadTicket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetAvisoDePrivacidadRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAvisoDePrivacidadRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoEmpresa" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_ConsultaAvisoPrivacidadTicketResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_ConsultaAvisoPrivacidadTicketResult" type="tns:GetAvisoDePrivacidadResponsetInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAvisoDePrivacidadResponsetInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="0" maxOccurs="1" name="RawText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FormatedTex" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_ConsultaAvisoPrivacidadOperador">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetAvisoDePrivacidadRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_ConsultaAvisoPrivacidadOperadorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_ConsultaAvisoPrivacidadOperadorResult" type="tns:GetAvisoDePrivacidadResponsetInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_ConsultaAvisoPrivacidad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetAvisoDePrivacidadRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_ConsultaAvisoPrivacidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_ConsultaAvisoPrivacidadResult" type="tns:GetAvisoDePrivacidadResponsetInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_BuscaEnvio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:TDRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_BuscaEnvioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_BuscaEnvioResult" type="tns:TDResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TD_GetSTPComisionByAgent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Request" type="tns:Request" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Request">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_GetSTPComisionByAgentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TD_GetSTPComisionByAgentResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DataComisionAgente" type="tns:ArrayOfDataComisionAgente" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDataComisionAgente">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DataComisionAgente" type="tns:DataComisionAgente" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DataComisionAgente">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdAgente" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Comision" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Estatus" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaMovimiento" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaRegistro" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_ConsultaForelo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetForeloRequestInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetForeloRequestInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdAgente" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumeroCuenta" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TD_ConsultaForeloResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TD_ConsultaForeloResult" type="tns:GetListForeloResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetListForeloResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Encabezado" type="tns:Header" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Forelo" type="tns:ForeloInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ForeloInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="idAgente" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="nNumeroCuenta" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="forelo" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetAvailableQuoteCurrenCyListSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetAvailableQuoteCurrenCyList" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetAvailableQuoteCurrenCyListSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetAvailableQuoteCurrenCyListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetAvailableCountryCompaniesListSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetAvailableCountryCompaniesList" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetAvailableCountryCompaniesListSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetAvailableCountryCompaniesListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetAvailableCompaniesListSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetAvailableCompaniesList" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetAvailableCompaniesListSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetAvailableCompaniesListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetAvailableCurrencyListSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetAvailableCurrencyList" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetAvailableCurrencyListSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetAvailableCurrencyListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetAvailableStateListSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetAvailableStateList" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetAvailableStateListSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetAvailableStateListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetAvailableCityListSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetAvailableCityList" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetAvailableCityListSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetAvailableCityListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetAgenciaSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetAgencia" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetAgenciaSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetAgenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetStateListSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetStateList" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetStateListSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetStateListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetCityListSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetCityList" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetCityListSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetCityListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetPostalCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetPostalCode" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetPostalCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetPostalCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetNeighborhoodListSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetNeighborhoodList" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetNeighborhoodListSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetNeighborhoodListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetGenreListSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetGenreList" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetGenreListSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetGenreListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetOcupationListSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetOcupationList" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetOcupationListSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetOcupationListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetCountryListSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetCountryList" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetCountryListSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetCountryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetIdListSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetIdList" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetIdListSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetIdListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetEnvioParameterListSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetEnvioParameterList" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetEnvioParameterListSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetEnvioParameterListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetCobroParameterListSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetCobroParameterList" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetCobroParameterListSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetCobroParameterListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_ActualizaRemesaSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_ActualizaRemesa" />
+  </wsdl:message>
+  <wsdl:message name="TD_ActualizaRemesaSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_ActualizaRemesaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_ConsultaUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_ConsultaUsuario" />
+  </wsdl:message>
+  <wsdl:message name="TD_ConsultaUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_ConsultaUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_ConsultaBeneficiarioSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_ConsultaBeneficiario" />
+  </wsdl:message>
+  <wsdl:message name="TD_ConsultaBeneficiarioSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_ConsultaBeneficiarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_RegistraBeneficiarioSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_RegistraBeneficiario" />
+  </wsdl:message>
+  <wsdl:message name="TD_RegistraBeneficiarioSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_RegistraBeneficiarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_CobraEnvioSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_CobraEnvio" />
+  </wsdl:message>
+  <wsdl:message name="TD_CobraEnvioSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_CobraEnvioResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_ReversoCobroSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_ReversoCobro" />
+  </wsdl:message>
+  <wsdl:message name="TD_ReversoCobroSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_ReversoCobroResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_CotizaEnvioSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_CotizaEnvio" />
+  </wsdl:message>
+  <wsdl:message name="TD_CotizaEnvioSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_CotizaEnvioResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GeneraEnvioSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GeneraEnvio" />
+  </wsdl:message>
+  <wsdl:message name="TD_GeneraEnvioSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GeneraEnvioResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_ReversoEnvioSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_ReversoEnvio" />
+  </wsdl:message>
+  <wsdl:message name="TD_ReversoEnvioSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_ReversoEnvioResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_ConsultaAvisoPrivacidadTicketSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_ConsultaAvisoPrivacidadTicket" />
+  </wsdl:message>
+  <wsdl:message name="TD_ConsultaAvisoPrivacidadTicketSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_ConsultaAvisoPrivacidadTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_ConsultaAvisoPrivacidadOperadorSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_ConsultaAvisoPrivacidadOperador" />
+  </wsdl:message>
+  <wsdl:message name="TD_ConsultaAvisoPrivacidadOperadorSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_ConsultaAvisoPrivacidadOperadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_ConsultaAvisoPrivacidadSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_ConsultaAvisoPrivacidad" />
+  </wsdl:message>
+  <wsdl:message name="TD_ConsultaAvisoPrivacidadSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_ConsultaAvisoPrivacidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_BuscaEnvioSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_BuscaEnvio" />
+  </wsdl:message>
+  <wsdl:message name="TD_BuscaEnvioSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_BuscaEnvioResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetSTPComisionByAgentSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_GetSTPComisionByAgent" />
+  </wsdl:message>
+  <wsdl:message name="TD_GetSTPComisionByAgentSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_GetSTPComisionByAgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="TD_ConsultaForeloSoapIn">
+    <wsdl:part name="parameters" element="tns:TD_ConsultaForelo" />
+  </wsdl:message>
+  <wsdl:message name="TD_ConsultaForeloSoapOut">
+    <wsdl:part name="parameters" element="tns:TD_ConsultaForeloResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TDCustomerServicesSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableQuoteCurrenCyList">
+      <wsdl:input message="tns:TD_GetAvailableQuoteCurrenCyListSoapIn" />
+      <wsdl:output message="tns:TD_GetAvailableQuoteCurrenCyListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableCountryCompaniesList">
+      <wsdl:input message="tns:TD_GetAvailableCountryCompaniesListSoapIn" />
+      <wsdl:output message="tns:TD_GetAvailableCountryCompaniesListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableCompaniesList">
+      <wsdl:input message="tns:TD_GetAvailableCompaniesListSoapIn" />
+      <wsdl:output message="tns:TD_GetAvailableCompaniesListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableCurrencyList">
+      <wsdl:input message="tns:TD_GetAvailableCurrencyListSoapIn" />
+      <wsdl:output message="tns:TD_GetAvailableCurrencyListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableStateList">
+      <wsdl:input message="tns:TD_GetAvailableStateListSoapIn" />
+      <wsdl:output message="tns:TD_GetAvailableStateListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableCityList">
+      <wsdl:input message="tns:TD_GetAvailableCityListSoapIn" />
+      <wsdl:output message="tns:TD_GetAvailableCityListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAgencia">
+      <wsdl:input message="tns:TD_GetAgenciaSoapIn" />
+      <wsdl:output message="tns:TD_GetAgenciaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetStateList">
+      <wsdl:input message="tns:TD_GetStateListSoapIn" />
+      <wsdl:output message="tns:TD_GetStateListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetCityList">
+      <wsdl:input message="tns:TD_GetCityListSoapIn" />
+      <wsdl:output message="tns:TD_GetCityListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetPostalCode">
+      <wsdl:input message="tns:TD_GetPostalCodeSoapIn" />
+      <wsdl:output message="tns:TD_GetPostalCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetNeighborhoodList">
+      <wsdl:input message="tns:TD_GetNeighborhoodListSoapIn" />
+      <wsdl:output message="tns:TD_GetNeighborhoodListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetGenreList">
+      <wsdl:input message="tns:TD_GetGenreListSoapIn" />
+      <wsdl:output message="tns:TD_GetGenreListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetOcupationList">
+      <wsdl:input message="tns:TD_GetOcupationListSoapIn" />
+      <wsdl:output message="tns:TD_GetOcupationListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetCountryList">
+      <wsdl:input message="tns:TD_GetCountryListSoapIn" />
+      <wsdl:output message="tns:TD_GetCountryListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetIdList">
+      <wsdl:input message="tns:TD_GetIdListSoapIn" />
+      <wsdl:output message="tns:TD_GetIdListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetEnvioParameterList">
+      <wsdl:input message="tns:TD_GetEnvioParameterListSoapIn" />
+      <wsdl:output message="tns:TD_GetEnvioParameterListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetCobroParameterList">
+      <wsdl:input message="tns:TD_GetCobroParameterListSoapIn" />
+      <wsdl:output message="tns:TD_GetCobroParameterListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_ActualizaRemesa">
+      <wsdl:input message="tns:TD_ActualizaRemesaSoapIn" />
+      <wsdl:output message="tns:TD_ActualizaRemesaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaUsuario">
+      <wsdl:input message="tns:TD_ConsultaUsuarioSoapIn" />
+      <wsdl:output message="tns:TD_ConsultaUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaBeneficiario">
+      <wsdl:input message="tns:TD_ConsultaBeneficiarioSoapIn" />
+      <wsdl:output message="tns:TD_ConsultaBeneficiarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_RegistraBeneficiario">
+      <wsdl:input message="tns:TD_RegistraBeneficiarioSoapIn" />
+      <wsdl:output message="tns:TD_RegistraBeneficiarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_CobraEnvio">
+      <wsdl:input message="tns:TD_CobraEnvioSoapIn" />
+      <wsdl:output message="tns:TD_CobraEnvioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_ReversoCobro">
+      <wsdl:input message="tns:TD_ReversoCobroSoapIn" />
+      <wsdl:output message="tns:TD_ReversoCobroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_CotizaEnvio">
+      <wsdl:input message="tns:TD_CotizaEnvioSoapIn" />
+      <wsdl:output message="tns:TD_CotizaEnvioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GeneraEnvio">
+      <wsdl:input message="tns:TD_GeneraEnvioSoapIn" />
+      <wsdl:output message="tns:TD_GeneraEnvioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_ReversoEnvio">
+      <wsdl:input message="tns:TD_ReversoEnvioSoapIn" />
+      <wsdl:output message="tns:TD_ReversoEnvioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaAvisoPrivacidadTicket">
+      <wsdl:input message="tns:TD_ConsultaAvisoPrivacidadTicketSoapIn" />
+      <wsdl:output message="tns:TD_ConsultaAvisoPrivacidadTicketSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaAvisoPrivacidadOperador">
+      <wsdl:input message="tns:TD_ConsultaAvisoPrivacidadOperadorSoapIn" />
+      <wsdl:output message="tns:TD_ConsultaAvisoPrivacidadOperadorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaAvisoPrivacidad">
+      <wsdl:input message="tns:TD_ConsultaAvisoPrivacidadSoapIn" />
+      <wsdl:output message="tns:TD_ConsultaAvisoPrivacidadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_BuscaEnvio">
+      <wsdl:input message="tns:TD_BuscaEnvioSoapIn" />
+      <wsdl:output message="tns:TD_BuscaEnvioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetSTPComisionByAgent">
+      <wsdl:input message="tns:TD_GetSTPComisionByAgentSoapIn" />
+      <wsdl:output message="tns:TD_GetSTPComisionByAgentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaForelo">
+      <wsdl:input message="tns:TD_ConsultaForeloSoapIn" />
+      <wsdl:output message="tns:TD_ConsultaForeloSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TDCustomerServicesSoap" type="tns:TDCustomerServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://transferdirecto.com/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableQuoteCurrenCyList">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetAvailableQuoteCurrenCyList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableCountryCompaniesList">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetAvailableCountryCompaniesList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableCompaniesList">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetAvailableCompaniesList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableCurrencyList">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetAvailableCurrencyList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableStateList">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetAvailableStateList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableCityList">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetAvailableCityList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAgencia">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetAgencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetStateList">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetStateList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetCityList">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetCityList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetPostalCode">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetPostalCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetNeighborhoodList">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetNeighborhoodList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetGenreList">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetGenreList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetOcupationList">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetOcupationList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetCountryList">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetCountryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetIdList">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetIdList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetEnvioParameterList">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetEnvioParameterList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetCobroParameterList">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetCobroParameterList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ActualizaRemesa">
+      <soap:operation soapAction="http://transferdirecto.com/TD_ActualizaRemesa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaUsuario">
+      <soap:operation soapAction="http://transferdirecto.com/TD_ConsultaUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaBeneficiario">
+      <soap:operation soapAction="http://transferdirecto.com/TD_ConsultaBeneficiario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_RegistraBeneficiario">
+      <soap:operation soapAction="http://transferdirecto.com/TD_RegistraBeneficiario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_CobraEnvio">
+      <soap:operation soapAction="http://transferdirecto.com/TD_CobraEnvio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ReversoCobro">
+      <soap:operation soapAction="http://transferdirecto.com/TD_ReversoCobro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_CotizaEnvio">
+      <soap:operation soapAction="http://transferdirecto.com/TD_CotizaEnvio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GeneraEnvio">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GeneraEnvio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ReversoEnvio">
+      <soap:operation soapAction="http://transferdirecto.com/TD_ReversoEnvio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaAvisoPrivacidadTicket">
+      <soap:operation soapAction="http://transferdirecto.com/TD_ConsultaAvisoPrivacidadTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaAvisoPrivacidadOperador">
+      <soap:operation soapAction="http://transferdirecto.com/TD_ConsultaAvisoPrivacidadOperador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaAvisoPrivacidad">
+      <soap:operation soapAction="http://transferdirecto.com/TD_ConsultaAvisoPrivacidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_BuscaEnvio">
+      <soap:operation soapAction="http://transferdirecto.com/TD_BuscaEnvio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetSTPComisionByAgent">
+      <soap:operation soapAction="http://transferdirecto.com/TD_GetSTPComisionByAgent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaForelo">
+      <soap:operation soapAction="http://transferdirecto.com/TD_ConsultaForelo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TDCustomerServicesSoap12" type="tns:TDCustomerServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://transferdirecto.com/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableQuoteCurrenCyList">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetAvailableQuoteCurrenCyList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableCountryCompaniesList">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetAvailableCountryCompaniesList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableCompaniesList">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetAvailableCompaniesList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableCurrencyList">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetAvailableCurrencyList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableStateList">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetAvailableStateList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAvailableCityList">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetAvailableCityList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetAgencia">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetAgencia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetStateList">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetStateList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetCityList">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetCityList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetPostalCode">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetPostalCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetNeighborhoodList">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetNeighborhoodList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetGenreList">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetGenreList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetOcupationList">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetOcupationList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetCountryList">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetCountryList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetIdList">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetIdList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetEnvioParameterList">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetEnvioParameterList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetCobroParameterList">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetCobroParameterList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ActualizaRemesa">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_ActualizaRemesa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaUsuario">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_ConsultaUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaBeneficiario">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_ConsultaBeneficiario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_RegistraBeneficiario">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_RegistraBeneficiario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_CobraEnvio">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_CobraEnvio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ReversoCobro">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_ReversoCobro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_CotizaEnvio">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_CotizaEnvio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GeneraEnvio">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GeneraEnvio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ReversoEnvio">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_ReversoEnvio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaAvisoPrivacidadTicket">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_ConsultaAvisoPrivacidadTicket" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaAvisoPrivacidadOperador">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_ConsultaAvisoPrivacidadOperador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaAvisoPrivacidad">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_ConsultaAvisoPrivacidad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_BuscaEnvio">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_BuscaEnvio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_GetSTPComisionByAgent">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_GetSTPComisionByAgent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TD_ConsultaForelo">
+      <soap12:operation soapAction="http://transferdirecto.com/TD_ConsultaForelo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TDCustomerServices">
+    <wsdl:port name="TDCustomerServicesSoap" binding="tns:TDCustomerServicesSoap">
+      <soap:address location="http://sandboxv2-www.transferdirecto.com:7013/TDServiceV2/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TDCustomerServicesSoap12" binding="tns:TDCustomerServicesSoap12">
+      <soap12:address location="http://sandboxv2-www.transferdirecto.com:7013/TDServiceV2/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

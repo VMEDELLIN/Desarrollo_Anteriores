@@ -1,0 +1,11 @@
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\bin\Release\Common.dll
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\bin\Release\Common.pdb
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\bin\Release\MySql.Data.dll
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\bin\Release\Newtonsoft.Json.dll
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\bin\Release\xmldiffpatch.dll
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\bin\Release\Newtonsoft.Json.xml
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\obj\Release\Common.csproj.CoreCompileInputs.cache
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\obj\Release\Common.csproj.CopyComplete
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\obj\Release\Common.dll
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\obj\Release\Common.pdb
+C:\wwwroot\NET\TransferDirecto.Net\_Desarrollo\Lib\Common\Common\obj\Release\Common.csproj.AssemblyReference.cache

@@ -19,7 +19,7 @@ namespace ConsultaSTP
         public bool debug = true;
         public CryptoHandler()
         {
-            //Transfer nueva
+            ////Transfer nueva
             string ruta = Path.Combine(System.IO.Directory.GetCurrentDirectory(), "TransferNueva\\prueba.p12");
             filename = ruta;
             password = "TransferStp#4";

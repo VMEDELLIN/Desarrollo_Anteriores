@@ -1,12 +1,35 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<div id="divLista">
+<h2>Lista</h2>
+<div id="divLista"></div>
 
-</div>
+<h2>Notifications</h2>
+<div id="notificationContainer"></div>
+
 <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
 <script>
-    var connection = new signalR.HubConnectionBuilder().withUrl("/personHub").build();
+    var connection = new signalR.HubConnectionBuilder()
+        .withUrl("/personHub")
+        .build();
+    var connectionOperation = new signalR.HubConnectionBuilder()
+        .withUrl("/operationHub")
+        .build();
+
+
+    connection.on("Receive", function (Clave, Name, Date, Extra) {
+        let divBloqueo = document.createElement("div");
+        divBloqueo.textContent = Clave + Name + Date + Extra;
+        document.getElementById("divLista").appendChild(divBloqueo);
+    });
+
+    connectionOperation.on("ReceiveOperation", function (oOperation,oIntentos,oPagados,oCancelados) {
+        let divOper = document.createElement("divOper");
+        divOper.textContent = oOperation;
+        document.getElementById("notificationContainer").appendChild(divOper);
+    });
+
+
 
     connection.start().then(function () {
         console.log("Conexión exitosa");
@@ -14,9 +37,13 @@
         console.error(err);
     });
 
-    connection.on("Receive", function (Clave, Name, Date) {
-        let divBloqueo = document.createElement("div");
-        divBloqueo.textContent = Clave + Name + Date;
-        document.getElementById("divLista").appendChild(divBloqueo);
+    connectionOperation.start().then(function () {
+        console.log("Conexión exitosa");
+    }).catch(function (err) {
+        console.error(err);
     });
+
+
+
+
 </script>
